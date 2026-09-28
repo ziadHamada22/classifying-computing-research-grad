@@ -1,0 +1,49 @@
+# Final-system training/inference stack (Python 3.12).
+#
+# Kept separate from prototype/.venv on purpose: the prototype is the archived
+# artefact the submitted preliminary report cites, and transformers must move to
+# >=4.48 here for ModernBERT support, which would have changed that environment.
+#
+# Every reported number was produced with torch 2.6.0+cu124 on an RTX 3060
+# laptop GPU (6 GB). The versions in the comments are the exact ones installed
+# when the results were generated (2026-09-26).
+--extra-index-url https://download.pytorch.org/whl/cu124
+
+torch==2.6.0+cu124
+
+transformers>=4.48,<5      # 4.57.6; >=4.48 required for ModernBERT
+tokenizers>=0.21           # 0.22.2
+datasets>=3.1.0            # 5.0.0
+accelerate>=1.1.1          # 1.14.0
+sentencepiece>=0.2.0       # DeBERTa-v3 tokenizer
+protobuf>=4.25             # slow->fast tokenizer conversion for DeBERTa-v3
+
+scikit-learn>=1.5.2        # 1.9.0
+xgboost>=2.0               # 3.4.1; the TF-IDF + XGBoost baseline
+pandas>=2.2.3              # 3.0.5
+numpy>=1.26.4,<2           # 1.26.4
+pyarrow>=17.0.0
+scipy>=1.14
+
+matplotlib>=3.9.2
+seaborn>=0.13.2
+joblib>=1.4.2
+tqdm>=4.66.5
+
+# Ingestion
+pymupdf>=1.24              # 1.28.0; PDF parsing with span-level font sizes
+python-docx>=1.1.2
+
+# Tests
+pytest>=8
+
+# Notebook / demo
+ipykernel>=6.29
+ipywidgets>=8.1
+
+# Optional: the local-LLM experiments only (Agent 1 second opinion, Agent 3 RAG
+# few-shot). Not needed to run the system. 0.3.4 is the last prebuilt CUDA wheel
+# that loads on this CPU (newer wheels need AVX-512); it borrows the CUDA runtime
+# DLLs from torch's own lib folder, so no system CUDA install is required:
+#   pip install llama-cpp-python==0.3.4 --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cu124
+# Model: Qwen2.5-3B-Instruct Q4_K_M GGUF in C:\Users\ziada\gp_data\llm (or CRC_LLM_DIR).

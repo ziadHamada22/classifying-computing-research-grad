@@ -1,0 +1,166 @@
+{
+  "model_dir": "models\\scibert-soft",
+  "tag": "scibert-soft",
+  "temperature": 1.0,
+  "device": "cuda",
+  "splits": {
+    "test": {
+      "split": "test",
+      "n": 12960,
+      "strict_accuracy": 0.8104,
+      "strict_macro_f1": 0.811,
+      "strict_weighted_f1": 0.811,
+      "co_listed_accuracy": 0.9216,
+      "ece": 0.0246,
+      "mean_confidence": 0.7941,
+      "report": "                        precision    recall  f1-score   support\n\n      Computer Science     0.7164    0.7380    0.7270      2160\n   Information Systems     0.8262    0.8361    0.8311      2160\nInformation Technology     0.7933    0.8546    0.8228      2160\n  Software Engineering     0.9164    0.8579    0.8862      2160\n  Computer Engineering     0.7827    0.7870    0.7849      2160\n          Data Science     0.8402    0.7889    0.8138      2160\n\n              accuracy                         0.8104     12960\n             macro avg     0.8125    0.8104    0.8110     12960\n          weighted avg     0.8125    0.8104    0.8110     12960\n",
+      "confusion": [
+        [
+          1594,
+          136,
+          69,
+          28,
+          238,
+          95
+        ],
+        [
+          114,
+          1806,
+          110,
+          55,
+          21,
+          54
+        ],
+        [
+          75,
+          64,
+          1846,
+          59,
+          87,
+          29
+        ],
+        [
+          99,
+          49,
+          107,
+          1853,
+          16,
+          36
+        ],
+        [
+          199,
+          26,
+          117,
+          8,
+          1700,
+          110
+        ],
+        [
+          144,
+          105,
+          78,
+          19,
+          110,
+          1704
+        ]
+      ],
+      "unambiguous": {
+        "n": 10800,
+        "accuracy": 0.8525,
+        "macro_f1": 0.8528,
+        "co_listed_accuracy": 0.9168
+      },
+      "ambiguous": {
+        "n": 2160,
+        "accuracy": 0.6,
+        "macro_f1": 0.5993,
+        "co_listed_accuracy": 0.9458
+      },
+      "latency": {
+        "total_seconds": 104.26,
+        "docs_per_second": 124.3,
+        "ms_per_doc": 8.05,
+        "batch_size": 64
+      }
+    },
+    "temporal_test": {
+      "split": "temporal_test",
+      "n": 9000,
+      "strict_accuracy": 0.7343,
+      "strict_macro_f1": 0.7338,
+      "strict_weighted_f1": 0.7338,
+      "co_listed_accuracy": 0.9093,
+      "ece": 0.0355,
+      "mean_confidence": 0.7589,
+      "report": "                        precision    recall  f1-score   support\n\n      Computer Science     0.5880    0.6480    0.6166      1500\n   Information Systems     0.7713    0.8320    0.8005      1500\nInformation Technology     0.7288    0.7667    0.7472      1500\n  Software Engineering     0.8658    0.8647    0.8652      1500\n  Computer Engineering     0.6735    0.5887    0.6282      1500\n          Data Science     0.7891    0.7060    0.7452      1500\n\n              accuracy                         0.7343      9000\n             macro avg     0.7361    0.7343    0.7338      9000\n          weighted avg     0.7361    0.7343    0.7338      9000\n",
+      "confusion": [
+        [
+          972,
+          123,
+          113,
+          57,
+          187,
+          48
+        ],
+        [
+          133,
+          1248,
+          40,
+          25,
+          13,
+          41
+        ],
+        [
+          78,
+          35,
+          1150,
+          82,
+          115,
+          40
+        ],
+        [
+          68,
+          28,
+          66,
+          1297,
+          16,
+          25
+        ],
+        [
+          222,
+          76,
+          162,
+          28,
+          883,
+          129
+        ],
+        [
+          180,
+          108,
+          47,
+          9,
+          97,
+          1059
+        ]
+      ],
+      "unambiguous": {
+        "n": 6396,
+        "accuracy": 0.8318,
+        "macro_f1": 0.8236,
+        "co_listed_accuracy": 0.897
+      },
+      "ambiguous": {
+        "n": 2604,
+        "accuracy": 0.495,
+        "macro_f1": 0.5133,
+        "co_listed_accuracy": 0.9397
+      },
+      "latency": {
+        "total_seconds": 72.87,
+        "docs_per_second": 123.5,
+        "ms_per_doc": 8.1,
+        "batch_size": 64
+      }
+    }
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "format": "conformal-bank-1",
+  "method": "lac",
+  "class_conditional": true,
+  "calib_source": "temporal-half (2025+), 28.9% ambiguous",
+  "n_calib": 4500,
+  "alphas": {
+    "0.01": {
+      "method": "lac",
+      "alpha": 0.01,
+      "class_conditional": true,
+      "qhat": null,
+      "qhat_per_class": [
+        0.9813876837997071,
+        0.9808209943503836,
+        0.99105474170092,
+        0.9877946743803763,
+        0.9907947154437493,
+        0.9836062823497873
+      ],
+      "n_calib": 4500,
+      "n_calib_per_class": [
+        752,
+        761,
+        750,
+        745,
+        756,
+        736
+      ],
+      "calib_source": "temporal-half (2025+), 28.9% ambiguous",
+      "seed": 42
+    },
+    "0.02": {
+      "method": "lac",
+      "alpha": 0.02,
+      "class_conditional": true,
+      "qhat": null,
+      "qhat_per_class": [
+        0.967597239419074,
+        0.9674552802973406,
+        0.9869557459017586,
+        0.9771418545479115,
+        0.9883521340425324,
+        0.9711662428763934
+      ],
+      "n_calib": 4500,
+      "n_calib_per_class": [
+        752,
+        761,
+        750,
+        745,
+        756,
+        736
+      ],
+      "calib_source": "temporal-half (2025+), 28.9% ambiguous",
+      "seed": 42
+    },
+    "0.05": {
+      "method": "lac",
+      "alpha": 0.05,
+      "class_conditional": true,
+      "qhat": null,
+      "qhat_per_class": [
+        0.9427741456053136,
+        0.9290484044369537,
+        0.9656383502991464,
+        0.9294770926989692,
+        0.9829615540072582,
+        0.9512791952142187
+      ],
+      "n_calib": 4500,
+      "n_calib_per_class": [
+        752,
+        761,
+        750,
+        745,
+        756,
+        736
+      ],
+      "calib_source": "temporal-half (2025+), 28.9% ambiguous",
+      "seed": 42
+    },
+    "0.1": {
+      "method": "lac",
+      "alpha": 0.1,
+      "class_conditional": true,
+      "qhat": null,
+      "qhat_per_class": [
+        0.8984416755193431,
+        0.8019584325675235,
+        0.870847685802247,
+        0.7878122864385919,
+        0.9664121860757283,
+        0.912413283095902
+      ],
+      "n_calib": 4500,
+      "n_calib_per_class": [
+        752,
+        761,
+        750,
+        745,
+        756,
+        736
+      ],
+      "calib_source": "temporal-half (2025+), 28.9% ambiguous",
+      "seed": 42
+    },
+    "0.15": {
+      "method": "lac",
+      "alpha": 0.15,
+      "class_conditional": true,
+      "qhat": null,
+      "qhat_per_class": [
+        0.8510542852841929,
+        0.6865895999337246,
+        0.7632181972073125,
+        0.6138078091181565,
+        0.9387841450157836,
+        0.857498872148364
+      ],
+      "n_calib": 4500,
+      "n_calib_per_class": [
+        752,
+        761,
+        750,
+        745,
+        756,
+        736
+      ],
+      "calib_source": "temporal-half (2025+), 28.9% ambiguous",
+      "seed": 42
+    },
+    "0.2": {
+      "method": "lac",
+      "alpha": 0.2,
+      "class_conditional": true,
+      "qhat": null,
+      "qhat_per_class": [
+        0.7881928788051937,
+        0.5579276794738353,
+        0.6586598660758285,
+        0.38156317509578763,
+        0.8851726148562041,
+        0.7891510960734671
+      ],
+      "n_calib": 4500,
+      "n_calib_per_class": [
+        752,
+        761,
+        750,
+        745,
+        756,
+        736
+      ],
+      "calib_source": "temporal-half (2025+), 28.9% ambiguous",
+      "seed": 42
+    },
+    "0.3": {
+      "method": "lac",
+      "alpha": 0.3,
+      "class_conditional": true,
+      "qhat": null,
+      "qhat_per_class": [
+        0.6757902799611464,
+        0.40784490557426734,
+        0.45683376139757315,
+        0.20572233424609676,
+        0.7383752294194461,
+        0.6691953233446482
+      ],
+      "n_calib": 4500,
+      "n_calib_per_class": [
+        752,
+        761,
+        750,
+        745,
+        756,
+        736
+      ],
+      "calib_source": "temporal-half (2025+), 28.9% ambiguous",
+      "seed": 42
+    }
+  }
+}

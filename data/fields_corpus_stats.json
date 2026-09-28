@@ -1,0 +1,115 @@
+{
+  "n_total": 111917,
+  "per_discipline": {
+    "Computer Science": {
+      "n": 27966,
+      "n_fields": 7,
+      "majority_share": 0.143,
+      "fields": {
+        "Artificial Intelligence and Agents": 4000,
+        "Natural Language Processing": 4000,
+        "Algorithms and Complexity": 4000,
+        "Computer Vision": 4000,
+        "Theory of Computation and Logic": 4000,
+        "Graphics, Multimedia and Sound": 4000,
+        "Programming Languages and Compilers": 3966
+      },
+      "splits": {
+        "train": 19576,
+        "test": 4196,
+        "val": 4194
+      }
+    },
+    "Information Systems": {
+      "n": 22359,
+      "n_fields": 6,
+      "majority_share": 0.1789,
+      "fields": {
+        "Social and Information Networks": 4000,
+        "Computing, Ethics and Society": 4000,
+        "Data and Database Management": 4000,
+        "Information Retrieval and Search": 4000,
+        "Human-Computer Interaction": 4000,
+        "Digital Libraries and Scholarly Information": 2359
+      },
+      "splits": {
+        "train": 15651,
+        "test": 3355,
+        "val": 3353
+      }
+    },
+    "Information Technology": {
+      "n": 13048,
+      "n_fields": 5,
+      "majority_share": 0.3066,
+      "fields": {
+        "Cybersecurity and Cryptography": 4000,
+        "Distributed and Cloud Computing": 4000,
+        "Networking and Communications": 4000,
+        "Performance, Capacity and Reliability": 721,
+        "Operating Systems and Platforms": 327
+      },
+      "splits": {
+        "train": 9132,
+        "test": 1959,
+        "val": 1957
+      }
+    },
+    "Software Engineering": {
+      "n": 3226,
+      "n_fields": 7,
+      "majority_share": 0.2781,
+      "fields": {
+        "Empirical and Human Factors in SE": 897,
+        "Testing, Verification and Validation": 897,
+        "Requirements and Specification": 489,
+        "Software Architecture and Design": 279,
+        "Construction, Tooling and Program Analysis": 279,
+        "Maintenance and Evolution": 228,
+        "Software Process and Management": 157
+      },
+      "splits": {
+        "train": 2254,
+        "test": 492,
+        "val": 480
+      }
+    },
+    "Computer Engineering": {
+      "n": 20087,
+      "n_fields": 6,
+      "majority_share": 0.1991,
+      "fields": {
+        "Signal and Audio Processing": 4000,
+        "Information and Coding Theory": 4000,
+        "Control Systems and Robotics": 4000,
+        "Image and Video Processing": 3444,
+        "Computer Architecture and Hardware": 2809,
+        "Embedded and Emerging Devices": 1834
+      },
+      "splits": {
+        "train": 14059,
+        "test": 3016,
+        "val": 3012
+      }
+    },
+    "Data Science": {
+      "n": 25231,
+      "n_fields": 7,
+      "majority_share": 0.1585,
+      "fields": {
+        "Machine Learning Methods": 4000,
+        "Statistical Methodology and Inference": 4000,
+        "Statistical Learning Theory": 4000,
+        "Applied Statistics and Analytics": 4000,
+        "Neural and Evolutionary Computation": 4000,
+        "Computational Science and Engineering": 2781,
+        "Computational Statistics": 2450
+      },
+      "splits": {
+        "train": 17661,
+        "test": 3786,
+        "val": 3784
+      }
+    }
+  }
+}

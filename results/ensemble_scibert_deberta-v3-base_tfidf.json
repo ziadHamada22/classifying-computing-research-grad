@@ -1,0 +1,24 @@
+{
+  "tag": "ensemble_scibert_deberta-v3-base_tfidf",
+  "members": [
+    "scibert",
+    "deberta-v3-base",
+    "tfidf"
+  ],
+  "weights": {
+    "scibert": 0.5,
+    "deberta-v3-base": 0.2,
+    "tfidf": 0.3
+  },
+  "val": {
+    "macro_f1": 0.8584,
+    "accuracy": 0.8585,
+    "ece": 0.0341
+  },
+  "test": {
+    "macro_f1": 0.8161,
+    "accuracy": 0.8162,
+    "ece": 0.0099,
+    "lift_over_best_single": 0.0039
+  }
+}

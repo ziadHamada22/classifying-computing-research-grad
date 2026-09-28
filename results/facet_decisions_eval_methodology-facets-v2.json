@@ -1,0 +1,893 @@
+{
+  "model": "methodology-facets-v2",
+  "yardstick": "current cues",
+  "thresholds": {
+    "builds": 0.45,
+    "evaluates": 0.49,
+    "proves": 0.38,
+    "simulates": 0.69,
+    "human_data": 0.36,
+    "field_context": 0.42,
+    "secondary": 0.15,
+    "intervenes": 0.41
+  },
+  "val": {
+    "0.5 everywhere": {
+      "no_facet_rate": 0.1599,
+      "prevalence": {
+        "builds": 0.2345,
+        "evaluates": 0.5842,
+        "proves": 0.2253,
+        "simulates": 0.1569,
+        "human_data": 0.0174,
+        "field_context": 0.0276,
+        "secondary": 0.0043,
+        "intervenes": 0.0095
+      },
+      "label_model_prevalence": {
+        "builds": 0.2566,
+        "evaluates": 0.5734,
+        "proves": 0.2418,
+        "simulates": 0.1707,
+        "human_data": 0.0181,
+        "field_context": 0.0398,
+        "secondary": 0.0102,
+        "intervenes": 0.0141
+      },
+      "f1_vs_label_model": {
+        "builds": 0.6698,
+        "evaluates": 0.8519,
+        "proves": 0.7169,
+        "simulates": 0.7771,
+        "human_data": 0.4815,
+        "field_context": 0.5073,
+        "secondary": 0.5909,
+        "intervenes": 0.6111
+      },
+      "unseen_region": {
+        "builds": {
+          "methods": {
+            "agreement": 0.6745,
+            "kappa": 0.1516,
+            "n": 2387
+          },
+          "results_conclusion": {
+            "agreement": 0.7427,
+            "kappa": 0.1661,
+            "n": 1512
+          }
+        },
+        "evaluates": {
+          "methods": {
+            "agreement": 0.6992,
+            "kappa": 0.3862,
+            "n": 2387
+          },
+          "results_conclusion": {
+            "agreement": 0.7321,
+            "kappa": 0.4334,
+            "n": 1512
+          }
+        },
+        "proves": {
+          "methods": {
+            "agreement": 0.7767,
+            "kappa": 0.3345,
+            "n": 2387
+          },
+          "results_conclusion": {
+            "agreement": 0.8221,
+            "kappa": 0.4269,
+            "n": 1512
+          }
+        },
+        "simulates": {
+          "methods": {
+            "agreement": 0.8454,
+            "kappa": 0.382,
+            "n": 2387
+          },
+          "results_conclusion": {
+            "agreement": 0.873,
+            "kappa": 0.4713,
+            "n": 1512
+          }
+        },
+        "human_data": {
+          "methods": {
+            "agreement": 0.9594,
+            "kappa": 0.3316,
+            "n": 2387
+          },
+          "results_conclusion": {
+            "agreement": 0.9649,
+            "kappa": 0.2763,
+            "n": 1512
+          }
+        },
+        "field_context": {
+          "methods": {
+            "agreement": 0.9485,
+            "kappa": 0.2797,
+            "n": 2387
+          },
+          "results_conclusion": {
+            "agreement": 0.9497,
+            "kappa": 0.2845,
+            "n": 1512
+          }
+        },
+        "secondary": {
+          "methods": {
+            "agreement": 0.9824,
+            "kappa": 0.27,
+            "n": 2387
+          },
+          "results_conclusion": {
+            "agreement": 0.9914,
+            "kappa": 0.3769,
+            "n": 1512
+          }
+        },
+        "intervenes": {
+          "methods": {
+            "agreement": 0.977,
+            "kappa": 0.2361,
+            "n": 2387
+          },
+          "results_conclusion": {
+            "agreement": 0.9854,
+            "kappa": 0.2595,
+            "n": 1512
+          }
+        }
+      },
+      "external_signals": {
+        "code_release": {
+          "facet": "builds",
+          "n": 55,
+          "p_facet_given_signal": 0.3455,
+          "p_facet_otherwise": 0.2325,
+          "lift": 1.49
+        },
+        "tool_demo": {
+          "facet": "builds",
+          "n": 6,
+          "p_facet_given_signal": 0.5,
+          "p_facet_otherwise": 0.234,
+          "lift": 2.14
+        },
+        "theory_venue": {
+          "facet": "proves",
+          "n": 27,
+          "p_facet_given_signal": 1.0,
+          "p_facet_otherwise": 0.2184,
+          "lift": 4.58
+        },
+        "hci_venue": {
+          "facet": "human_data",
+          "n": 11,
+          "p_facet_given_signal": 0.0909,
+          "p_facet_otherwise": 0.0172,
+          "lift": 5.3
+        },
+        "industry_track": {
+          "facet": "field_context",
+          "n": 2,
+          "p_facet_given_signal": 0.0,
+          "p_facet_otherwise": 0.0276,
+          "lift": 0.0
+        },
+        "survey_venue": {
+          "facet": "secondary",
+          "n": 5,
+          "p_facet_given_signal": 0.0,
+          "p_facet_otherwise": 0.0043,
+          "lift": 0.0
+        },
+        "simulation_venue": {
+          "facet": "simulates",
+          "n": 2,
+          "p_facet_given_signal": 1.0,
+          "p_facet_otherwise": 0.1564,
+          "lift": 6.4
+        }
+      },
+      "design_counts": {
+        "Design & Creation (Design Science)": 1176,
+        "Experiment / Empirical Evaluation": 914,
+        "Formal / Theoretical": 431,
+        "Simulation & Modelling": 378,
+        "Case Study": 83,
+        "Qualitative Field Study / Grounded Theory": 32,
+        "Systematic Literature Review / Secondary Study": 13,
+        "Survey (empirical study of respondents)": 13
+      },
+      "design_agreement_with_unseen_text": 0.415,
+      "n_with_unseen_reference": 2241,
+      "no_evidence": {
+        "n": 486,
+        "n_with_unseen_reference": 300,
+        "reference_design_counts": {
+          "Experiment / Empirical Evaluation": 69,
+          "Formal / Theoretical": 63,
+          "Design & Creation (Design Science)": 59,
+          "Simulation & Modelling": 57,
+          "Case Study": 22,
+          "Systematic Literature Review / Secondary Study": 15,
+          "Survey (empirical study of respondents)": 9,
+          "Qualitative Field Study / Grounded Theory": 4,
+          "Action Research": 2
+        },
+        "agreement_with_unseen_text": {
+          "default (Design & Creation)": 0.1967,
+          "majority of evidenced references (Experiment)": 0.23,
+          "most probable single facet": 0.35,
+          "similar reference papers": 0.3533
+        }
+      },
+      "design_agreement_with_unseen_text_fallback_similar_papers": 0.436,
+      "design_agreement_with_unseen_text_fallback_top_facet": 0.4355,
+      "design_agreement_with_unseen_text_with_fallback": 0.436
+    },
+    "fitted per facet": {
+      "no_facet_rate": 0.1447,
+      "prevalence": {
+        "builds": 0.2536,
+        "evaluates": 0.5888,
+        "proves": 0.2586,
+        "simulates": 0.1296,
+        "human_data": 0.022,
+        "field_context": 0.0332,
+        "secondary": 0.0089,
+        "intervenes": 0.0095
+      },
+      "label_model_prevalence": {
+        "builds": 0.2566,
+        "evaluates": 0.5734,
+        "proves": 0.2418,
+        "simulates": 0.1707,
+        "human_data": 0.0181,
+        "field_context": 0.0398,
+        "secondary": 0.0102,
+        "intervenes": 0.0141
+      },
+      "f1_vs_label_model": {
+        "builds": 0.6705,
+        "evaluates": 0.8537,
+        "proves": 0.7258,
+        "simulates": 0.8018,
+        "human_data": 0.4918,
+        "field_context": 0.5495,
+        "secondary": 0.7586,
+        "intervenes": 0.6111
+      },
+      "unseen_region": {
+        "builds": {
+          "methods": {
+            "agreement": 0.6724,
+            "kappa": 0.1654,
+            "n": 2387
+          },
+          "results_conclusion": {
+            "agreement": 0.7341,
+            "kappa": 0.1706,
+            "n": 1512
+          }
+        },
+        "evaluates": {
+          "methods": {
+            "agreement": 0.6988,
+            "kappa": 0.3849,
+            "n": 2387
+          },
+          "results_conclusion": {
+            "agreement": 0.7348,
+            "kappa": 0.4376,
+            "n": 1512
+          }
+        },
+        "proves": {
+          "methods": {
+            "agreement": 0.7704,
+            "kappa": 0.3475,
+            "n": 2387
+          },
+          "results_conclusion": {
+            "agreement": 0.8128,
+            "kappa": 0.4285,
+            "n": 1512
+          }
+        },
+        "simulates": {
+          "methods": {
+            "agreement": 0.8592,
+            "kappa": 0.3841,
+            "n": 2387
+          },
+          "results_conclusion": {
+            "agreement": 0.8776,
+            "kappa": 0.4569,
+            "n": 1512
+          }
+        },
+        "human_data": {
+          "methods": {
+            "agreement": 0.9594,
+            "kappa": 0.3785,
+            "n": 2387
+          },
+          "results_conclusion": {
+            "agreement": 0.9636,
+            "kappa": 0.3189,
+            "n": 1512
+          }
+        },
+        "field_context": {
+          "methods": {
+            "agreement": 0.9451,
+            "kappa": 0.2789,
+            "n": 2387
+          },
+          "results_conclusion": {
+            "agreement": 0.9484,
+            "kappa": 0.3236,
+            "n": 1512
+          }
+        },
+        "secondary": {
+          "methods": {
+            "agreement": 0.9824,
+            "kappa": 0.392,
+            "n": 2387
+          },
+          "results_conclusion": {
+            "agreement": 0.9874,
+            "kappa": 0.3386,
+            "n": 1512
+          }
+        },
+        "intervenes": {
+          "methods": {
+            "agreement": 0.977,
+            "kappa": 0.2361,
+            "n": 2387
+          },
+          "results_conclusion": {
+            "agreement": 0.9854,
+            "kappa": 0.2595,
+            "n": 1512
+          }
+        }
+      },
+      "external_signals": {
+        "code_release": {
+          "facet": "builds",
+          "n": 55,
+          "p_facet_given_signal": 0.3636,
+          "p_facet_otherwise": 0.2516,
+          "lift": 1.45
+        },
+        "tool_demo": {
+          "facet": "builds",
+          "n": 6,
+          "p_facet_given_signal": 0.5,
+          "p_facet_otherwise": 0.2531,
+          "lift": 1.98
+        },
+        "theory_venue": {
+          "facet": "proves",
+          "n": 27,
+          "p_facet_given_signal": 1.0,
+          "p_facet_otherwise": 0.2519,
+          "lift": 3.97
+        },
+        "hci_venue": {
+          "facet": "human_data",
+          "n": 11,
+          "p_facet_given_signal": 0.2727,
+          "p_facet_otherwise": 0.0211,
+          "lift": 12.91
+        },
+        "industry_track": {
+          "facet": "field_context",
+          "n": 2,
+          "p_facet_given_signal": 0.0,
+          "p_facet_otherwise": 0.0332,
+          "lift": 0.0
+        },
+        "survey_venue": {
+          "facet": "secondary",
+          "n": 5,
+          "p_facet_given_signal": 0.0,
+          "p_facet_otherwise": 0.0089,
+          "lift": 0.0
+        },
+        "simulation_venue": {
+          "facet": "simulates",
+          "n": 2,
+          "p_facet_given_signal": 1.0,
+          "p_facet_otherwise": 0.129,
+          "lift": 7.75
+        }
+      },
+      "design_counts": {
+        "Design & Creation (Design Science)": 1175,
+        "Experiment / Empirical Evaluation": 867,
+        "Formal / Theoretical": 513,
+        "Simulation & Modelling": 307,
+        "Case Study": 96,
+        "Qualitative Field Study / Grounded Theory": 37,
+        "Systematic Literature Review / Secondary Study": 27,
+        "Survey (empirical study of respondents)": 17,
+        "Action Research": 1
+      },
+      "design_agreement_with_unseen_text": 0.4221,
+      "n_with_unseen_reference": 2241,
+      "no_evidence": {
+        "n": 440,
+        "n_with_unseen_reference": 272,
+        "reference_design_counts": {
+          "Experiment / Empirical Evaluation": 66,
+          "Simulation & Modelling": 60,
+          "Design & Creation (Design Science)": 53,
+          "Formal / Theoretical": 51,
+          "Case Study": 19,
+          "Systematic Literature Review / Secondary Study": 10,
+          "Survey (empirical study of respondents)": 7,
+          "Qualitative Field Study / Grounded Theory": 4,
+          "Action Research": 2
+        },
+        "agreement_with_unseen_text": {
+          "default (Design & Creation)": 0.1949,
+          "majority of evidenced references (Experiment)": 0.2426,
+          "most probable single facet": 0.3419,
+          "similar reference papers": 0.3346
+        }
+      },
+      "design_agreement_with_unseen_text_fallback_similar_papers": 0.4391,
+      "design_agreement_with_unseen_text_fallback_top_facet": 0.44,
+      "design_agreement_with_unseen_text_with_fallback": 0.4391
+    }
+  },
+  "test": {
+    "0.5 everywhere": {
+      "no_facet_rate": 0.1589,
+      "prevalence": {
+        "builds": 0.2433,
+        "evaluates": 0.5826,
+        "proves": 0.2187,
+        "simulates": 0.1662,
+        "human_data": 0.0174,
+        "field_context": 0.0335,
+        "secondary": 0.0033,
+        "intervenes": 0.0108
+      },
+      "label_model_prevalence": {
+        "builds": 0.247,
+        "evaluates": 0.5773,
+        "proves": 0.2263,
+        "simulates": 0.1816,
+        "human_data": 0.0204,
+        "field_context": 0.0463,
+        "secondary": 0.0069,
+        "intervenes": 0.0148
+      },
+      "f1_vs_label_model": {
+        "builds": 0.6818,
+        "evaluates": 0.8692,
+        "proves": 0.7188,
+        "simulates": 0.7743,
+        "human_data": 0.5391,
+        "field_context": 0.5514,
+        "secondary": 0.5161,
+        "intervenes": 0.5128
+      },
+      "unseen_region": {
+        "builds": {
+          "methods": {
+            "agreement": 0.6778,
+            "kappa": 0.1715,
+            "n": 2356
+          },
+          "results_conclusion": {
+            "agreement": 0.7099,
+            "kappa": 0.1146,
+            "n": 1551
+          }
+        },
+        "evaluates": {
+          "methods": {
+            "agreement": 0.7131,
+            "kappa": 0.4136,
+            "n": 2356
+          },
+          "results_conclusion": {
+            "agreement": 0.7589,
+            "kappa": 0.4839,
+            "n": 1551
+          }
+        },
+        "proves": {
+          "methods": {
+            "agreement": 0.7903,
+            "kappa": 0.3461,
+            "n": 2356
+          },
+          "results_conclusion": {
+            "agreement": 0.8143,
+            "kappa": 0.3877,
+            "n": 1551
+          }
+        },
+        "simulates": {
+          "methods": {
+            "agreement": 0.8239,
+            "kappa": 0.305,
+            "n": 2356
+          },
+          "results_conclusion": {
+            "agreement": 0.8607,
+            "kappa": 0.4389,
+            "n": 1551
+          }
+        },
+        "human_data": {
+          "methods": {
+            "agreement": 0.969,
+            "kappa": 0.3825,
+            "n": 2356
+          },
+          "results_conclusion": {
+            "agreement": 0.9703,
+            "kappa": 0.3089,
+            "n": 1551
+          }
+        },
+        "field_context": {
+          "methods": {
+            "agreement": 0.9385,
+            "kappa": 0.1936,
+            "n": 2356
+          },
+          "results_conclusion": {
+            "agreement": 0.9536,
+            "kappa": 0.3342,
+            "n": 1551
+          }
+        },
+        "secondary": {
+          "methods": {
+            "agreement": 0.9839,
+            "kappa": 0.2356,
+            "n": 2356
+          },
+          "results_conclusion": {
+            "agreement": 0.9903,
+            "kappa": 0.2073,
+            "n": 1551
+          }
+        },
+        "intervenes": {
+          "methods": {
+            "agreement": 0.9775,
+            "kappa": 0.1981,
+            "n": 2356
+          },
+          "results_conclusion": {
+            "agreement": 0.9787,
+            "kappa": 0.2228,
+            "n": 1551
+          }
+        }
+      },
+      "external_signals": {
+        "code_release": {
+          "facet": "builds",
+          "n": 54,
+          "p_facet_given_signal": 0.2778,
+          "p_facet_otherwise": 0.2427,
+          "lift": 1.14
+        },
+        "tool_demo": {
+          "facet": "builds",
+          "n": 1,
+          "p_facet_given_signal": 1.0,
+          "p_facet_otherwise": 0.2431,
+          "lift": 4.11
+        },
+        "theory_venue": {
+          "facet": "proves",
+          "n": 15,
+          "p_facet_given_signal": 0.9333,
+          "p_facet_otherwise": 0.2152,
+          "lift": 4.34
+        },
+        "hci_venue": {
+          "facet": "human_data",
+          "n": 13,
+          "p_facet_given_signal": 0.3846,
+          "p_facet_otherwise": 0.0158,
+          "lift": 24.29
+        },
+        "industry_track": {
+          "facet": "field_context",
+          "n": 5,
+          "p_facet_given_signal": 0.4,
+          "p_facet_otherwise": 0.0329,
+          "lift": 12.16
+        },
+        "survey_venue": {
+          "facet": "secondary",
+          "n": 1,
+          "p_facet_given_signal": 0.0,
+          "p_facet_otherwise": 0.0033,
+          "lift": 0.0
+        }
+      },
+      "design_counts": {
+        "Design & Creation (Design Science)": 1191,
+        "Experiment / Empirical Evaluation": 867,
+        "Simulation & Modelling": 413,
+        "Formal / Theoretical": 411,
+        "Case Study": 99,
+        "Qualitative Field Study / Grounded Theory": 33,
+        "Survey (empirical study of respondents)": 19,
+        "Systematic Literature Review / Secondary Study": 9,
+        "Action Research": 3
+      },
+      "design_agreement_with_unseen_text": 0.4252,
+      "n_with_unseen_reference": 2218,
+      "no_evidence": {
+        "n": 484,
+        "n_with_unseen_reference": 282,
+        "reference_design_counts": {
+          "Design & Creation (Design Science)": 77,
+          "Simulation & Modelling": 52,
+          "Experiment / Empirical Evaluation": 46,
+          "Formal / Theoretical": 45,
+          "Case Study": 30,
+          "Systematic Literature Review / Secondary Study": 13,
+          "Survey (empirical study of respondents)": 9,
+          "Qualitative Field Study / Grounded Theory": 8,
+          "Action Research": 2
+        },
+        "agreement_with_unseen_text": {
+          "default (Design & Creation)": 0.273,
+          "majority of evidenced references (Experiment)": 0.1631,
+          "most probable single facet": 0.3759,
+          "similar reference papers": 0.3688
+        }
+      },
+      "design_agreement_with_unseen_text_fallback_similar_papers": 0.4373,
+      "design_agreement_with_unseen_text_fallback_top_facet": 0.4382,
+      "design_agreement_with_unseen_text_with_fallback": 0.4373
+    },
+    "fitted per facet": {
+      "no_facet_rate": 0.1478,
+      "prevalence": {
+        "builds": 0.2617,
+        "evaluates": 0.5875,
+        "proves": 0.2604,
+        "simulates": 0.1379,
+        "human_data": 0.0213,
+        "field_context": 0.0374,
+        "secondary": 0.0102,
+        "intervenes": 0.0118
+      },
+      "label_model_prevalence": {
+        "builds": 0.247,
+        "evaluates": 0.5773,
+        "proves": 0.2263,
+        "simulates": 0.1816,
+        "human_data": 0.0204,
+        "field_context": 0.0463,
+        "secondary": 0.0069,
+        "intervenes": 0.0148
+      },
+      "f1_vs_label_model": {
+        "builds": 0.6817,
+        "evaluates": 0.87,
+        "proves": 0.7193,
+        "simulates": 0.777,
+        "human_data": 0.5827,
+        "field_context": 0.5569,
+        "secondary": 0.4615,
+        "intervenes": 0.4938
+      },
+      "unseen_region": {
+        "builds": {
+          "methods": {
+            "agreement": 0.6719,
+            "kappa": 0.1754,
+            "n": 2356
+          },
+          "results_conclusion": {
+            "agreement": 0.7079,
+            "kappa": 0.1377,
+            "n": 1551
+          }
+        },
+        "evaluates": {
+          "methods": {
+            "agreement": 0.7135,
+            "kappa": 0.4139,
+            "n": 2356
+          },
+          "results_conclusion": {
+            "agreement": 0.7614,
+            "kappa": 0.488,
+            "n": 1551
+          }
+        },
+        "proves": {
+          "methods": {
+            "agreement": 0.7827,
+            "kappa": 0.364,
+            "n": 2356
+          },
+          "results_conclusion": {
+            "agreement": 0.8008,
+            "kappa": 0.3929,
+            "n": 1551
+          }
+        },
+        "simulates": {
+          "methods": {
+            "agreement": 0.8353,
+            "kappa": 0.295,
+            "n": 2356
+          },
+          "results_conclusion": {
+            "agreement": 0.8691,
+            "kappa": 0.4307,
+            "n": 1551
+          }
+        },
+        "human_data": {
+          "methods": {
+            "agreement": 0.9707,
+            "kappa": 0.459,
+            "n": 2356
+          },
+          "results_conclusion": {
+            "agreement": 0.971,
+            "kappa": 0.3516,
+            "n": 1551
+          }
+        },
+        "field_context": {
+          "methods": {
+            "agreement": 0.9363,
+            "kappa": 0.1863,
+            "n": 2356
+          },
+          "results_conclusion": {
+            "agreement": 0.9516,
+            "kappa": 0.3345,
+            "n": 1551
+          }
+        },
+        "secondary": {
+          "methods": {
+            "agreement": 0.9826,
+            "kappa": 0.3414,
+            "n": 2356
+          },
+          "results_conclusion": {
+            "agreement": 0.9858,
+            "kappa": 0.2595,
+            "n": 1551
+          }
+        },
+        "intervenes": {
+          "methods": {
+            "agreement": 0.9762,
+            "kappa": 0.1883,
+            "n": 2356
+          },
+          "results_conclusion": {
+            "agreement": 0.9787,
+            "kappa": 0.2228,
+            "n": 1551
+          }
+        }
+      },
+      "external_signals": {
+        "code_release": {
+          "facet": "builds",
+          "n": 54,
+          "p_facet_given_signal": 0.3148,
+          "p_facet_otherwise": 0.2608,
+          "lift": 1.21
+        },
+        "tool_demo": {
+          "facet": "builds",
+          "n": 1,
+          "p_facet_given_signal": 1.0,
+          "p_facet_otherwise": 0.2615,
+          "lift": 3.82
+        },
+        "theory_venue": {
+          "facet": "proves",
+          "n": 15,
+          "p_facet_given_signal": 0.9333,
+          "p_facet_otherwise": 0.2571,
+          "lift": 3.63
+        },
+        "hci_venue": {
+          "facet": "human_data",
+          "n": 13,
+          "p_facet_given_signal": 0.4615,
+          "p_facet_otherwise": 0.0195,
+          "lift": 23.72
+        },
+        "industry_track": {
+          "facet": "field_context",
+          "n": 5,
+          "p_facet_given_signal": 0.4,
+          "p_facet_otherwise": 0.0368,
+          "lift": 10.86
+        },
+        "survey_venue": {
+          "facet": "secondary",
+          "n": 1,
+          "p_facet_given_signal": 0.0,
+          "p_facet_otherwise": 0.0102,
+          "lift": 0.0
+        }
+      },
+      "design_counts": {
+        "Design & Creation (Design Science)": 1204,
+        "Experiment / Empirical Evaluation": 817,
+        "Formal / Theoretical": 486,
+        "Simulation & Modelling": 341,
+        "Case Study": 104,
+        "Qualitative Field Study / Grounded Theory": 41,
+        "Systematic Literature Review / Secondary Study": 28,
+        "Survey (empirical study of respondents)": 21,
+        "Action Research": 3
+      },
+      "design_agreement_with_unseen_text": 0.4252,
+      "n_with_unseen_reference": 2218,
+      "no_evidence": {
+        "n": 450,
+        "n_with_unseen_reference": 259,
+        "reference_design_counts": {
+          "Design & Creation (Design Science)": 73,
+          "Simulation & Modelling": 55,
+          "Experiment / Empirical Evaluation": 43,
+          "Formal / Theoretical": 38,
+          "Case Study": 27,
+          "Systematic Literature Review / Secondary Study": 10,
+          "Survey (empirical study of respondents)": 7,
+          "Qualitative Field Study / Grounded Theory": 4,
+          "Action Research": 2
+        },
+        "agreement_with_unseen_text": {
+          "default (Design & Creation)": 0.2819,
+          "majority of evidenced references (Experiment)": 0.166,
+          "most probable single facet": 0.3745,
+          "similar reference papers": 0.3668
+        }
+      },
+      "design_agreement_with_unseen_text_fallback_similar_papers": 0.4351,
+      "design_agreement_with_unseen_text_fallback_top_facet": 0.436,
+      "design_agreement_with_unseen_text_with_fallback": 0.4351
+    }
+  },
+  "gates": {
+    "thresholds_mean_kappa_val": {
+      "0.5": 0.3167,
+      "fitted": 0.3314
+    },
+    "use_fitted_thresholds": true,
+    "fallback_val_agreement": {
+      "default (Design & Creation)": 0.1949,
+      "majority of evidenced references (Experiment)": 0.2426,
+      "most probable single facet": 0.3419,
+      "similar reference papers": 0.3346
+    },
+    "no_evidence_fallback": "top_facet"
+  }
+}

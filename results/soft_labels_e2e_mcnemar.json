@@ -1,0 +1,19 @@
+{
+  "field_test": {
+    "discipline": {
+      "fixed": 460,
+      "broken": 334,
+      "p_value": 1e-05
+    },
+    "e2e": {
+      "fixed": 382,
+      "broken": 272,
+      "p_value": 2e-05
+    }
+  },
+  "temporal_slice_e2e": {
+    "fixed": 155,
+    "broken": 122,
+    "p_value": 0.05432
+  }
+}

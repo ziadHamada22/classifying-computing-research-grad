@@ -1,0 +1,106 @@
+{
+  "tag": "specter2",
+  "temperature": 1.0,
+  "splits": {
+    "val": {
+      "abstract_only": {
+        "accuracy": 0.8152,
+        "macro_f1": 0.8168,
+        "ece": 0.0542,
+        "mean_confidence": 0.8206
+      },
+      "title_abstract": {
+        "accuracy": 0.7972,
+        "macro_f1": 0.7991,
+        "ece": 0.06,
+        "mean_confidence": 0.7455
+      },
+      "mean": {
+        "accuracy": 0.7972,
+        "macro_f1": 0.7994,
+        "ece": 0.1193,
+        "mean_confidence": 0.6778
+      },
+      "max": {
+        "accuracy": 0.7649,
+        "macro_f1": 0.7686,
+        "ece": 0.18,
+        "mean_confidence": 0.9448
+      },
+      "weighted_mean": {
+        "accuracy": 0.823,
+        "macro_f1": 0.8247,
+        "ece": 0.0535,
+        "mean_confidence": 0.7941
+      },
+      "weighted_geometric": {
+        "accuracy": 0.8243,
+        "macro_f1": 0.8259,
+        "ece": 0.0379,
+        "mean_confidence": 0.8224
+      },
+      "_n_papers": 774,
+      "_n_chunks": 17160,
+      "_chunks_per_second": 120.3,
+      "_best": "weighted_geometric"
+    },
+    "test": {
+      "abstract_only": {
+        "accuracy": 0.7937,
+        "macro_f1": 0.7939,
+        "ece": 0.0375,
+        "mean_confidence": 0.8125
+      },
+      "title_abstract": {
+        "accuracy": 0.7924,
+        "macro_f1": 0.7929,
+        "ece": 0.0518,
+        "mean_confidence": 0.7443
+      },
+      "mean": {
+        "accuracy": 0.7871,
+        "macro_f1": 0.787,
+        "ece": 0.1202,
+        "mean_confidence": 0.6786
+      },
+      "max": {
+        "accuracy": 0.7648,
+        "macro_f1": 0.7662,
+        "ece": 0.1798,
+        "mean_confidence": 0.9434
+      },
+      "weighted_mean": {
+        "accuracy": 0.8029,
+        "macro_f1": 0.8027,
+        "ece": 0.0211,
+        "mean_confidence": 0.7911
+      },
+      "weighted_geometric": {
+        "accuracy": 0.8042,
+        "macro_f1": 0.8045,
+        "ece": 0.0337,
+        "mean_confidence": 0.8203
+      },
+      "_n_papers": 761,
+      "_n_chunks": 16780,
+      "_chunks_per_second": 120.3,
+      "_best": "weighted_geometric"
+    }
+  },
+  "section_weights": {
+    "title": 0.2973,
+    "abstract": 37.7913,
+    "introduction": 3.0651,
+    "background": 1.8837,
+    "related_work": 3.7642,
+    "methods": 1.8763,
+    "results": 0.5547,
+    "discussion": 0.8718,
+    "conclusion": 0.9978,
+    "references": 0.0,
+    "acknowledgements": 0.0,
+    "appendix": 1.0,
+    "body": 1.0,
+    "other": 0.0018
+  }
+}

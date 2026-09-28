@@ -1,0 +1,70 @@
+{
+  "model": "scibert-soft",
+  "strategy": "weighted_mean",
+  "bank": "C:\\Users\\ziada\\OneDrive\\Desktop\\YEAR 4\\GP\\system\\models\\scibert-soft\\conformal.json",
+  "doc_temperature_fitted_on_val": 0.7528,
+  "test_papers": 3055,
+  "test_ambiguous_share": 0.0,
+  "variants": {
+    "abstract only": {
+      "accuracy": 0.7987,
+      "ece": 0.0402,
+      "alphas": {
+        "0.1": {
+          "coverage": 0.9558,
+          "avg_set_size": 1.7777,
+          "contested_share": 0.5673,
+          "coverage_clean": 0.9558,
+          "coverage_ambiguous": null
+        },
+        "0.2": {
+          "coverage": 0.8962,
+          "avg_set_size": 1.2845,
+          "contested_share": 0.2799,
+          "coverage_clean": 0.8962,
+          "coverage_ambiguous": null
+        }
+      }
+    },
+    "whole document (weighted_mean)": {
+      "accuracy": 0.8033,
+      "ece": 0.0574,
+      "alphas": {
+        "0.1": {
+          "coverage": 0.9633,
+          "avg_set_size": 1.8327,
+          "contested_share": 0.5997,
+          "coverage_clean": 0.9633,
+          "coverage_ambiguous": null
+        },
+        "0.2": {
+          "coverage": 0.9034,
+          "avg_set_size": 1.2949,
+          "contested_share": 0.2871,
+          "coverage_clean": 0.9034,
+          "coverage_ambiguous": null
+        }
+      }
+    },
+    "whole document, doc temperature 0.753": {
+      "accuracy": 0.8033,
+      "ece": 0.023,
+      "alphas": {
+        "0.1": {
+          "coverage": 0.945,
+          "avg_set_size": 1.5794,
+          "contested_share": 0.4622,
+          "coverage_clean": 0.945,
+          "coverage_ambiguous": null
+        },
+        "0.2": {
+          "coverage": 0.892,
+          "avg_set_size": 1.2383,
+          "contested_share": 0.2298,
+          "coverage_clean": 0.892,
+          "coverage_ambiguous": null
+        }
+      }
+    }
+  }
+}

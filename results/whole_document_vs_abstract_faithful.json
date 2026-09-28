@@ -1,0 +1,29 @@
+{
+  "scibert|weighted_geometric": {
+    "abstract_acc": 0.7853,
+    "whole_doc_acc": 0.7964,
+    "mcnemar": {
+      "fixed": 103,
+      "broken": 69,
+      "p_value": 0.01164
+    }
+  },
+  "scibert|weighted_mean": {
+    "abstract_acc": 0.7853,
+    "whole_doc_acc": 0.7941,
+    "mcnemar": {
+      "fixed": 89,
+      "broken": 62,
+      "p_value": 0.03401
+    }
+  },
+  "scibert-soft|weighted_mean": {
+    "abstract_acc": 0.7987,
+    "whole_doc_acc": 0.8033,
+    "mcnemar": {
+      "fixed": 64,
+      "broken": 50,
+      "p_value": 0.22323
+    }
+  }
+}

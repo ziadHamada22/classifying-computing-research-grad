@@ -1,0 +1,160 @@
+{
+  "judged_with_v1_cues": {
+    "August (v1 model, 0.5, silent default)": {
+      "design_agreement_with_unseen_text": 0.4288,
+      "no_evidence_rate": 0.1911,
+      "share_of_design_and_creation_with_no_evidence": 0.5267,
+      "design_counts": {
+        "Design & Creation (Design Science)": 1105,
+        "Experiment / Empirical Evaluation": 932,
+        "Simulation & Modelling": 428,
+        "Formal / Theoretical": 426,
+        "Case Study": 94,
+        "Qualitative Field Study / Grounded Theory": 36,
+        "Survey (empirical study of respondents)": 12,
+        "Systematic Literature Review / Secondary Study": 9,
+        "Action Research": 3
+      }
+    },
+    "now (methodology-facets-v2, fitted thresholds, top_facet fallback)": {
+      "design_agreement_with_unseen_text": 0.4421,
+      "no_evidence_rate": 0.1478,
+      "share_of_design_and_creation_with_no_evidence": 0.0,
+      "design_counts": {
+        "Experiment / Empirical Evaluation": 1006,
+        "Design & Creation (Design Science)": 808,
+        "Formal / Theoretical": 533,
+        "Simulation & Modelling": 468,
+        "Case Study": 137,
+        "Qualitative Field Study / Grounded Theory": 41,
+        "Systematic Literature Review / Secondary Study": 28,
+        "Survey (empirical study of respondents)": 21,
+        "Action Research": 3
+      }
+    },
+    "difference_now_minus_august": 0.0133,
+    "difference_ci95": [
+      -0.0028,
+      0.0303
+    ],
+    "n_with_unseen_design": 2176
+  },
+  "judged_with_v2_cues": {
+    "August (v1 model, 0.5, silent default)": {
+      "design_agreement_with_unseen_text": 0.4206,
+      "no_evidence_rate": 0.1911,
+      "share_of_design_and_creation_with_no_evidence": 0.5267,
+      "design_counts": {
+        "Design & Creation (Design Science)": 1105,
+        "Experiment / Empirical Evaluation": 932,
+        "Simulation & Modelling": 428,
+        "Formal / Theoretical": 426,
+        "Case Study": 94,
+        "Qualitative Field Study / Grounded Theory": 36,
+        "Survey (empirical study of respondents)": 12,
+        "Systematic Literature Review / Secondary Study": 9,
+        "Action Research": 3
+      }
+    },
+    "now (methodology-facets-v2, fitted thresholds, top_facet fallback)": {
+      "design_agreement_with_unseen_text": 0.436,
+      "no_evidence_rate": 0.1478,
+      "share_of_design_and_creation_with_no_evidence": 0.0,
+      "design_counts": {
+        "Experiment / Empirical Evaluation": 1006,
+        "Design & Creation (Design Science)": 808,
+        "Formal / Theoretical": 533,
+        "Simulation & Modelling": 468,
+        "Case Study": 137,
+        "Qualitative Field Study / Grounded Theory": 41,
+        "Systematic Literature Review / Secondary Study": 28,
+        "Survey (empirical study of respondents)": 21,
+        "Action Research": 3
+      }
+    },
+    "difference_now_minus_august": 0.0153,
+    "difference_ci95": [
+      -0.0009,
+      0.032
+    ],
+    "n_with_unseen_design": 2218
+  },
+  "external_signals_test": {
+    "August (v1 model, 0.5, silent default)": {
+      "code_release": {
+        "n": 54,
+        "facet": "builds",
+        "p_given_signal": 0.2037,
+        "p_otherwise": 0.1819
+      },
+      "tool_demo": {
+        "n": 1,
+        "facet": "builds",
+        "p_given_signal": 0.0,
+        "p_otherwise": 0.1823
+      },
+      "theory_venue": {
+        "n": 15,
+        "facet": "proves",
+        "p_given_signal": 0.9333,
+        "p_otherwise": 0.2017
+      },
+      "hci_venue": {
+        "n": 13,
+        "facet": "human_data",
+        "p_given_signal": 0.3077,
+        "p_otherwise": 0.0152
+      },
+      "industry_track": {
+        "n": 5,
+        "facet": "field_context",
+        "p_given_signal": 0.4,
+        "p_otherwise": 0.0312
+      },
+      "survey_venue": {
+        "n": 1,
+        "facet": "secondary",
+        "p_given_signal": 0.0,
+        "p_otherwise": 0.0033
+      }
+    },
+    "now (methodology-facets-v2, fitted thresholds, top_facet fallback)": {
+      "code_release": {
+        "n": 54,
+        "facet": "builds",
+        "p_given_signal": 0.3148,
+        "p_otherwise": 0.2608
+      },
+      "tool_demo": {
+        "n": 1,
+        "facet": "builds",
+        "p_given_signal": 1.0,
+        "p_otherwise": 0.2615
+      },
+      "theory_venue": {
+        "n": 15,
+        "facet": "proves",
+        "p_given_signal": 0.9333,
+        "p_otherwise": 0.2571
+      },
+      "hci_venue": {
+        "n": 13,
+        "facet": "human_data",
+        "p_given_signal": 0.4615,
+        "p_otherwise": 0.0195
+      },
+      "industry_track": {
+        "n": 5,
+        "facet": "field_context",
+        "p_given_signal": 0.4,
+        "p_otherwise": 0.0368
+      },
+      "survey_venue": {
+        "n": 1,
+        "facet": "secondary",
+        "p_given_signal": 0.0,
+        "p_otherwise": 0.0102
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "train_rows": 93090,
+  "features": 150000,
+  "conditioning": "oracle (true discipline)",
+  "models": {
+    "tfidf-logreg": {
+      "train_seconds": 273.2,
+      "test": {
+        "conditioned_accuracy": 0.8302,
+        "conditioned_macro_f1": 0.8237,
+        "flat_accuracy": 0.7117
+      },
+      "2025+": {
+        "conditioned_accuracy": 0.7826,
+        "conditioned_macro_f1": 0.7738,
+        "flat_accuracy": 0.6115
+      },
+      "wos": {
+        "conditioned_accuracy": 0.6804,
+        "conditioned_macro_f1": 0.2448,
+        "flat_accuracy": 0.4749
+      }
+    },
+    "tfidf-svm": {
+      "train_seconds": 288.1,
+      "test": {
+        "conditioned_accuracy": 0.8236,
+        "conditioned_macro_f1": 0.8184,
+        "flat_accuracy": 0.7158
+      },
+      "2025+": {
+        "conditioned_accuracy": 0.785,
+        "conditioned_macro_f1": 0.7776,
+        "flat_accuracy": 0.619
+      },
+      "wos": {
+        "conditioned_accuracy": 0.6753,
+        "conditioned_macro_f1": 0.2458,
+        "flat_accuracy": 0.4815
+      }
+    }
+  }
+}

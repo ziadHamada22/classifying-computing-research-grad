@@ -1,0 +1,22 @@
+{
+  "tag": "ensemble_scibert_deberta-v3-base",
+  "members": [
+    "scibert",
+    "deberta-v3-base"
+  ],
+  "weights": {
+    "scibert": 0.7,
+    "deberta-v3-base": 0.3
+  },
+  "val": {
+    "macro_f1": 0.8532,
+    "accuracy": 0.8532,
+    "ece": 0.0256
+  },
+  "test": {
+    "macro_f1": 0.8152,
+    "accuracy": 0.8154,
+    "ece": 0.0318,
+    "lift_over_best_single": 0.003
+  }
+}

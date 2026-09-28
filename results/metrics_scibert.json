@@ -1,0 +1,35 @@
+{
+  "model": "allenai/scibert_scivocab_uncased",
+  "tag": "scibert",
+  "corpus": "abstract",
+  "train_seconds": 1885.4,
+  "args": {
+    "model": "allenai/scibert_scivocab_uncased",
+    "tag": "scibert",
+    "corpus": "abstract",
+    "max_chunk_rows": 400000,
+    "epochs": 3.0,
+    "batch_size": 16,
+    "grad_accum": 2,
+    "lr": 2e-05,
+    "max_length": 256,
+    "label_smoothing": 0.05,
+    "warmup_ratio": 0.06,
+    "weight_decay": 0.01,
+    "seed": 42,
+    "patience": 2,
+    "eval_steps": 0
+  },
+  "val": {
+    "macro_f1": 0.851013732030328,
+    "weighted_f1": 0.8510137320303282,
+    "accuracy": 0.8510185185185185,
+    "report": "                        precision    recall  f1-score   support\n\n      Computer Science     0.8067    0.7928    0.7997      1800\n   Information Systems     0.8588    0.8478    0.8532      1800\nInformation Technology     0.8287    0.8628    0.8454      1800\n  Software Engineering     0.9002    0.9067    0.9034      1800\n  Computer Engineering     0.8194    0.8244    0.8219      1800\n          Data Science     0.8935    0.8717    0.8825      1800\n\n              accuracy                         0.8510     10800\n             macro avg     0.8512    0.8510    0.8510     10800\n          weighted avg     0.8512    0.8510    0.8510     10800\n"
+  },
+  "test": {
+    "macro_f1": 0.8121981729445603,
+    "weighted_f1": 0.8121981729445603,
+    "accuracy": 0.8122685185185186,
+    "report": "                        precision    recall  f1-score   support\n\n      Computer Science     0.7316    0.7181    0.7248      2160\n   Information Systems     0.8392    0.8116    0.8251      2160\nInformation Technology     0.8025    0.8444    0.8229      2160\n  Software Engineering     0.8929    0.8912    0.8920      2160\n  Computer Engineering     0.7795    0.8005    0.7899      2160\n          Data Science     0.8294    0.8079    0.8185      2160\n\n              accuracy                         0.8123     12960\n             macro avg     0.8125    0.8123    0.8122     12960\n          weighted avg     0.8125    0.8123    0.8122     12960\n"
+  }
+}

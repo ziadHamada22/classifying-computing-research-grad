@@ -1,0 +1,126 @@
+{
+  "test_n": 12960,
+  "openalex": {
+    "available": true,
+    "n": 12960,
+    "resolved": 12015,
+    "resolved_pct": 0.9271,
+    "mappable": 8381,
+    "mappable_pct": 0.6467,
+    "all": {
+      "n": 8381,
+      "strict": 0.3654,
+      "co_listed": 0.6345,
+      "macro_f1": 0.3456
+    },
+    "clean": {
+      "n": 8127,
+      "strict": 0.3691,
+      "co_listed": 0.6454,
+      "macro_f1": 0.3479
+    },
+    "per_discipline": {
+      "Computer Science": {
+        "n": 1418,
+        "strict": 0.725
+      },
+      "Information Systems": {
+        "n": 1107,
+        "strict": 0.3532
+      },
+      "Information Technology": {
+        "n": 1715,
+        "strict": 0.2985
+      },
+      "Software Engineering": {
+        "n": 1574,
+        "strict": 0.1436
+      },
+      "Computer Engineering": {
+        "n": 1302,
+        "strict": 0.5192
+      },
+      "Data Science": {
+        "n": 1265,
+        "strict": 0.181
+      }
+    }
+  },
+  "s2fos": {
+    "available": true,
+    "resolved": 12903,
+    "resolved_pct": 0.9956,
+    "pct_tagged_CS_overall": 0.8706,
+    "per_discipline_pct_CS": {
+      "Computer Science": {
+        "n": 2152,
+        "pct_tagged_CS": 0.8652
+      },
+      "Information Systems": {
+        "n": 2149,
+        "pct_tagged_CS": 0.8711
+      },
+      "Information Technology": {
+        "n": 2150,
+        "pct_tagged_CS": 0.986
+      },
+      "Software Engineering": {
+        "n": 2152,
+        "pct_tagged_CS": 0.9865
+      },
+      "Computer Engineering": {
+        "n": 2150,
+        "pct_tagged_CS": 0.7926
+      },
+      "Data Science": {
+        "n": 2150,
+        "pct_tagged_CS": 0.7219
+      }
+    },
+    "nmi_gold_vs_isCS": 0.0438,
+    "note": "S2FOS top-level 'Computer Science' spans all six of our disciplines; near-uniform pct_CS and NMI~0 mean it carries no 6-way discriminative signal by construction."
+  },
+  "cso": {
+    "available": true,
+    "n_run": 1500,
+    "mappable": 1061,
+    "mappable_pct": 0.7073,
+    "all": {
+      "n": 1061,
+      "strict": 0.5344,
+      "co_listed": 0.623,
+      "macro_f1": 0.5062
+    },
+    "per_discipline": {
+      "Computer Science": {
+        "n": 154,
+        "strict": 0.3506
+      },
+      "Information Systems": {
+        "n": 186,
+        "strict": 0.5323
+      },
+      "Information Technology": {
+        "n": 208,
+        "strict": 0.8221
+      },
+      "Software Engineering": {
+        "n": 193,
+        "strict": 0.658
+      },
+      "Computer Engineering": {
+        "n": 168,
+        "strict": 0.506
+      },
+      "Data Science": {
+        "n": 152,
+        "strict": 0.2039
+      }
+    }
+  },
+  "agent1_scibert": {
+    "strict": 0.8123,
+    "co_listed": 0.9209,
+    "macro_f1": 0.8123
+  }
+}

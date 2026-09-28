@@ -1,0 +1,107 @@
+{
+  "model": "allenai/scibert_scivocab_uncased",
+  "tag": "methodology-blocks",
+  "level": "block",
+  "train_seconds": 1541.3,
+  "args": {
+    "model": "allenai/scibert_scivocab_uncased",
+    "tag": "methodology-blocks",
+    "corpus": "C:\\Users\\ziada\\gp_data\\corpus\\methodology_blocks.parquet",
+    "epochs": 3.0,
+    "batch_size": 16,
+    "grad_accum": 2,
+    "lr": 2e-05,
+    "max_length": 256,
+    "label_smoothing": 0.05,
+    "warmup_ratio": 0.06,
+    "weight_decay": 0.01,
+    "seed": 42,
+    "patience": 2
+  },
+  "labels": [
+    "Design & Creation (Design Science)",
+    "Experiment / Empirical Evaluation",
+    "Formal / Theoretical",
+    "Simulation & Modelling"
+  ],
+  "val": {
+    "n_blocks": 20691,
+    "n_papers": 1406,
+    "block_accuracy": 0.602580832245904,
+    "block_macro_f1": 0.5533590835522417,
+    "per_section_block_accuracy": {
+      "abstract": {
+        "n": 2770,
+        "accuracy": 0.6372
+      },
+      "background": {
+        "n": 1367,
+        "accuracy": 0.5955
+      },
+      "conclusion": {
+        "n": 230,
+        "accuracy": 0.6043
+      },
+      "discussion": {
+        "n": 165,
+        "accuracy": 0.6606
+      },
+      "introduction": {
+        "n": 6323,
+        "accuracy": 0.5902
+      },
+      "methods": {
+        "n": 6259,
+        "accuracy": 0.6041
+      },
+      "related_work": {
+        "n": 1544,
+        "accuracy": 0.5661
+      },
+      "results": {
+        "n": 2033,
+        "accuracy": 0.6168
+      }
+    }
+  },
+  "test": {
+    "n_blocks": 20923,
+    "n_papers": 1410,
+    "block_accuracy": 0.6108588634517038,
+    "block_macro_f1": 0.5644776359353593,
+    "per_section_block_accuracy": {
+      "abstract": {
+        "n": 2658,
+        "accuracy": 0.6539
+      },
+      "background": {
+        "n": 1299,
+        "accuracy": 0.5766
+      },
+      "conclusion": {
+        "n": 199,
+        "accuracy": 0.6281
+      },
+      "discussion": {
+        "n": 204,
+        "accuracy": 0.6127
+      },
+      "introduction": {
+        "n": 6194,
+        "accuracy": 0.6075
+      },
+      "methods": {
+        "n": 6679,
+        "accuracy": 0.6122
+      },
+      "related_work": {
+        "n": 1605,
+        "accuracy": 0.6093
+      },
+      "results": {
+        "n": 2085,
+        "accuracy": 0.5823
+      }
+    }
+  }
+}

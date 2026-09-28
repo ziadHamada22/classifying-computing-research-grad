@@ -1,0 +1,153 @@
+{
+  "model": "allenai/scibert_scivocab_uncased",
+  "tag": "methodology-facets",
+  "facets": [
+    "builds",
+    "evaluates",
+    "proves",
+    "simulates",
+    "human_data",
+    "field_context",
+    "secondary",
+    "intervenes"
+  ],
+  "train_seconds": 697.8,
+  "args": {
+    "model": "allenai/scibert_scivocab_uncased",
+    "tag": "methodology-facets",
+    "facets": "C:\\Users\\ziada\\gp_data\\corpus\\facets_pool.parquet",
+    "epochs": 4.0,
+    "batch_size": 16,
+    "grad_accum": 2,
+    "lr": 2e-05,
+    "max_length": 256,
+    "warmup_ratio": 0.06,
+    "weight_decay": 0.01,
+    "seed": 42,
+    "patience": 2
+  },
+  "val": {
+    "n": 3040,
+    "per_facet": {
+      "builds": {
+        "positives": 623,
+        "prevalence": 0.2049,
+        "auc": 0.8358,
+        "average_precision": 0.6275,
+        "f1_at_0.5": 0.6146
+      },
+      "evaluates": {
+        "positives": 1632,
+        "prevalence": 0.5368,
+        "auc": 0.9095,
+        "average_precision": 0.928,
+        "f1_at_0.5": 0.8401
+      },
+      "proves": {
+        "positives": 705,
+        "prevalence": 0.2319,
+        "auc": 0.8957,
+        "average_precision": 0.7713,
+        "f1_at_0.5": 0.6813
+      },
+      "simulates": {
+        "positives": 519,
+        "prevalence": 0.1707,
+        "auc": 0.9252,
+        "average_precision": 0.8409,
+        "f1_at_0.5": 0.7809
+      },
+      "human_data": {
+        "positives": 55,
+        "prevalence": 0.0181,
+        "auc": 0.8902,
+        "average_precision": 0.3439,
+        "f1_at_0.5": 0.5047
+      },
+      "field_context": {
+        "positives": 121,
+        "prevalence": 0.0398,
+        "auc": 0.8828,
+        "average_precision": 0.4545,
+        "f1_at_0.5": 0.505
+      },
+      "secondary": {
+        "positives": 31,
+        "prevalence": 0.0102,
+        "auc": 0.9094,
+        "average_precision": 0.7026,
+        "f1_at_0.5": 0.5778
+      },
+      "intervenes": {
+        "positives": 43,
+        "prevalence": 0.0141,
+        "auc": 0.9284,
+        "average_precision": 0.5479,
+        "f1_at_0.5": 0.6197
+      }
+    },
+    "macro_auc": 0.8971
+  },
+  "test": {
+    "n": 3045,
+    "per_facet": {
+      "builds": {
+        "positives": 607,
+        "prevalence": 0.1993,
+        "auc": 0.8477,
+        "average_precision": 0.6498,
+        "f1_at_0.5": 0.6403
+      },
+      "evaluates": {
+        "positives": 1618,
+        "prevalence": 0.5314,
+        "auc": 0.9213,
+        "average_precision": 0.9362,
+        "f1_at_0.5": 0.8525
+      },
+      "proves": {
+        "positives": 682,
+        "prevalence": 0.224,
+        "auc": 0.8974,
+        "average_precision": 0.7499,
+        "f1_at_0.5": 0.6855
+      },
+      "simulates": {
+        "positives": 553,
+        "prevalence": 0.1816,
+        "auc": 0.9346,
+        "average_precision": 0.8451,
+        "f1_at_0.5": 0.7675
+      },
+      "human_data": {
+        "positives": 62,
+        "prevalence": 0.0204,
+        "auc": 0.8995,
+        "average_precision": 0.5419,
+        "f1_at_0.5": 0.5179
+      },
+      "field_context": {
+        "positives": 141,
+        "prevalence": 0.0463,
+        "auc": 0.8926,
+        "average_precision": 0.5216,
+        "f1_at_0.5": 0.5546
+      },
+      "secondary": {
+        "positives": 21,
+        "prevalence": 0.0069,
+        "auc": 0.9313,
+        "average_precision": 0.4965,
+        "f1_at_0.5": 0.5161
+      },
+      "intervenes": {
+        "positives": 45,
+        "prevalence": 0.0148,
+        "auc": 0.9548,
+        "average_precision": 0.5529,
+        "f1_at_0.5": 0.5263
+      }
+    },
+    "macro_auc": 0.9099
+  }
+}

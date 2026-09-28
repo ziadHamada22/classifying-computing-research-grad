@@ -1,0 +1,119 @@
+{
+  "facet model (deployed)": {
+    "macro_auc": 0.9099,
+    "rare_facet_auc": 0.9195,
+    "unseen_region_agreement": 0.8737,
+    "per_facet_auc": {
+      "builds": 0.8477,
+      "evaluates": 0.9213,
+      "proves": 0.8974,
+      "simulates": 0.9346,
+      "human_data": 0.8995,
+      "field_context": 0.8926,
+      "secondary": 0.9313,
+      "intervenes": 0.9548
+    }
+  },
+  "kNN over specter2": {
+    "macro_auc": 0.8015,
+    "rare_facet_auc": 0.8222,
+    "unseen_region_agreement": 0.885,
+    "per_facet_auc": {
+      "builds": 0.6368,
+      "evaluates": 0.8298,
+      "proves": 0.8134,
+      "simulates": 0.8431,
+      "human_data": 0.8562,
+      "field_context": 0.7556,
+      "secondary": 0.813,
+      "intervenes": 0.864
+    }
+  },
+  "blend: model + kNN(specter2)": {
+    "macro_auc": 0.9103,
+    "rare_facet_auc": 0.9256,
+    "unseen_region_agreement": 0.8858,
+    "per_facet_auc": {
+      "builds": 0.8424,
+      "evaluates": 0.9114,
+      "proves": 0.8941,
+      "simulates": 0.932,
+      "human_data": 0.9149,
+      "field_context": 0.8885,
+      "secondary": 0.9436,
+      "intervenes": 0.9556
+    }
+  },
+  "kNN over minilm": {
+    "macro_auc": 0.7891,
+    "rare_facet_auc": 0.7992,
+    "unseen_region_agreement": 0.8787,
+    "per_facet_auc": {
+      "builds": 0.647,
+      "evaluates": 0.8172,
+      "proves": 0.8164,
+      "simulates": 0.8355,
+      "human_data": 0.8753,
+      "field_context": 0.7419,
+      "secondary": 0.711,
+      "intervenes": 0.8687
+    }
+  },
+  "blend: model + kNN(minilm)": {
+    "macro_auc": 0.9131,
+    "rare_facet_auc": 0.9327,
+    "unseen_region_agreement": 0.8831,
+    "per_facet_auc": {
+      "builds": 0.8419,
+      "evaluates": 0.9074,
+      "proves": 0.8939,
+      "simulates": 0.9309,
+      "human_data": 0.9307,
+      "field_context": 0.887,
+      "secondary": 0.9438,
+      "intervenes": 0.9694
+    }
+  },
+  "kNN over facet_encoder": {
+    "macro_auc": 0.8882,
+    "rare_facet_auc": 0.8861,
+    "unseen_region_agreement": 0.876,
+    "per_facet_auc": {
+      "builds": 0.8304,
+      "evaluates": 0.9143,
+      "proves": 0.8867,
+      "simulates": 0.9302,
+      "human_data": 0.8991,
+      "field_context": 0.8664,
+      "secondary": 0.854,
+      "intervenes": 0.9248
+    }
+  },
+  "blend: model + kNN(facet_encoder)": {
+    "macro_auc": 0.9055,
+    "rare_facet_auc": 0.9126,
+    "unseen_region_agreement": 0.876,
+    "per_facet_auc": {
+      "builds": 0.8434,
+      "evaluates": 0.9194,
+      "proves": 0.8962,
+      "simulates": 0.9349,
+      "human_data": 0.9051,
+      "field_context": 0.8885,
+      "secondary": 0.9078,
+      "intervenes": 0.9489
+    }
+  },
+  "nearest-neighbour specter2": {
+    "same_discipline": 0.7727,
+    "same_derived_design": 0.3875
+  },
+  "nearest-neighbour minilm": {
+    "same_discipline": 0.7727,
+    "same_derived_design": 0.3967
+  },
+  "nearest-neighbour facet_encoder": {
+    "same_discipline": 0.6053,
+    "same_derived_design": 0.5885
+  }
+}

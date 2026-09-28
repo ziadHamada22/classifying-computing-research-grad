@@ -1,0 +1,168 @@
+{
+  "model_dir": "C:\\Users\\ziada\\OneDrive\\Desktop\\YEAR 4\\GP\\system\\models\\specter2-principal",
+  "tag": "specter2-principal",
+  "temperature": 0.012154742500762865,
+  "device": "cpu",
+  "splits": {
+    "test": {
+      "split": "test",
+      "n": 12960,
+      "strict_accuracy": 0.7451,
+      "strict_macro_f1": 0.7448,
+      "strict_weighted_f1": 0.7448,
+      "co_listed_accuracy": 0.8715,
+      "ece": 0.013,
+      "mean_confidence": 0.7512,
+      "report": "                        precision    recall  f1-score   support\n\n      Computer Science     0.6592    0.6574    0.6583      2160\n   Information Systems     0.7798    0.7509    0.7651      2160\nInformation Technology     0.7386    0.7653    0.7517      2160\n  Software Engineering     0.7836    0.8431    0.8122      2160\n  Computer Engineering     0.7186    0.7236    0.7211      2160\n          Data Science     0.7929    0.7301    0.7602      2160\n\n              accuracy                         0.7451     12960\n             macro avg     0.7454    0.7451    0.7448     12960\n          weighted avg     0.7454    0.7451    0.7448     12960\n",
+      "confusion": [
+        [
+          1420,
+          169,
+          85,
+          107,
+          262,
+          117
+        ],
+        [
+          135,
+          1622,
+          125,
+          141,
+          52,
+          85
+        ],
+        [
+          92,
+          79,
+          1653,
+          176,
+          133,
+          27
+        ],
+        [
+          81,
+          73,
+          105,
+          1821,
+          18,
+          62
+        ],
+        [
+          248,
+          30,
+          167,
+          31,
+          1563,
+          121
+        ],
+        [
+          178,
+          107,
+          103,
+          48,
+          147,
+          1577
+        ]
+      ],
+      "unambiguous": {
+        "n": 10800,
+        "accuracy": 0.7878,
+        "macro_f1": 0.7876,
+        "co_listed_accuracy": 0.8677
+      },
+      "ambiguous": {
+        "n": 2160,
+        "accuracy": 0.5315,
+        "macro_f1": 0.5239,
+        "co_listed_accuracy": 0.8903
+      },
+      "latency": {
+        "docs_per_second": 326.7,
+        "ms_per_doc": 3.06,
+        "classify_only_seconds": 0.014,
+        "encode_docs_per_second": 326.8,
+        "note": "end to end: SPECTER2 encode (timed on a 1,000-paper sample, GPU otherwise idle) + classification"
+      }
+    },
+    "temporal_test": {
+      "split": "temporal_test",
+      "n": 9000,
+      "strict_accuracy": 0.6772,
+      "strict_macro_f1": 0.6736,
+      "strict_weighted_f1": 0.6736,
+      "co_listed_accuracy": 0.841,
+      "ece": 0.0568,
+      "mean_confidence": 0.7339,
+      "report": "                        precision    recall  f1-score   support\n\n      Computer Science     0.6061    0.5520    0.5778      1500\n   Information Systems     0.6918    0.8007    0.7423      1500\nInformation Technology     0.7053    0.6493    0.6762      1500\n  Software Engineering     0.6932    0.8587    0.7671      1500\n  Computer Engineering     0.6017    0.5620    0.5812      1500\n          Data Science     0.7639    0.6407    0.6969      1500\n\n              accuracy                         0.6772      9000\n             macro avg     0.6770    0.6772    0.6736      9000\n          weighted avg     0.6770    0.6772    0.6736      9000\n",
+      "confusion": [
+        [
+          828,
+          174,
+          86,
+          126,
+          223,
+          63
+        ],
+        [
+          72,
+          1201,
+          53,
+          99,
+          21,
+          54
+        ],
+        [
+          51,
+          69,
+          974,
+          219,
+          167,
+          20
+        ],
+        [
+          55,
+          49,
+          50,
+          1288,
+          18,
+          40
+        ],
+        [
+          195,
+          92,
+          169,
+          81,
+          843,
+          120
+        ],
+        [
+          165,
+          151,
+          49,
+          45,
+          129,
+          961
+        ]
+      ],
+      "unambiguous": {
+        "n": 6396,
+        "accuracy": 0.7706,
+        "macro_f1": 0.7623,
+        "co_listed_accuracy": 0.839
+      },
+      "ambiguous": {
+        "n": 2604,
+        "accuracy": 0.4478,
+        "macro_f1": 0.4492,
+        "co_listed_accuracy": 0.846
+      },
+      "latency": {
+        "docs_per_second": 326.7,
+        "ms_per_doc": 3.06,
+        "classify_only_seconds": 0.009,
+        "encode_docs_per_second": 326.8,
+        "note": "end to end: SPECTER2 encode (timed on a 1,000-paper sample, GPU otherwise idle) + classification"
+      }
+    }
+  }
+}

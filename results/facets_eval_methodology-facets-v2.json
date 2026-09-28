@@ -1,0 +1,212 @@
+{
+  "split": "test",
+  "n": 3045,
+  "model_dir": "methodology-facets-v2",
+  "regions": [
+    "title",
+    "abstract",
+    "introduction",
+    "methods",
+    "results_conclusion"
+  ],
+  "yardstick": "v2 cues",
+  "thresholds": {
+    "builds": 0.45,
+    "evaluates": 0.49,
+    "proves": 0.38,
+    "simulates": 0.69,
+    "human_data": 0.36,
+    "field_context": 0.42,
+    "secondary": 0.15,
+    "intervenes": 0.41
+  },
+  "labelling_function_accuracy": {
+    "builds": {
+      "title": 0.4707,
+      "abstract": 0.7407,
+      "introduction": 0.7645,
+      "methods": 0.6427,
+      "results_conclusion": 0.5953
+    },
+    "evaluates": {
+      "title": 0.524,
+      "abstract": 0.8503,
+      "introduction": 0.8169,
+      "methods": 0.7604,
+      "results_conclusion": 0.8013
+    },
+    "proves": {
+      "title": 0.5157,
+      "abstract": 0.75,
+      "introduction": 0.8376,
+      "methods": 0.7212,
+      "results_conclusion": 0.735
+    },
+    "simulates": {
+      "title": 0.6245,
+      "abstract": 0.8273,
+      "introduction": 0.862,
+      "methods": 0.6745,
+      "results_conclusion": 0.7499
+    },
+    "human_data": {
+      "title": 0.625,
+      "abstract": 0.6752,
+      "introduction": 0.7123,
+      "methods": 0.8206,
+      "results_conclusion": 0.7272
+    },
+    "field_context": {
+      "title": 0.461,
+      "abstract": 0.7397,
+      "introduction": 0.863,
+      "methods": 0.675,
+      "results_conclusion": 0.6809
+    },
+    "secondary": {
+      "title": 0.4562,
+      "abstract": 0.6852,
+      "introduction": 0.76,
+      "methods": 0.7714,
+      "results_conclusion": 0.6937
+    },
+    "intervenes": {
+      "title": 0.5803,
+      "abstract": 0.7667,
+      "introduction": 0.8475,
+      "methods": 0.7506,
+      "results_conclusion": 0.7579
+    }
+  },
+  "model_vs_cues_on_unseen_regions": {
+    "builds": {
+      "methods": {
+        "abstract_cues": 0.666,
+        "model": 0.6719,
+        "delta": 0.0059,
+        "n": 2356
+      },
+      "results_conclusion": {
+        "abstract_cues": 0.7083,
+        "model": 0.7079,
+        "delta": -0.0003,
+        "n": 1551
+      }
+    },
+    "evaluates": {
+      "methods": {
+        "abstract_cues": 0.6728,
+        "model": 0.7135,
+        "delta": 0.0407,
+        "n": 2356
+      },
+      "results_conclusion": {
+        "abstract_cues": 0.7199,
+        "model": 0.7614,
+        "delta": 0.0415,
+        "n": 1551
+      }
+    },
+    "proves": {
+      "methods": {
+        "abstract_cues": 0.7633,
+        "model": 0.7827,
+        "delta": 0.0194,
+        "n": 2356
+      },
+      "results_conclusion": {
+        "abstract_cues": 0.7833,
+        "model": 0.8008,
+        "delta": 0.0175,
+        "n": 1551
+      }
+    },
+    "simulates": {
+      "methods": {
+        "abstract_cues": 0.8304,
+        "model": 0.8353,
+        "delta": 0.0049,
+        "n": 2356
+      },
+      "results_conclusion": {
+        "abstract_cues": 0.8693,
+        "model": 0.8691,
+        "delta": -0.0002,
+        "n": 1551
+      }
+    },
+    "human_data": {
+      "methods": {
+        "abstract_cues": 0.9643,
+        "model": 0.9707,
+        "delta": 0.0064,
+        "n": 2356
+      },
+      "results_conclusion": {
+        "abstract_cues": 0.9664,
+        "model": 0.971,
+        "delta": 0.0046,
+        "n": 1551
+      }
+    },
+    "field_context": {
+      "methods": {
+        "abstract_cues": 0.9252,
+        "model": 0.9363,
+        "delta": 0.0111,
+        "n": 2356
+      },
+      "results_conclusion": {
+        "abstract_cues": 0.9431,
+        "model": 0.9516,
+        "delta": 0.0086,
+        "n": 1551
+      }
+    },
+    "secondary": {
+      "methods": {
+        "abstract_cues": 0.9809,
+        "model": 0.9826,
+        "delta": 0.0017,
+        "n": 2356
+      },
+      "results_conclusion": {
+        "abstract_cues": 0.9897,
+        "model": 0.9858,
+        "delta": -0.0038,
+        "n": 1551
+      }
+    },
+    "intervenes": {
+      "methods": {
+        "abstract_cues": 0.9779,
+        "model": 0.9762,
+        "delta": -0.0017,
+        "n": 2356
+      },
+      "results_conclusion": {
+        "abstract_cues": 0.9774,
+        "model": 0.9787,
+        "delta": 0.0014,
+        "n": 1551
+      }
+    }
+  },
+  "model_wins": {
+    "wins": 12,
+    "comparisons": 16
+  },
+  "derived_design_counts": {
+    "Design & Creation (Design Science)": 1204,
+    "Experiment / Empirical Evaluation": 817,
+    "Formal / Theoretical": 486,
+    "Simulation & Modelling": 341,
+    "Case Study": 104,
+    "Qualitative Field Study / Grounded Theory": 41,
+    "Systematic Literature Review / Secondary Study": 28,
+    "Survey (empirical study of respondents)": 21,
+    "Action Research": 3
+  },
+  "both_builds_and_evaluates": 601,
+  "underdetermined": 1209
+}

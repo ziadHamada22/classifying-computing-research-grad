@@ -1,0 +1,488 @@
+{
+  "members": [
+    [
+      "scibert",
+      0.5
+    ],
+    [
+      "deberta-v3-base",
+      0.2
+    ],
+    [
+      "tfidf",
+      0.3
+    ]
+  ],
+  "normalised_weights": [
+    0.5,
+    0.2,
+    0.3
+  ],
+  "splits": {
+    "val": {
+      "ensemble": {
+        "macro_f1": 0.8579,
+        "accuracy": 0.8581,
+        "ece": 0.0272
+      },
+      "scibert": {
+        "macro_f1": 0.851,
+        "accuracy": 0.851,
+        "ece": 0.0282
+      }
+    },
+    "test": {
+      "ensemble": {
+        "macro_f1": 0.816,
+        "accuracy": 0.8161,
+        "ece": 0.012
+      },
+      "scibert": {
+        "macro_f1": 0.8122,
+        "accuracy": 0.8123,
+        "ece": 0.0416
+      }
+    },
+    "temporal": {
+      "ensemble": {
+        "macro_f1": 0.7359,
+        "accuracy": 0.7376,
+        "ece": 0.0596
+      },
+      "scibert": {
+        "macro_f1": 0.7282,
+        "accuracy": 0.7297,
+        "ece": 0.0999
+      }
+    }
+  },
+  "conformal_eval_half": {
+    "0.01": {
+      "n": 4500,
+      "alpha": 0.01,
+      "target_coverage": 0.99,
+      "coverage": 0.9973,
+      "coverage_gap": 0.0073,
+      "avg_set_size": 3.8791,
+      "median_set_size": 4,
+      "size_distribution": {
+        "1": 379,
+        "2": 606,
+        "3": 858,
+        "4": 843,
+        "5": 965,
+        "6": 849
+      },
+      "routed_share": 0.9158,
+      "singleton_share": 0.0842,
+      "empty_share": 0.0,
+      "singleton_accuracy": 0.9947,
+      "error_recall": 0.9983,
+      "error_precision": 0.2771,
+      "top1_accuracy": 0.7458,
+      "per_class": {
+        "Computer Science": {
+          "n": 748,
+          "coverage": 0.9906,
+          "avg_set_size": 3.9104,
+          "routed_share": 0.9171
+        },
+        "Information Systems": {
+          "n": 739,
+          "coverage": 0.9986,
+          "avg_set_size": 4.3545,
+          "routed_share": 0.9743
+        },
+        "Information Technology": {
+          "n": 750,
+          "coverage": 0.9987,
+          "avg_set_size": 4.2347,
+          "routed_share": 0.984
+        },
+        "Software Engineering": {
+          "n": 755,
+          "coverage": 0.9987,
+          "avg_set_size": 2.9841,
+          "routed_share": 0.6887
+        },
+        "Computer Engineering": {
+          "n": 744,
+          "coverage": 0.9987,
+          "avg_set_size": 4.004,
+          "routed_share": 0.9892
+        },
+        "Data Science": {
+          "n": 764,
+          "coverage": 0.9987,
+          "avg_set_size": 3.8024,
+          "routed_share": 0.9437
+        }
+      }
+    },
+    "0.02": {
+      "n": 4500,
+      "alpha": 0.02,
+      "target_coverage": 0.98,
+      "coverage": 0.9884,
+      "coverage_gap": 0.0084,
+      "avg_set_size": 3.1478,
+      "median_set_size": 3,
+      "size_distribution": {
+        "1": 657,
+        "2": 955,
+        "3": 1082,
+        "4": 918,
+        "5": 648,
+        "6": 240
+      },
+      "routed_share": 0.854,
+      "singleton_share": 0.146,
+      "empty_share": 0.0,
+      "singleton_accuracy": 0.9833,
+      "error_recall": 0.9904,
+      "error_precision": 0.2948,
+      "top1_accuracy": 0.7458,
+      "per_class": {
+        "Computer Science": {
+          "n": 748,
+          "coverage": 0.9826,
+          "avg_set_size": 3.1711,
+          "routed_share": 0.8743
+        },
+        "Information Systems": {
+          "n": 739,
+          "coverage": 0.9878,
+          "avg_set_size": 3.4181,
+          "routed_share": 0.889
+        },
+        "Information Technology": {
+          "n": 750,
+          "coverage": 0.988,
+          "avg_set_size": 3.3973,
+          "routed_share": 0.94
+        },
+        "Software Engineering": {
+          "n": 755,
+          "coverage": 0.9841,
+          "avg_set_size": 2.4901,
+          "routed_share": 0.5974
+        },
+        "Computer Engineering": {
+          "n": 744,
+          "coverage": 0.9933,
+          "avg_set_size": 3.3065,
+          "routed_share": 0.9691
+        },
+        "Data Science": {
+          "n": 764,
+          "coverage": 0.9948,
+          "avg_set_size": 3.1139,
+          "routed_share": 0.8573
+        }
+      }
+    },
+    "0.05": {
+      "n": 4500,
+      "alpha": 0.05,
+      "target_coverage": 0.95,
+      "coverage": 0.964,
+      "coverage_gap": 0.014,
+      "avg_set_size": 2.3504,
+      "median_set_size": 2,
+      "size_distribution": {
+        "1": 1271,
+        "2": 1340,
+        "3": 1149,
+        "4": 547,
+        "5": 167,
+        "6": 26
+      },
+      "routed_share": 0.7176,
+      "singleton_share": 0.2824,
+      "empty_share": 0.0,
+      "singleton_accuracy": 0.9544,
+      "error_recall": 0.9493,
+      "error_precision": 0.3363,
+      "top1_accuracy": 0.7458,
+      "per_class": {
+        "Computer Science": {
+          "n": 748,
+          "coverage": 0.9586,
+          "avg_set_size": 2.4251,
+          "routed_share": 0.7781
+        },
+        "Information Systems": {
+          "n": 739,
+          "coverage": 0.9648,
+          "avg_set_size": 2.3356,
+          "routed_share": 0.6752
+        },
+        "Information Technology": {
+          "n": 750,
+          "coverage": 0.9667,
+          "avg_set_size": 2.5733,
+          "routed_share": 0.8453
+        },
+        "Software Engineering": {
+          "n": 755,
+          "coverage": 0.9523,
+          "avg_set_size": 1.8318,
+          "routed_share": 0.4159
+        },
+        "Computer Engineering": {
+          "n": 744,
+          "coverage": 0.9597,
+          "avg_set_size": 2.5954,
+          "routed_share": 0.8817
+        },
+        "Data Science": {
+          "n": 764,
+          "coverage": 0.9817,
+          "avg_set_size": 2.3469,
+          "routed_share": 0.712
+        }
+      }
+    },
+    "0.1": {
+      "n": 4500,
+      "alpha": 0.1,
+      "target_coverage": 0.9,
+      "coverage": 0.9169,
+      "coverage_gap": 0.0169,
+      "avg_set_size": 1.77,
+      "median_set_size": 2,
+      "size_distribution": {
+        "1": 2029,
+        "2": 1620,
+        "3": 717,
+        "4": 125,
+        "5": 9
+      },
+      "routed_share": 0.5491,
+      "singleton_share": 0.4509,
+      "empty_share": 0.0,
+      "singleton_accuracy": 0.9014,
+      "error_recall": 0.8252,
+      "error_precision": 0.382,
+      "top1_accuracy": 0.7458,
+      "per_class": {
+        "Computer Science": {
+          "n": 748,
+          "coverage": 0.9158,
+          "avg_set_size": 1.8717,
+          "routed_share": 0.6283
+        },
+        "Information Systems": {
+          "n": 739,
+          "coverage": 0.9337,
+          "avg_set_size": 1.6698,
+          "routed_share": 0.4601
+        },
+        "Information Technology": {
+          "n": 750,
+          "coverage": 0.892,
+          "avg_set_size": 1.888,
+          "routed_share": 0.636
+        },
+        "Software Engineering": {
+          "n": 755,
+          "coverage": 0.9152,
+          "avg_set_size": 1.3987,
+          "routed_share": 0.2861
+        },
+        "Computer Engineering": {
+          "n": 744,
+          "coverage": 0.914,
+          "avg_set_size": 1.9825,
+          "routed_share": 0.7366
+        },
+        "Data Science": {
+          "n": 764,
+          "coverage": 0.9306,
+          "avg_set_size": 1.8115,
+          "routed_share": 0.5497
+        }
+      }
+    },
+    "0.15": {
+      "n": 4500,
+      "alpha": 0.15,
+      "target_coverage": 0.85,
+      "coverage": 0.8691,
+      "coverage_gap": 0.0191,
+      "avg_set_size": 1.4633,
+      "median_set_size": 1,
+      "size_distribution": {
+        "1": 2732,
+        "2": 1458,
+        "3": 303,
+        "4": 7
+      },
+      "routed_share": 0.3929,
+      "singleton_share": 0.6071,
+      "empty_share": 0.0,
+      "singleton_accuracy": 0.8547,
+      "error_recall": 0.653,
+      "error_precision": 0.4225,
+      "top1_accuracy": 0.7458,
+      "per_class": {
+        "Computer Science": {
+          "n": 748,
+          "coverage": 0.8623,
+          "avg_set_size": 1.5668,
+          "routed_share": 0.4746
+        },
+        "Information Systems": {
+          "n": 739,
+          "coverage": 0.8877,
+          "avg_set_size": 1.3586,
+          "routed_share": 0.3099
+        },
+        "Information Technology": {
+          "n": 750,
+          "coverage": 0.8413,
+          "avg_set_size": 1.5093,
+          "routed_share": 0.4227
+        },
+        "Software Engineering": {
+          "n": 755,
+          "coverage": 0.8715,
+          "avg_set_size": 1.1775,
+          "routed_share": 0.1589
+        },
+        "Computer Engineering": {
+          "n": 744,
+          "coverage": 0.8575,
+          "avg_set_size": 1.6694,
+          "routed_share": 0.586
+        },
+        "Data Science": {
+          "n": 764,
+          "coverage": 0.894,
+          "avg_set_size": 1.5,
+          "routed_share": 0.4071
+        }
+      }
+    },
+    "0.2": {
+      "n": 4500,
+      "alpha": 0.2,
+      "target_coverage": 0.8,
+      "coverage": 0.8178,
+      "coverage_gap": 0.0178,
+      "avg_set_size": 1.2536,
+      "median_set_size": 1,
+      "size_distribution": {
+        "0": 46,
+        "1": 3352,
+        "2": 1017,
+        "3": 85
+      },
+      "routed_share": 0.2551,
+      "singleton_share": 0.7449,
+      "empty_share": 0.0102,
+      "singleton_accuracy": 0.8073,
+      "error_recall": 0.4353,
+      "error_precision": 0.4338,
+      "top1_accuracy": 0.7458,
+      "per_class": {
+        "Computer Science": {
+          "n": 748,
+          "coverage": 0.8195,
+          "avg_set_size": 1.3409,
+          "routed_share": 0.3302
+        },
+        "Information Systems": {
+          "n": 739,
+          "coverage": 0.8309,
+          "avg_set_size": 1.1664,
+          "routed_share": 0.1691
+        },
+        "Information Technology": {
+          "n": 750,
+          "coverage": 0.768,
+          "avg_set_size": 1.232,
+          "routed_share": 0.2467
+        },
+        "Software Engineering": {
+          "n": 755,
+          "coverage": 0.8291,
+          "avg_set_size": 1.0265,
+          "routed_share": 0.0834
+        },
+        "Computer Engineering": {
+          "n": 744,
+          "coverage": 0.8091,
+          "avg_set_size": 1.4435,
+          "routed_share": 0.4247
+        },
+        "Data Science": {
+          "n": 764,
+          "coverage": 0.8495,
+          "avg_set_size": 1.3128,
+          "routed_share": 0.2775
+        }
+      }
+    },
+    "0.3": {
+      "n": 4500,
+      "alpha": 0.3,
+      "target_coverage": 0.7,
+      "coverage": 0.7187,
+      "coverage_gap": 0.0187,
+      "avg_set_size": 0.9909,
+      "median_set_size": 1,
+      "size_distribution": {
+        "0": 358,
+        "1": 3827,
+        "2": 313,
+        "3": 2
+      },
+      "routed_share": 0.1496,
+      "singleton_share": 0.8504,
+      "empty_share": 0.0796,
+      "singleton_accuracy": 0.7836,
+      "error_recall": 0.2762,
+      "error_precision": 0.4695,
+      "top1_accuracy": 0.7458,
+      "per_class": {
+        "Computer Science": {
+          "n": 748,
+          "coverage": 0.7326,
+          "avg_set_size": 1.0548,
+          "routed_share": 0.1564
+        },
+        "Information Systems": {
+          "n": 739,
+          "coverage": 0.7185,
+          "avg_set_size": 0.9323,
+          "routed_share": 0.1001
+        },
+        "Information Technology": {
+          "n": 750,
+          "coverage": 0.6787,
+          "avg_set_size": 0.932,
+          "routed_share": 0.124
+        },
+        "Software Engineering": {
+          "n": 755,
+          "coverage": 0.7179,
+          "avg_set_size": 0.8305,
+          "routed_share": 0.1775
+        },
+        "Computer Engineering": {
+          "n": 744,
+          "coverage": 0.6788,
+          "avg_set_size": 1.1223,
+          "routed_share": 0.2204
+        },
+        "Data Science": {
+          "n": 764,
+          "coverage": 0.784,
+          "avg_set_size": 1.0733,
+          "routed_share": 0.1191
+        }
+      }
+    }
+  }
+}

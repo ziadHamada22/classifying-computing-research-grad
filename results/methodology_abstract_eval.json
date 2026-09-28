@@ -1,0 +1,146 @@
+{
+  "model_dir": "methodology-abstract",
+  "labels": [
+    "Design & Creation (Design Science)",
+    "Experiment / Empirical Evaluation",
+    "Formal / Theoretical",
+    "Simulation & Modelling"
+  ],
+  "paper_level_baseline": {
+    "accuracy": 0.6567,
+    "macro_f1": 0.6312,
+    "n_papers": 1410,
+    "tag": "methodology-scibert"
+  },
+  "fitted_section_weights": {
+    "abstract": 1.0
+  },
+  "strategies": {
+    "mean": {
+      "val": {
+        "n_papers": 1405,
+        "accuracy": 0.7089,
+        "macro_f1": 0.6874
+      },
+      "test": {
+        "n_papers": 1410,
+        "accuracy": 0.6879,
+        "macro_f1": 0.6677
+      }
+    },
+    "max": {
+      "val": {
+        "n_papers": 1405,
+        "accuracy": 0.711,
+        "macro_f1": 0.6926
+      },
+      "test": {
+        "n_papers": 1410,
+        "accuracy": 0.6922,
+        "macro_f1": 0.6697
+      }
+    },
+    "weighted_mean": {
+      "val": {
+        "n_papers": 1405,
+        "accuracy": 0.711,
+        "macro_f1": 0.6888
+      },
+      "test": {
+        "n_papers": 1410,
+        "accuracy": 0.6887,
+        "macro_f1": 0.6671
+      }
+    },
+    "weighted_geometric": {
+      "val": {
+        "n_papers": 1405,
+        "accuracy": 0.7117,
+        "macro_f1": 0.6894
+      },
+      "test": {
+        "n_papers": 1410,
+        "accuracy": 0.6894,
+        "macro_f1": 0.6683
+      }
+    },
+    "weighted_mean + fitted weights": {
+      "val": {
+        "n_papers": 1405,
+        "accuracy": 0.711,
+        "macro_f1": 0.6888
+      },
+      "test": {
+        "n_papers": 1410,
+        "accuracy": 0.6887,
+        "macro_f1": 0.6671
+      }
+    },
+    "weighted_geometric + fitted weights": {
+      "val": {
+        "n_papers": 1405,
+        "accuracy": 0.7117,
+        "macro_f1": 0.6894
+      },
+      "test": {
+        "n_papers": 1410,
+        "accuracy": 0.6894,
+        "macro_f1": 0.6683
+      }
+    }
+  },
+  "delta_vs_baseline": {
+    "accuracy": 0.0355,
+    "macro_f1": 0.0385,
+    "selected_strategy": "max"
+  },
+  "single_section_ablation_test": {
+    "abstract": {
+      "n_papers": 1410,
+      "coverage": 1.0,
+      "accuracy": 0.6879,
+      "macro_f1": 0.6677
+    }
+  },
+  "confusion_matrix_test": {
+    "labels": [
+      "Design & Creation (Design Science)",
+      "Experiment / Empirical Evaluation",
+      "Formal / Theoretical",
+      "Simulation & Modelling"
+    ],
+    "matrix": [
+      [
+        300,
+        94,
+        45,
+        11
+      ],
+      [
+        130,
+        291,
+        23,
+        6
+      ],
+      [
+        43,
+        14,
+        330,
+        17
+      ],
+      [
+        12,
+        17,
+        22,
+        55
+      ]
+    ]
+  },
+  "dc_experiment_bleed": {
+    "dc_to_exp": 94,
+    "exp_to_dc": 130,
+    "total": 224,
+    "all_errors": 434,
+    "share_of_errors": 0.5161
+  }
+}

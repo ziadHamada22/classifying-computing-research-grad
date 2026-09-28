@@ -1,0 +1,15 @@
+{
+  "thresholds": {
+    "builds": 0.45,
+    "evaluates": 0.49,
+    "proves": 0.38,
+    "simulates": 0.69,
+    "human_data": 0.36,
+    "field_context": 0.42,
+    "secondary": 0.15,
+    "intervenes": 0.41
+  },
+  "fitted_on": "validation split, F1 against the label model's hard labels",
+  "no_evidence_fallback": "top_facet",
+  "evidence": "facet_decisions_eval_methodology-facets-v2.json"
+}

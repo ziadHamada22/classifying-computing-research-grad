@@ -1,0 +1,52 @@
+{
+  "model": "allenai/scibert_scivocab_uncased",
+  "tag": "methodology-abstract",
+  "level": "block",
+  "train_seconds": 428.5,
+  "args": {
+    "model": "allenai/scibert_scivocab_uncased",
+    "tag": "methodology-abstract",
+    "corpus": "C:\\Users\\ziada\\gp_data\\corpus\\methodology_blocks.parquet",
+    "epochs": 4.0,
+    "batch_size": 16,
+    "grad_accum": 2,
+    "lr": 2e-05,
+    "max_length": 256,
+    "label_smoothing": 0.05,
+    "warmup_ratio": 0.06,
+    "weight_decay": 0.01,
+    "seed": 42,
+    "patience": 2,
+    "sections": "abstract"
+  },
+  "labels": [
+    "Design & Creation (Design Science)",
+    "Experiment / Empirical Evaluation",
+    "Formal / Theoretical",
+    "Simulation & Modelling"
+  ],
+  "val": {
+    "n_blocks": 2770,
+    "n_papers": 1405,
+    "block_accuracy": 0.6581227436823105,
+    "block_macro_f1": 0.6143989707987999,
+    "per_section_block_accuracy": {
+      "abstract": {
+        "n": 2770,
+        "accuracy": 0.6581
+      }
+    }
+  },
+  "test": {
+    "n_blocks": 2658,
+    "n_papers": 1410,
+    "block_accuracy": 0.6629044394281415,
+    "block_macro_f1": 0.6314871985303492,
+    "per_section_block_accuracy": {
+      "abstract": {
+        "n": 2658,
+        "accuracy": 0.6629
+      }
+    }
+  }
+}

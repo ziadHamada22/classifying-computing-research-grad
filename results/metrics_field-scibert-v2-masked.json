@@ -1,0 +1,123 @@
+{
+  "model": "allenai/scibert_scivocab_uncased",
+  "tag": "field-scibert-v2-masked",
+  "train_seconds": 3472.7,
+  "args": {
+    "model": "allenai/scibert_scivocab_uncased",
+    "tag": "field-scibert-v2-masked",
+    "corpus": "C:/Users/ziada/gp_data/corpus/fields_corpus_st.parquet",
+    "epochs": 3.0,
+    "batch_size": 16,
+    "grad_accum": 2,
+    "lr": 2e-05,
+    "max_length": 256,
+    "label_smoothing": 0.05,
+    "warmup_ratio": 0.06,
+    "weight_decay": 0.01,
+    "seed": 42,
+    "patience": 2,
+    "masked_loss": true
+  },
+  "val": {
+    "n": 16780,
+    "flat_accuracy": 0.6679380214541121,
+    "flat_macro_f1": 0.6648361492362226,
+    "conditioned_accuracy": 0.8372467222884387,
+    "conditioned_macro_f1": 0.8278679092522299,
+    "per_discipline": {
+      "Computer Science": {
+        "n": 4194,
+        "accuracy": 0.8617072007629948,
+        "macro_f1": 0.8610171152506404,
+        "majority_baseline": 0.1430615164520744,
+        "n_fields": 7
+      },
+      "Information Systems": {
+        "n": 3353,
+        "accuracy": 0.8663883089770354,
+        "macro_f1": 0.8667083805850249,
+        "majority_baseline": 0.17894422904861318,
+        "n_fields": 6
+      },
+      "Information Technology": {
+        "n": 1957,
+        "accuracy": 0.8788962698007153,
+        "macro_f1": 0.8024984607416517,
+        "majority_baseline": 0.3065917220235054,
+        "n_fields": 5
+      },
+      "Software Engineering": {
+        "n": 480,
+        "accuracy": 0.85625,
+        "macro_f1": 0.8329128671152144,
+        "majority_baseline": 0.2791666666666667,
+        "n_fields": 7
+      },
+      "Computer Engineering": {
+        "n": 3012,
+        "accuracy": 0.8562416998671979,
+        "macro_f1": 0.8571040106757812,
+        "majority_baseline": 0.199203187250996,
+        "n_fields": 6
+      },
+      "Data Science": {
+        "n": 3784,
+        "accuracy": 0.7452431289640592,
+        "macro_f1": 0.7494434319643799,
+        "majority_baseline": 0.15856236786469344,
+        "n_fields": 7
+      }
+    }
+  },
+  "test": {
+    "n": 16804,
+    "flat_accuracy": 0.669185908117115,
+    "flat_macro_f1": 0.6651290152425015,
+    "conditioned_accuracy": 0.8395024994049036,
+    "conditioned_macro_f1": 0.8308619055781945,
+    "per_discipline": {
+      "Computer Science": {
+        "n": 4196,
+        "accuracy": 0.8598665395614872,
+        "macro_f1": 0.8597899382825247,
+        "majority_baseline": 0.14299332697807435,
+        "n_fields": 7
+      },
+      "Information Systems": {
+        "n": 3355,
+        "accuracy": 0.8551415797317437,
+        "macro_f1": 0.8559887673842854,
+        "majority_baseline": 0.17883755588673622,
+        "n_fields": 6
+      },
+      "Information Technology": {
+        "n": 1959,
+        "accuracy": 0.8989280245022971,
+        "macro_f1": 0.8144609986610829,
+        "majority_baseline": 0.30627871362940273,
+        "n_fields": 5
+      },
+      "Software Engineering": {
+        "n": 492,
+        "accuracy": 0.8760162601626016,
+        "macro_f1": 0.8405024545851393,
+        "majority_baseline": 0.2764227642276423,
+        "n_fields": 7
+      },
+      "Computer Engineering": {
+        "n": 3016,
+        "accuracy": 0.8554376657824934,
+        "macro_f1": 0.8590882167510938,
+        "majority_baseline": 0.1989389920424403,
+        "n_fields": 6
+      },
+      "Data Science": {
+        "n": 3786,
+        "accuracy": 0.7548864236661385,
+        "macro_f1": 0.7582769662542932,
+        "majority_baseline": 0.15847860538827258,
+        "n_fields": 7
+      }
+    }
+  }
+}

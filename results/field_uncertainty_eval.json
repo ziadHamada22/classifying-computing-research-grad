@@ -1,0 +1,528 @@
+{
+  "field_model": "field-scibert-v2",
+  "conditioning": "oracle (true discipline)",
+  "calibration": {
+    "val": {
+      "n": 16780,
+      "accuracy": 0.8358,
+      "ece": 0.0376,
+      "mean_confidence": 0.8688,
+      "per_discipline_accuracy": {
+        "Computer Science": 0.8619,
+        "Information Systems": 0.8631,
+        "Information Technology": 0.8815,
+        "Software Engineering": 0.8562,
+        "Computer Engineering": 0.8529,
+        "Data Science": 0.7429
+      }
+    },
+    "test": {
+      "n": 16804,
+      "accuracy": 0.8398,
+      "ece": 0.0355,
+      "mean_confidence": 0.8689,
+      "per_discipline_accuracy": {
+        "Computer Science": 0.8625,
+        "Information Systems": 0.8578,
+        "Information Technology": 0.8969,
+        "Software Engineering": 0.874,
+        "Computer Engineering": 0.8505,
+        "Data Science": 0.7562
+      }
+    },
+    "2025+ calib half": {
+      "n": 2992,
+      "accuracy": 0.7931,
+      "ece": 0.0615,
+      "mean_confidence": 0.8394,
+      "per_discipline_accuracy": {
+        "Computer Science": 0.7648,
+        "Information Systems": 0.8632,
+        "Information Technology": 0.7227,
+        "Software Engineering": 0.8195,
+        "Computer Engineering": 0.8554,
+        "Data Science": 0.7495
+      }
+    },
+    "2025+ eval half": {
+      "n": 2979,
+      "accuracy": 0.7895,
+      "ece": 0.0651,
+      "mean_confidence": 0.8465,
+      "per_discipline_accuracy": {
+        "Computer Science": 0.7726,
+        "Information Systems": 0.8556,
+        "Information Technology": 0.7453,
+        "Software Engineering": 0.8365,
+        "Computer Engineering": 0.832,
+        "Data Science": 0.7245
+      }
+    }
+  },
+  "borderline_flag": {
+    "legacy": {
+      "val": {
+        "low_confidence": 0.55,
+        "tight_gap": 0.12,
+        "fire_rate": 0.0819,
+        "error_recall": 0.2599,
+        "error_precision": 0.5211
+      },
+      "test": {
+        "low_confidence": 0.55,
+        "tight_gap": 0.12,
+        "fire_rate": 0.0824,
+        "error_recall": 0.2585,
+        "error_precision": 0.5029
+      },
+      "2025+ calib half": {
+        "low_confidence": 0.55,
+        "tight_gap": 0.12,
+        "fire_rate": 0.1257,
+        "error_recall": 0.3086,
+        "error_precision": 0.508
+      },
+      "2025+ eval half": {
+        "low_confidence": 0.55,
+        "tight_gap": 0.12,
+        "fire_rate": 0.1074,
+        "error_recall": 0.2871,
+        "error_precision": 0.5625
+      }
+    },
+    "tuned_on_val": {
+      "val": {
+        "low_confidence": 0.8,
+        "tight_gap": 0.02,
+        "fire_rate": 0.2462,
+        "error_recall": 0.6298,
+        "error_precision": 0.4199
+      },
+      "test": {
+        "low_confidence": 0.8,
+        "tight_gap": 0.02,
+        "fire_rate": 0.2442,
+        "error_recall": 0.6207,
+        "error_precision": 0.4072
+      },
+      "2025+ calib half": {
+        "low_confidence": 0.8,
+        "tight_gap": 0.02,
+        "fire_rate": 0.2945,
+        "error_recall": 0.6478,
+        "error_precision": 0.4552
+      },
+      "2025+ eval half": {
+        "low_confidence": 0.8,
+        "tight_gap": 0.02,
+        "fire_rate": 0.2914,
+        "error_recall": 0.6826,
+        "error_precision": 0.4931
+      }
+    },
+    "tuned_thresholds": {
+      "low_confidence": 0.8,
+      "tight_gap": 0.02,
+      "budget": 0.25
+    }
+  },
+  "conformal": {
+    "calibrated on val": {
+      "test": {
+        "0.05": {
+          "n": 16804,
+          "alpha": 0.05,
+          "target_coverage": 0.95,
+          "coverage": 0.9516,
+          "coverage_gap": 0.0016,
+          "avg_set_size": 1.5177,
+          "median_set_size": 1,
+          "size_distribution": {
+            "1": 10851,
+            "2": 4282,
+            "3": 1064,
+            "4": 316,
+            "5": 156,
+            "6": 93,
+            "7": 42
+          },
+          "routed_share": 0.3543,
+          "singleton_share": 0.6457,
+          "empty_share": 0.0,
+          "singleton_accuracy": 0.9461,
+          "error_recall": 0.7827,
+          "error_precision": 0.3539,
+          "top1_accuracy": 0.8398
+        },
+        "0.1": {
+          "n": 16804,
+          "alpha": 0.1,
+          "target_coverage": 0.9,
+          "coverage": 0.9024,
+          "coverage_gap": 0.0024,
+          "avg_set_size": 1.1791,
+          "median_set_size": 1,
+          "size_distribution": {
+            "0": 5,
+            "1": 13937,
+            "2": 2713,
+            "3": 146,
+            "4": 3
+          },
+          "routed_share": 0.1706,
+          "singleton_share": 0.8294,
+          "empty_share": 0.0003,
+          "singleton_accuracy": 0.9003,
+          "error_recall": 0.484,
+          "error_precision": 0.4545,
+          "top1_accuracy": 0.8398
+        },
+        "0.2": {
+          "n": 16804,
+          "alpha": 0.2,
+          "target_coverage": 0.8,
+          "coverage": 0.8028,
+          "coverage_gap": 0.0028,
+          "avg_set_size": 0.9239,
+          "median_set_size": 1,
+          "size_distribution": {
+            "0": 1278,
+            "1": 15526
+          },
+          "routed_share": 0.0761,
+          "singleton_share": 0.9239,
+          "empty_share": 0.0761,
+          "singleton_accuracy": 0.8689,
+          "error_recall": 0.2441,
+          "error_precision": 0.5141,
+          "top1_accuracy": 0.8398
+        }
+      },
+      "2025+ eval half": {
+        "0.05": {
+          "n": 2979,
+          "alpha": 0.05,
+          "target_coverage": 0.95,
+          "coverage": 0.9345,
+          "coverage_gap": -0.0155,
+          "avg_set_size": 1.663,
+          "median_set_size": 1,
+          "size_distribution": {
+            "1": 1800,
+            "2": 737,
+            "3": 240,
+            "4": 108,
+            "5": 48,
+            "6": 34,
+            "7": 12
+          },
+          "routed_share": 0.3958,
+          "singleton_share": 0.6042,
+          "empty_share": 0.0,
+          "singleton_accuracy": 0.9378,
+          "error_recall": 0.8214,
+          "error_precision": 0.4368,
+          "top1_accuracy": 0.7895
+        },
+        "0.1": {
+          "n": 2979,
+          "alpha": 0.1,
+          "target_coverage": 0.9,
+          "coverage": 0.8637,
+          "coverage_gap": -0.0363,
+          "avg_set_size": 1.2051,
+          "median_set_size": 1,
+          "size_distribution": {
+            "0": 1,
+            "1": 2406,
+            "2": 532,
+            "3": 40
+          },
+          "routed_share": 0.1923,
+          "singleton_share": 0.8077,
+          "empty_share": 0.0003,
+          "singleton_accuracy": 0.8666,
+          "error_recall": 0.488,
+          "error_precision": 0.534,
+          "top1_accuracy": 0.7895
+        },
+        "0.2": {
+          "n": 2979,
+          "alpha": 0.2,
+          "target_coverage": 0.8,
+          "coverage": 0.7459,
+          "coverage_gap": -0.0541,
+          "avg_set_size": 0.9006,
+          "median_set_size": 1,
+          "size_distribution": {
+            "0": 296,
+            "1": 2683
+          },
+          "routed_share": 0.0994,
+          "singleton_share": 0.9006,
+          "empty_share": 0.0994,
+          "singleton_accuracy": 0.8282,
+          "error_recall": 0.2648,
+          "error_precision": 0.5608,
+          "top1_accuracy": 0.7895
+        }
+      }
+    },
+    "calibrated on 2025+ calib half": {
+      "test": {
+        "0.05": {
+          "n": 16804,
+          "alpha": 0.05,
+          "target_coverage": 0.95,
+          "coverage": 0.9642,
+          "coverage_gap": 0.0142,
+          "avg_set_size": 1.7045,
+          "median_set_size": 1,
+          "size_distribution": {
+            "1": 9645,
+            "2": 4660,
+            "3": 1388,
+            "4": 507,
+            "5": 259,
+            "6": 225,
+            "7": 120
+          },
+          "routed_share": 0.426,
+          "singleton_share": 0.574,
+          "empty_share": 0.0,
+          "singleton_accuracy": 0.9585,
+          "error_recall": 0.8514,
+          "error_precision": 0.3202,
+          "top1_accuracy": 0.8398
+        },
+        "0.1": {
+          "n": 16804,
+          "alpha": 0.1,
+          "target_coverage": 0.9,
+          "coverage": 0.9279,
+          "coverage_gap": 0.0279,
+          "avg_set_size": 1.302,
+          "median_set_size": 1,
+          "size_distribution": {
+            "1": 12557,
+            "2": 3557,
+            "3": 576,
+            "4": 93,
+            "5": 19,
+            "6": 2
+          },
+          "routed_share": 0.2527,
+          "singleton_share": 0.7473,
+          "empty_share": 0.0,
+          "singleton_accuracy": 0.9251,
+          "error_recall": 0.6508,
+          "error_precision": 0.4125,
+          "top1_accuracy": 0.8398
+        },
+        "0.2": {
+          "n": 16804,
+          "alpha": 0.2,
+          "target_coverage": 0.8,
+          "coverage": 0.856,
+          "coverage_gap": 0.056,
+          "avg_set_size": 1.036,
+          "median_set_size": 1,
+          "size_distribution": {
+            "0": 217,
+            "1": 15765,
+            "2": 822
+          },
+          "routed_share": 0.0618,
+          "singleton_share": 0.9382,
+          "empty_share": 0.0129,
+          "singleton_accuracy": 0.8643,
+          "error_recall": 0.2051,
+          "error_precision": 0.5313,
+          "top1_accuracy": 0.8398
+        }
+      },
+      "2025+ eval half": {
+        "0.05": {
+          "n": 2979,
+          "alpha": 0.05,
+          "target_coverage": 0.95,
+          "coverage": 0.95,
+          "coverage_gap": -0.0,
+          "avg_set_size": 1.8869,
+          "median_set_size": 1,
+          "size_distribution": {
+            "1": 1616,
+            "2": 734,
+            "3": 315,
+            "4": 119,
+            "5": 92,
+            "6": 65,
+            "7": 38
+          },
+          "routed_share": 0.4575,
+          "singleton_share": 0.5425,
+          "empty_share": 0.0,
+          "singleton_accuracy": 0.9517,
+          "error_recall": 0.8756,
+          "error_precision": 0.4028,
+          "top1_accuracy": 0.7895
+        },
+        "0.1": {
+          "n": 2979,
+          "alpha": 0.1,
+          "target_coverage": 0.9,
+          "coverage": 0.8966,
+          "coverage_gap": -0.0034,
+          "avg_set_size": 1.3662,
+          "median_set_size": 1,
+          "size_distribution": {
+            "1": 2144,
+            "2": 644,
+            "3": 142,
+            "4": 34,
+            "5": 14,
+            "6": 1
+          },
+          "routed_share": 0.2803,
+          "singleton_share": 0.7197,
+          "empty_share": 0.0,
+          "singleton_accuracy": 0.9016,
+          "error_recall": 0.6635,
+          "error_precision": 0.4982,
+          "top1_accuracy": 0.7895
+        },
+        "0.2": {
+          "n": 2979,
+          "alpha": 0.2,
+          "target_coverage": 0.8,
+          "coverage": 0.7986,
+          "coverage_gap": -0.0014,
+          "avg_set_size": 1.0141,
+          "median_set_size": 1,
+          "size_distribution": {
+            "0": 80,
+            "1": 2777,
+            "2": 122
+          },
+          "routed_share": 0.0678,
+          "singleton_share": 0.9322,
+          "empty_share": 0.0269,
+          "singleton_accuracy": 0.8174,
+          "error_recall": 0.1914,
+          "error_precision": 0.5941,
+          "top1_accuracy": 0.7895
+        }
+      }
+    }
+  },
+  "deployed_bank": "C:\\Users\\ziada\\OneDrive\\Desktop\\YEAR 4\\GP\\system\\models\\field-scibert-v2\\conformal.json",
+  "errors": {
+    "n_errors": 2692,
+    "share_naming_labeller_runner_up": 0.4116,
+    "accuracy_by_label_evidence": {
+      "category": 0.7638,
+      "both": 0.9169,
+      "keyword": 0.8511
+    },
+    "accuracy_by_label_margin": {
+      "0.2-0.4": 0.662,
+      "0.4-0.6": 0.7667,
+      "0.6-0.8": 0.9151,
+      "0.8-1.0": 0.8734
+    },
+    "top_confusions": [
+      {
+        "true": "Information and Coding Theory",
+        "pred": "Signal and Audio Processing",
+        "count": 110
+      },
+      {
+        "true": "Applied Statistics and Analytics",
+        "pred": "Statistical Methodology and Inference",
+        "count": 110
+      },
+      {
+        "true": "Machine Learning Methods",
+        "pred": "Statistical Learning Theory",
+        "count": 103
+      },
+      {
+        "true": "Statistical Learning Theory",
+        "pred": "Machine Learning Methods",
+        "count": 98
+      },
+      {
+        "true": "Signal and Audio Processing",
+        "pred": "Information and Coding Theory",
+        "count": 92
+      },
+      {
+        "true": "Theory of Computation and Logic",
+        "pred": "Programming Languages and Compilers",
+        "count": 64
+      },
+      {
+        "true": "Computing, Ethics and Society",
+        "pred": "Social and Information Networks",
+        "count": 61
+      },
+      {
+        "true": "Computing, Ethics and Society",
+        "pred": "Human-Computer Interaction",
+        "count": 59
+      },
+      {
+        "true": "Human-Computer Interaction",
+        "pred": "Computing, Ethics and Society",
+        "count": 55
+      },
+      {
+        "true": "Statistical Methodology and Inference",
+        "pred": "Applied Statistics and Analytics",
+        "count": 53
+      }
+    ],
+    "weakest_fields": [
+      {
+        "field": "Performance, Capacity and Reliability",
+        "n": 109,
+        "recall": 0.4954
+      },
+      {
+        "field": "Statistical Learning Theory",
+        "n": 600,
+        "recall": 0.64
+      },
+      {
+        "field": "Software Process and Management",
+        "n": 25,
+        "recall": 0.68
+      },
+      {
+        "field": "Applied Statistics and Analytics",
+        "n": 600,
+        "recall": 0.6917
+      },
+      {
+        "field": "Machine Learning Methods",
+        "n": 600,
+        "recall": 0.715
+      },
+      {
+        "field": "Signal and Audio Processing",
+        "n": 600,
+        "recall": 0.7333
+      },
+      {
+        "field": "Computing, Ethics and Society",
+        "n": 600,
+        "recall": 0.7367
+      },
+      {
+        "field": "Statistical Methodology and Inference",
+        "n": 600,
+        "recall": 0.7383
+      }
+    ]
+  }
+}

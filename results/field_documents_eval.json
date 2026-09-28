@@ -1,0 +1,124 @@
+{
+  "field_model": "field-scibert-v2",
+  "conditioning": "oracle (true discipline)",
+  "abstract_formats": {
+    "raw": {
+      "accuracy": 0.8399,
+      "macro_f1": 0.8321
+    },
+    "tagged": {
+      "accuracy": 0.8397,
+      "macro_f1": 0.8318,
+      "mcnemar_vs_raw": {
+        "fixed": 137,
+        "broken": 140,
+        "p_value": 0.90438
+      }
+    },
+    "bare": {
+      "accuracy": 0.835,
+      "macro_f1": 0.823,
+      "mcnemar_vs_raw": {
+        "fixed": 312,
+        "broken": 395,
+        "p_value": 0.00202
+      }
+    }
+  },
+  "documents": {
+    "tagged": {
+      "section_weights": {
+        "title": 1.0,
+        "abstract": 1.0,
+        "introduction": 1.0,
+        "background": 1.0,
+        "related_work": 1.0,
+        "methods": 1.0,
+        "results": 1.0,
+        "discussion": 1.0,
+        "conclusion": 1.0,
+        "appendix": 1.0,
+        "body": 1.0,
+        "other": 1.0
+      },
+      "val": {
+        "n_papers": 2132,
+        "abstract_only": 0.8279,
+        "title_abstract": 0.8166,
+        "mean": 0.8171,
+        "max": 0.8011,
+        "weighted_mean": 0.8189,
+        "weighted_geometric": 0.8194
+      },
+      "test": {
+        "n_papers": 2123,
+        "abstract_only": 0.8347,
+        "title_abstract": 0.8224,
+        "mean": 0.821,
+        "max": 0.8172,
+        "weighted_mean": 0.8295,
+        "weighted_geometric": 0.8304
+      },
+      "selected_on_val": "abstract_only",
+      "test_mcnemar": {
+        "abstract_only_vs_mean": {
+          "fixed": 103,
+          "broken": 74,
+          "p_value": 0.03503
+        },
+        "abstract_only_vs_abstract_only": {
+          "fixed": 0,
+          "broken": 0,
+          "p_value": 1.0
+        }
+      }
+    },
+    "untagged": {
+      "section_weights": {
+        "title": 1.0,
+        "abstract": 1.0,
+        "introduction": 1.0,
+        "background": 1.0,
+        "related_work": 1.0,
+        "methods": 1.0,
+        "results": 1.0,
+        "discussion": 1.0,
+        "conclusion": 1.0,
+        "appendix": 1.0,
+        "body": 1.0,
+        "other": 1.0
+      },
+      "val": {
+        "n_papers": 2132,
+        "abstract_only": 0.826,
+        "title_abstract": 0.8157,
+        "mean": 0.8152,
+        "max": 0.8016,
+        "weighted_mean": 0.8189,
+        "weighted_geometric": 0.8161
+      },
+      "test": {
+        "n_papers": 2123,
+        "abstract_only": 0.837,
+        "title_abstract": 0.8238,
+        "mean": 0.8201,
+        "max": 0.8154,
+        "weighted_mean": 0.8285,
+        "weighted_geometric": 0.8295
+      },
+      "selected_on_val": "abstract_only",
+      "test_mcnemar": {
+        "abstract_only_vs_mean": {
+          "fixed": 110,
+          "broken": 74,
+          "p_value": 0.00968
+        },
+        "abstract_only_vs_abstract_only": {
+          "fixed": 0,
+          "broken": 0,
+          "p_value": 1.0
+        }
+      }
+    }
+  }
+}

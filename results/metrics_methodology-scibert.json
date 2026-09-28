@@ -1,0 +1,88 @@
+{
+  "model": "allenai/scibert_scivocab_uncased",
+  "tag": "methodology-scibert",
+  "train_seconds": 397.2,
+  "args": {
+    "model": "allenai/scibert_scivocab_uncased",
+    "tag": "methodology-scibert",
+    "corpus": "C:\\Users\\ziada\\gp_data\\corpus\\methodology_corpus.parquet",
+    "epochs": 4.0,
+    "batch_size": 16,
+    "grad_accum": 2,
+    "lr": 2e-05,
+    "max_length": 320,
+    "label_smoothing": 0.05,
+    "warmup_ratio": 0.06,
+    "weight_decay": 0.01,
+    "seed": 42,
+    "patience": 2
+  },
+  "labels": [
+    "Design & Creation (Design Science)",
+    "Experiment / Empirical Evaluation",
+    "Formal / Theoretical",
+    "Simulation & Modelling"
+  ],
+  "val": {
+    "n": 1406,
+    "accuracy": 0.6386913229018493,
+    "macro_f1": 0.6151903137969349,
+    "confusion": [
+      [
+        291,
+        91,
+        45,
+        23
+      ],
+      [
+        159,
+        248,
+        25,
+        18
+      ],
+      [
+        62,
+        16,
+        306,
+        18
+      ],
+      [
+        27,
+        11,
+        13,
+        53
+      ]
+    ]
+  },
+  "test": {
+    "n": 1410,
+    "accuracy": 0.6567375886524822,
+    "macro_f1": 0.6312189964749578,
+    "confusion": [
+      [
+        310,
+        89,
+        40,
+        11
+      ],
+      [
+        163,
+        252,
+        23,
+        12
+      ],
+      [
+        56,
+        17,
+        314,
+        17
+      ],
+      [
+        21,
+        7,
+        28,
+        50
+      ]
+    ]
+  }
+}

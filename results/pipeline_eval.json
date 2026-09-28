@@ -1,0 +1,245 @@
+{
+  "discipline_model": "scibert",
+  "field_model": "field-scibert-v2",
+  "split": "test",
+  "subsets": {
+    "no_agent1_train_leak": {
+      "n": 13479,
+      "discipline_accuracy": 0.8178,
+      "discipline_colisted_accuracy": 0.8963,
+      "discipline_macro_f1": 0.7762,
+      "oracle_field_accuracy": 0.8362,
+      "oracle_field_macro_f1": 0.8219,
+      "end_to_end_field_accuracy": 0.6894,
+      "end_to_end_field_macro_f1": 0.645,
+      "end_to_end_with_borderline_fork": 0.7146,
+      "cascade_loss": 0.1467,
+      "field_acc_given_discipline_correct": 0.8431,
+      "defensible_discipline_error_share": 0.4308,
+      "borderline_share": 0.0757,
+      "hierarchical": {
+        "hierarchical_precision": 0.7536,
+        "hierarchical_recall": 0.7536,
+        "hierarchical_f1": 0.7536,
+        "level_accuracy": {
+          "discipline": 0.8178,
+          "field": 0.6894
+        },
+        "partial_credit_share": 0.1283
+      }
+    },
+    "unseen_by_agent1": {
+      "n": 12035,
+      "discipline_accuracy": 0.8123,
+      "discipline_colisted_accuracy": 0.8938,
+      "discipline_macro_f1": 0.6924,
+      "oracle_field_accuracy": 0.8351,
+      "oracle_field_macro_f1": 0.7723,
+      "end_to_end_field_accuracy": 0.6838,
+      "end_to_end_field_macro_f1": 0.5381,
+      "end_to_end_with_borderline_fork": 0.7093,
+      "cascade_loss": 0.1513,
+      "field_acc_given_discipline_correct": 0.8419,
+      "defensible_discipline_error_share": 0.4343,
+      "borderline_share": 0.0768,
+      "hierarchical": {
+        "hierarchical_precision": 0.7481,
+        "hierarchical_recall": 0.7481,
+        "hierarchical_f1": 0.7481,
+        "level_accuracy": {
+          "discipline": 0.8123,
+          "field": 0.6838
+        },
+        "partial_credit_share": 0.1285
+      }
+    },
+    "full_field_test": {
+      "n": 16804,
+      "discipline_accuracy": 0.8397,
+      "discipline_colisted_accuracy": 0.9093,
+      "discipline_macro_f1": 0.827,
+      "oracle_field_accuracy": 0.8399,
+      "oracle_field_macro_f1": 0.8321,
+      "end_to_end_field_accuracy": 0.7109,
+      "end_to_end_field_macro_f1": 0.697,
+      "end_to_end_with_borderline_fork": 0.7336,
+      "cascade_loss": 0.129,
+      "field_acc_given_discipline_correct": 0.8466,
+      "defensible_discipline_error_share": 0.4343,
+      "borderline_share": 0.0711,
+      "hierarchical": {
+        "hierarchical_precision": 0.7753,
+        "hierarchical_recall": 0.7753,
+        "hierarchical_f1": 0.7753,
+        "level_accuracy": {
+          "discipline": 0.8397,
+          "field": 0.7109
+        },
+        "partial_credit_share": 0.1288
+      }
+    }
+  },
+  "per_true_discipline_headline": {
+    "Computer Science": {
+      "n": 3705,
+      "discipline_recall": 0.7417,
+      "oracle_field_acc": 0.8599,
+      "end_to_end_field_acc": 0.641
+    },
+    "Information Systems": {
+      "n": 2590,
+      "discipline_recall": 0.834,
+      "oracle_field_acc": 0.8568,
+      "end_to_end_field_acc": 0.7247
+    },
+    "Information Technology": {
+      "n": 1455,
+      "discipline_recall": 0.8625,
+      "oracle_field_acc": 0.912,
+      "end_to_end_field_acc": 0.7924
+    },
+    "Software Engineering": {
+      "n": 177,
+      "discipline_recall": 0.9831,
+      "oracle_field_acc": 0.8701,
+      "end_to_end_field_acc": 0.8531
+    },
+    "Computer Engineering": {
+      "n": 2425,
+      "discipline_recall": 0.8128,
+      "oracle_field_acc": 0.8441,
+      "end_to_end_field_acc": 0.6998
+    },
+    "Data Science": {
+      "n": 3127,
+      "discipline_recall": 0.8682,
+      "oracle_field_acc": 0.7477,
+      "end_to_end_field_acc": 0.6524
+    }
+  },
+  "conformal_routing": {
+    "calibration_source": "discipline val split (0% ambiguous, 2015-2024)",
+    "policies": {
+      "top-1 only": {
+        "n": 13479,
+        "discipline_set_coverage": 0.8178,
+        "field_in_candidate_set": 0.6894,
+        "avg_candidates": 1.0,
+        "routed_share": 0.0,
+        "empty_share": 0.0,
+        "singleton_share": 1.0,
+        "singleton_field_accuracy": 0.6894
+      },
+      "fixed top-2 when borderline": {
+        "n": 13479,
+        "discipline_set_coverage": 0.8485,
+        "field_in_candidate_set": 0.7146,
+        "avg_candidates": 1.0757,
+        "routed_share": 0.0757,
+        "empty_share": 0.0,
+        "singleton_share": 0.9243,
+        "singleton_field_accuracy": 0.715
+      },
+      "conformal LAC alpha=0.02": {
+        "n": 13479,
+        "discipline_set_coverage": 0.9708,
+        "field_in_candidate_set": 0.8144,
+        "avg_candidates": 1.8259,
+        "routed_share": 0.5508,
+        "empty_share": 0.0,
+        "singleton_share": 0.4492,
+        "singleton_field_accuracy": 0.8089
+      },
+      "conformal LAC alpha=0.05": {
+        "n": 13479,
+        "discipline_set_coverage": 0.9384,
+        "field_in_candidate_set": 0.788,
+        "avg_candidates": 1.4196,
+        "routed_share": 0.3461,
+        "empty_share": 0.0,
+        "singleton_share": 0.6539,
+        "singleton_field_accuracy": 0.7827
+      },
+      "conformal LAC alpha=0.1": {
+        "n": 13479,
+        "discipline_set_coverage": 0.8769,
+        "field_in_candidate_set": 0.7383,
+        "avg_candidates": 1.1448,
+        "routed_share": 0.1421,
+        "empty_share": 0.0,
+        "singleton_share": 0.8579,
+        "singleton_field_accuracy": 0.7334
+      },
+      "conformal LAC alpha=0.2": {
+        "n": 13479,
+        "discipline_set_coverage": 0.7632,
+        "field_in_candidate_set": 0.6435,
+        "avg_candidates": 0.8849,
+        "routed_share": 0.1151,
+        "empty_share": 0.1151,
+        "singleton_share": 0.8849,
+        "singleton_field_accuracy": 0.7273
+      },
+      "conformal LAC alpha=0.3": {
+        "n": 13479,
+        "discipline_set_coverage": 0.6625,
+        "field_in_candidate_set": 0.5578,
+        "avg_candidates": 0.7216,
+        "routed_share": 0.2784,
+        "empty_share": 0.2784,
+        "singleton_share": 0.7216,
+        "singleton_field_accuracy": 0.7729
+      },
+      "conformal LAC alpha=0.02 +top1-fallback": {
+        "n": 13479,
+        "discipline_set_coverage": 0.9708,
+        "field_in_candidate_set": 0.8144,
+        "avg_candidates": 1.8259,
+        "routed_share": 0.5508,
+        "empty_share": 0.0,
+        "singleton_share": 0.4492,
+        "singleton_field_accuracy": 0.8089
+      },
+      "conformal LAC alpha=0.05 +top1-fallback": {
+        "n": 13479,
+        "discipline_set_coverage": 0.9384,
+        "field_in_candidate_set": 0.788,
+        "avg_candidates": 1.4196,
+        "routed_share": 0.3461,
+        "empty_share": 0.0,
+        "singleton_share": 0.6539,
+        "singleton_field_accuracy": 0.7827
+      },
+      "conformal LAC alpha=0.1 +top1-fallback": {
+        "n": 13479,
+        "discipline_set_coverage": 0.8769,
+        "field_in_candidate_set": 0.7383,
+        "avg_candidates": 1.1448,
+        "routed_share": 0.1421,
+        "empty_share": 0.0,
+        "singleton_share": 0.8579,
+        "singleton_field_accuracy": 0.7334
+      },
+      "conformal LAC alpha=0.2 +top1-fallback": {
+        "n": 13479,
+        "discipline_set_coverage": 0.8178,
+        "field_in_candidate_set": 0.6894,
+        "avg_candidates": 1.0,
+        "routed_share": 0.0,
+        "empty_share": 0.0,
+        "singleton_share": 1.0,
+        "singleton_field_accuracy": 0.6894
+      },
+      "conformal LAC alpha=0.3 +top1-fallback": {
+        "n": 13479,
+        "discipline_set_coverage": 0.8178,
+        "field_in_candidate_set": 0.6894,
+        "avg_candidates": 1.0,
+        "routed_share": 0.0,
+        "empty_share": 0.0,
+        "singleton_share": 1.0,
+        "singleton_field_accuracy": 0.6894
+      }
+    }
+  }
+}

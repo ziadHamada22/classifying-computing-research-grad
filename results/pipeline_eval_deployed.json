@@ -1,0 +1,245 @@
+{
+  "discipline_model": "scibert-soft",
+  "field_model": "field-scibert-v2",
+  "split": "test",
+  "subsets": {
+    "no_agent1_train_leak": {
+      "n": 13479,
+      "discipline_accuracy": 0.8271,
+      "discipline_colisted_accuracy": 0.9036,
+      "discipline_macro_f1": 0.7979,
+      "oracle_field_accuracy": 0.8362,
+      "oracle_field_macro_f1": 0.8219,
+      "end_to_end_field_accuracy": 0.6976,
+      "end_to_end_field_macro_f1": 0.6633,
+      "end_to_end_with_borderline_fork": 0.7373,
+      "cascade_loss": 0.1386,
+      "field_acc_given_discipline_correct": 0.8434,
+      "defensible_discipline_error_share": 0.4425,
+      "borderline_share": 0.1195,
+      "hierarchical": {
+        "hierarchical_precision": 0.7624,
+        "hierarchical_recall": 0.7624,
+        "hierarchical_f1": 0.7624,
+        "level_accuracy": {
+          "discipline": 0.8271,
+          "field": 0.6976
+        },
+        "partial_credit_share": 0.1295
+      }
+    },
+    "unseen_by_agent1": {
+      "n": 12035,
+      "discipline_accuracy": 0.8233,
+      "discipline_colisted_accuracy": 0.9022,
+      "discipline_macro_f1": 0.7053,
+      "oracle_field_accuracy": 0.8351,
+      "oracle_field_macro_f1": 0.7723,
+      "end_to_end_field_accuracy": 0.6933,
+      "end_to_end_field_macro_f1": 0.5446,
+      "end_to_end_with_borderline_fork": 0.7344,
+      "cascade_loss": 0.1418,
+      "field_acc_given_discipline_correct": 0.8421,
+      "defensible_discipline_error_share": 0.4464,
+      "borderline_share": 0.1233,
+      "hierarchical": {
+        "hierarchical_precision": 0.7583,
+        "hierarchical_recall": 0.7583,
+        "hierarchical_f1": 0.7583,
+        "level_accuracy": {
+          "discipline": 0.8233,
+          "field": 0.6933
+        },
+        "partial_credit_share": 0.13
+      }
+    },
+    "full_field_test": {
+      "n": 16804,
+      "discipline_accuracy": 0.8474,
+      "discipline_colisted_accuracy": 0.9155,
+      "discipline_macro_f1": 0.8421,
+      "oracle_field_accuracy": 0.8399,
+      "oracle_field_macro_f1": 0.8321,
+      "end_to_end_field_accuracy": 0.7173,
+      "end_to_end_field_macro_f1": 0.7096,
+      "end_to_end_with_borderline_fork": 0.7535,
+      "cascade_loss": 0.1226,
+      "field_acc_given_discipline_correct": 0.8465,
+      "defensible_discipline_error_share": 0.4462,
+      "borderline_share": 0.1103,
+      "hierarchical": {
+        "hierarchical_precision": 0.7824,
+        "hierarchical_recall": 0.7824,
+        "hierarchical_f1": 0.7824,
+        "level_accuracy": {
+          "discipline": 0.8474,
+          "field": 0.7173
+        },
+        "partial_credit_share": 0.1301
+      }
+    }
+  },
+  "per_true_discipline_headline": {
+    "Computer Science": {
+      "n": 3705,
+      "discipline_recall": 0.7695,
+      "oracle_field_acc": 0.8599,
+      "end_to_end_field_acc": 0.6642
+    },
+    "Information Systems": {
+      "n": 2590,
+      "discipline_recall": 0.8583,
+      "oracle_field_acc": 0.8568,
+      "end_to_end_field_acc": 0.744
+    },
+    "Information Technology": {
+      "n": 1455,
+      "discipline_recall": 0.8729,
+      "oracle_field_acc": 0.912,
+      "end_to_end_field_acc": 0.8
+    },
+    "Software Engineering": {
+      "n": 177,
+      "discipline_recall": 0.9774,
+      "oracle_field_acc": 0.8701,
+      "end_to_end_field_acc": 0.8531
+    },
+    "Computer Engineering": {
+      "n": 2425,
+      "discipline_recall": 0.807,
+      "oracle_field_acc": 0.8441,
+      "end_to_end_field_acc": 0.6915
+    },
+    "Data Science": {
+      "n": 3127,
+      "discipline_recall": 0.8555,
+      "oracle_field_acc": 0.7477,
+      "end_to_end_field_acc": 0.6469
+    }
+  },
+  "conformal_routing": {
+    "calibration_source": "DEPLOYED bank: temporal-half (2025+), 28.9% ambiguous",
+    "policies": {
+      "top-1 only": {
+        "n": 13479,
+        "discipline_set_coverage": 0.8271,
+        "field_in_candidate_set": 0.6976,
+        "avg_candidates": 1.0,
+        "routed_share": 0.0,
+        "empty_share": 0.0,
+        "singleton_share": 1.0,
+        "singleton_field_accuracy": 0.6976
+      },
+      "fixed top-2 when borderline": {
+        "n": 13479,
+        "discipline_set_coverage": 0.8747,
+        "field_in_candidate_set": 0.7373,
+        "avg_candidates": 1.1195,
+        "routed_share": 0.1195,
+        "empty_share": 0.0,
+        "singleton_share": 0.8805,
+        "singleton_field_accuracy": 0.7354
+      },
+      "conformal LAC alpha=0.02": {
+        "n": 13479,
+        "discipline_set_coverage": 0.9918,
+        "field_in_candidate_set": 0.8312,
+        "avg_candidates": 2.6571,
+        "routed_share": 0.807,
+        "empty_share": 0.0,
+        "singleton_share": 0.193,
+        "singleton_field_accuracy": 0.8286
+      },
+      "conformal LAC alpha=0.05": {
+        "n": 13479,
+        "discipline_set_coverage": 0.9803,
+        "field_in_candidate_set": 0.8222,
+        "avg_candidates": 2.05,
+        "routed_share": 0.6573,
+        "empty_share": 0.0,
+        "singleton_share": 0.3427,
+        "singleton_field_accuracy": 0.8212
+      },
+      "conformal LAC alpha=0.1": {
+        "n": 13479,
+        "discipline_set_coverage": 0.9598,
+        "field_in_candidate_set": 0.806,
+        "avg_candidates": 1.5979,
+        "routed_share": 0.4632,
+        "empty_share": 0.0,
+        "singleton_share": 0.5368,
+        "singleton_field_accuracy": 0.8028
+      },
+      "conformal LAC alpha=0.2": {
+        "n": 13479,
+        "discipline_set_coverage": 0.9034,
+        "field_in_candidate_set": 0.7604,
+        "avg_candidates": 1.2066,
+        "routed_share": 0.2044,
+        "empty_share": 0.0039,
+        "singleton_share": 0.7956,
+        "singleton_field_accuracy": 0.7548
+      },
+      "conformal LAC alpha=0.3": {
+        "n": 13479,
+        "discipline_set_coverage": 0.8446,
+        "field_in_candidate_set": 0.7116,
+        "avg_candidates": 1.0282,
+        "routed_share": 0.0932,
+        "empty_share": 0.0326,
+        "singleton_share": 0.9068,
+        "singleton_field_accuracy": 0.7302
+      },
+      "conformal LAC alpha=0.02 +top1-fallback": {
+        "n": 13479,
+        "discipline_set_coverage": 0.9918,
+        "field_in_candidate_set": 0.8312,
+        "avg_candidates": 2.6571,
+        "routed_share": 0.807,
+        "empty_share": 0.0,
+        "singleton_share": 0.193,
+        "singleton_field_accuracy": 0.8286
+      },
+      "conformal LAC alpha=0.05 +top1-fallback": {
+        "n": 13479,
+        "discipline_set_coverage": 0.9803,
+        "field_in_candidate_set": 0.8222,
+        "avg_candidates": 2.05,
+        "routed_share": 0.6573,
+        "empty_share": 0.0,
+        "singleton_share": 0.3427,
+        "singleton_field_accuracy": 0.8212
+      },
+      "conformal LAC alpha=0.1 +top1-fallback": {
+        "n": 13479,
+        "discipline_set_coverage": 0.9598,
+        "field_in_candidate_set": 0.806,
+        "avg_candidates": 1.5979,
+        "routed_share": 0.4632,
+        "empty_share": 0.0,
+        "singleton_share": 0.5368,
+        "singleton_field_accuracy": 0.8028
+      },
+      "conformal LAC alpha=0.2 +top1-fallback": {
+        "n": 13479,
+        "discipline_set_coverage": 0.9038,
+        "field_in_candidate_set": 0.7608,
+        "avg_candidates": 1.2105,
+        "routed_share": 0.2005,
+        "empty_share": 0.0,
+        "singleton_share": 0.7995,
+        "singleton_field_accuracy": 0.7517
+      },
+      "conformal LAC alpha=0.3 +top1-fallback": {
+        "n": 13479,
+        "discipline_set_coverage": 0.857,
+        "field_in_candidate_set": 0.7223,
+        "avg_candidates": 1.0608,
+        "routed_share": 0.0606,
+        "empty_share": 0.0,
+        "singleton_share": 0.9394,
+        "singleton_field_accuracy": 0.7163
+      }
+    }
+  }
+}

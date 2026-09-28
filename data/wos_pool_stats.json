@@ -1,0 +1,12 @@
+{
+  "n_total": 9462,
+  "per_discipline": {
+    "Computer Engineering": 3398,
+    "Computer Science": 2006,
+    "Data Science": 761,
+    "Information Systems": 417,
+    "Information Technology": 2047,
+    "Software Engineering": 833
+  },
+  "n_ambiguous": 821
+}

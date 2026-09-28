@@ -1,0 +1,291 @@
+{
+  "test_papers": 3045,
+  "thresholds": {
+    "v1 model": {
+      "builds": 0.41,
+      "evaluates": 0.52,
+      "proves": 0.38,
+      "simulates": 0.67,
+      "human_data": 0.5,
+      "field_context": 0.39,
+      "secondary": 0.2,
+      "intervenes": 0.31
+    },
+    "v2 model": {
+      "builds": 0.45,
+      "evaluates": 0.49,
+      "proves": 0.38,
+      "simulates": 0.69,
+      "human_data": 0.36,
+      "field_context": 0.42,
+      "secondary": 0.15,
+      "intervenes": 0.41
+    }
+  },
+  "unseen_text_v1_cues": {
+    "v1 model": {
+      "mean_kappa": 0.3099,
+      "per_facet_kappa": {
+        "builds": {
+          "methods": 0.1648,
+          "results_conclusion": 0.1238
+        },
+        "evaluates": {
+          "methods": 0.4281,
+          "results_conclusion": 0.4755
+        },
+        "proves": {
+          "methods": 0.356,
+          "results_conclusion": 0.3884
+        },
+        "simulates": {
+          "methods": 0.3115,
+          "results_conclusion": 0.4415
+        },
+        "human_data": {
+          "methods": 0.3624,
+          "results_conclusion": 0.2886
+        },
+        "field_context": {
+          "methods": 0.205,
+          "results_conclusion": 0.3559
+        },
+        "secondary": {
+          "methods": 0.3261,
+          "results_conclusion": 0.2902
+        },
+        "intervenes": {
+          "methods": 0.2337,
+          "results_conclusion": 0.2062
+        }
+      },
+      "design_agreement": 0.4338,
+      "no_facet_rate": 0.1764
+    },
+    "v2 model": {
+      "mean_kappa": 0.3129,
+      "per_facet_kappa": {
+        "builds": {
+          "methods": 0.1665,
+          "results_conclusion": 0.1249
+        },
+        "evaluates": {
+          "methods": 0.4072,
+          "results_conclusion": 0.492
+        },
+        "proves": {
+          "methods": 0.3529,
+          "results_conclusion": 0.3945
+        },
+        "simulates": {
+          "methods": 0.295,
+          "results_conclusion": 0.4307
+        },
+        "human_data": {
+          "methods": 0.459,
+          "results_conclusion": 0.3516
+        },
+        "field_context": {
+          "methods": 0.1863,
+          "results_conclusion": 0.3345
+        },
+        "secondary": {
+          "methods": 0.3414,
+          "results_conclusion": 0.2595
+        },
+        "intervenes": {
+          "methods": 0.1883,
+          "results_conclusion": 0.2228
+        }
+      },
+      "design_agreement": 0.4283,
+      "no_facet_rate": 0.1478
+    },
+    "design_agreement_diff_v2_minus_v1_ci95": [
+      -0.017,
+      0.006
+    ]
+  },
+  "unseen_text_v2_cues": {
+    "v1 model": {
+      "mean_kappa": 0.3082,
+      "per_facet_kappa": {
+        "builds": {
+          "methods": 0.1639,
+          "results_conclusion": 0.1254
+        },
+        "evaluates": {
+          "methods": 0.4271,
+          "results_conclusion": 0.4521
+        },
+        "proves": {
+          "methods": 0.3582,
+          "results_conclusion": 0.3839
+        },
+        "simulates": {
+          "methods": 0.3115,
+          "results_conclusion": 0.4415
+        },
+        "human_data": {
+          "methods": 0.3624,
+          "results_conclusion": 0.2886
+        },
+        "field_context": {
+          "methods": 0.205,
+          "results_conclusion": 0.3559
+        },
+        "secondary": {
+          "methods": 0.3261,
+          "results_conclusion": 0.2902
+        },
+        "intervenes": {
+          "methods": 0.2337,
+          "results_conclusion": 0.2062
+        }
+      },
+      "design_agreement": 0.4283,
+      "no_facet_rate": 0.1764
+    },
+    "v2 model": {
+      "mean_kappa": 0.3151,
+      "per_facet_kappa": {
+        "builds": {
+          "methods": 0.1754,
+          "results_conclusion": 0.1377
+        },
+        "evaluates": {
+          "methods": 0.4139,
+          "results_conclusion": 0.488
+        },
+        "proves": {
+          "methods": 0.364,
+          "results_conclusion": 0.3929
+        },
+        "simulates": {
+          "methods": 0.295,
+          "results_conclusion": 0.4307
+        },
+        "human_data": {
+          "methods": 0.459,
+          "results_conclusion": 0.3516
+        },
+        "field_context": {
+          "methods": 0.1863,
+          "results_conclusion": 0.3345
+        },
+        "secondary": {
+          "methods": 0.3414,
+          "results_conclusion": 0.2595
+        },
+        "intervenes": {
+          "methods": 0.1883,
+          "results_conclusion": 0.2228
+        }
+      },
+      "design_agreement": 0.4252,
+      "no_facet_rate": 0.1478
+    },
+    "design_agreement_diff_v2_minus_v1_ci95": [
+      -0.0149,
+      0.0086
+    ]
+  },
+  "external_signals_val_test": {
+    "v1 model": {
+      "code_release": {
+        "facet": "builds",
+        "n": 109,
+        "auc": 0.6259,
+        "p_given_signal": 0.2661,
+        "p_otherwise": 0.212
+      },
+      "tool_demo": {
+        "facet": "builds",
+        "n": 7,
+        "auc": 0.6868,
+        "p_given_signal": 0.4286,
+        "p_otherwise": 0.2127
+      },
+      "theory_venue": {
+        "facet": "proves",
+        "n": 42,
+        "auc": 0.9252,
+        "p_given_signal": 0.9762,
+        "p_otherwise": 0.2399
+      },
+      "hci_venue": {
+        "facet": "human_data",
+        "n": 24,
+        "auc": 0.918,
+        "p_given_signal": 0.2083,
+        "p_otherwise": 0.016
+      },
+      "industry_track": {
+        "facet": "field_context",
+        "n": 7,
+        "auc": 0.7563,
+        "p_given_signal": 0.2857,
+        "p_otherwise": 0.0359
+      },
+      "survey_venue": {
+        "facet": "secondary",
+        "n": 6,
+        "auc": 0.7903,
+        "p_given_signal": 0.0,
+        "p_otherwise": 0.0077
+      },
+      "position_no_facet": {
+        "n": 5,
+        "share_with_no_facet": 0.4
+      }
+    },
+    "v2 model": {
+      "code_release": {
+        "facet": "builds",
+        "n": 109,
+        "auc": 0.6464,
+        "p_given_signal": 0.3394,
+        "p_otherwise": 0.2562
+      },
+      "tool_demo": {
+        "facet": "builds",
+        "n": 7,
+        "auc": 0.706,
+        "p_given_signal": 0.5714,
+        "p_otherwise": 0.2573
+      },
+      "theory_venue": {
+        "facet": "proves",
+        "n": 42,
+        "auc": 0.9345,
+        "p_given_signal": 0.9762,
+        "p_otherwise": 0.2545
+      },
+      "hci_venue": {
+        "facet": "human_data",
+        "n": 24,
+        "auc": 0.9281,
+        "p_given_signal": 0.375,
+        "p_otherwise": 0.0203
+      },
+      "industry_track": {
+        "facet": "field_context",
+        "n": 7,
+        "auc": 0.7571,
+        "p_given_signal": 0.2857,
+        "p_otherwise": 0.035
+      },
+      "survey_venue": {
+        "facet": "secondary",
+        "n": 6,
+        "auc": 0.8025,
+        "p_given_signal": 0.0,
+        "p_otherwise": 0.0095
+      },
+      "position_no_facet": {
+        "n": 5,
+        "share_with_no_facet": 0.4
+      }
+    }
+  }
+}

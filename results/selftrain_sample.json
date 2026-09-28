@@ -1,0 +1,282 @@
+[
+  {
+    "discipline": "Computer Science",
+    "field": "Artificial Intelligence and Agents",
+    "conf": 0.9897,
+    "route": "conf-high",
+    "title": "LLM-SAP: Large Language Models Situational Awareness Based Planning"
+  },
+  {
+    "discipline": "Computer Science",
+    "field": "Artificial Intelligence and Agents",
+    "conf": 0.8693,
+    "route": "conf-mid+kw",
+    "title": "Explanation for Trajectory Planning using Multi-modal Large Language Model for Autonomous Driving"
+  },
+  {
+    "discipline": "Information Systems",
+    "field": "Information Retrieval and Search",
+    "conf": 0.9879,
+    "route": "conf-high",
+    "title": "Personalisation of d'Hondt's algorithm and its use in recommender ecosystems"
+  },
+  {
+    "discipline": "Computer Engineering",
+    "field": "Signal and Audio Processing",
+    "conf": 0.9026,
+    "route": "conf-high",
+    "title": "Controlling the Wireless Power Transfer Mechanism of the Both-Sides Retrodirective System"
+  },
+  {
+    "discipline": "Computer Science",
+    "field": "Artificial Intelligence and Agents",
+    "conf": 0.9894,
+    "route": "conf-high",
+    "title": "Mixed Fair Division: A Survey"
+  },
+  {
+    "discipline": "Information Systems",
+    "field": "Computing, Ethics and Society",
+    "conf": 0.7148,
+    "route": "conf-mid+kw",
+    "title": "How Platform-User Power Relations Shape Algorithmic Accountability: A Case Study of Instant Loan Platforms and Financially Stressed Users in India"
+  },
+  {
+    "discipline": "Computer Science",
+    "field": "Graphics, Multimedia and Sound",
+    "conf": 0.9585,
+    "route": "conf-high",
+    "title": "CosyVoice: A Scalable Multilingual Zero-shot Text-to-speech Synthesizer based on Supervised Semantic Tokens"
+  },
+  {
+    "discipline": "Computer Science",
+    "field": "Artificial Intelligence and Agents",
+    "conf": 0.9346,
+    "route": "conf-high",
+    "title": "Games With Tolerant Players"
+  },
+  {
+    "discipline": "Software Engineering",
+    "field": "Testing, Verification and Validation",
+    "conf": 0.7864,
+    "route": "conf-mid+kw",
+    "title": "A Comparative Study of Text Embedding Models for Semantic Text Similarity in Bug Reports"
+  },
+  {
+    "discipline": "Information Systems",
+    "field": "Digital Libraries and Scholarly Information",
+    "conf": 0.9067,
+    "route": "conf-high",
+    "title": "Which US and European Higher Education Institutions are visible in ResearchGate and what affects their RG Score?"
+  },
+  {
+    "discipline": "Computer Science",
+    "field": "Theory of Computation and Logic",
+    "conf": 0.9593,
+    "route": "conf-high",
+    "title": "Deciding Maxmin Reachability in Half-Blind Stochastic Games"
+  },
+  {
+    "discipline": "Data Science",
+    "field": "Computational Statistics",
+    "conf": 0.9686,
+    "route": "conf-high",
+    "title": "Forward and Inverse Uncertainty Quantification using Multilevel Monte Carlo Algorithms for an Elliptic Nonlocal Equation"
+  },
+  {
+    "discipline": "Information Systems",
+    "field": "Digital Libraries and Scholarly Information",
+    "conf": 0.985,
+    "route": "conf-high",
+    "title": "Software Citation in Theory and Practice"
+  },
+  {
+    "discipline": "Data Science",
+    "field": "Computational Statistics",
+    "conf": 0.9112,
+    "route": "conf-high",
+    "title": "Emulation of Higher-Order Tensors in Manifold Monte Carlo Methods for Bayesian Inverse Problems"
+  },
+  {
+    "discipline": "Computer Engineering",
+    "field": "Signal and Audio Processing",
+    "conf": 0.7765,
+    "route": "conf-mid+kw",
+    "title": "Graph Coloring Based Pilot Allocation to Mitigate Pilot Contamination for Multi-Cell Massive MIMO Systems"
+  },
+  {
+    "discipline": "Software Engineering",
+    "field": "Construction, Tooling and Program Analysis",
+    "conf": 0.908,
+    "route": "conf-high",
+    "title": "Uncovering LLM-Generated Code: A Zero-Shot Synthetic Code Detector via Code Rewriting"
+  },
+  {
+    "discipline": "Software Engineering",
+    "field": "Requirements and Specification",
+    "conf": 0.9628,
+    "route": "conf-high",
+    "title": "Modularization of Research Software for Collaborative Open Source Development"
+  },
+  {
+    "discipline": "Computer Science",
+    "field": "Graphics, Multimedia and Sound",
+    "conf": 0.9033,
+    "route": "conf-high",
+    "title": "Semantic Segmentation of Urban Textured Meshes Through Point Sampling"
+  },
+  {
+    "discipline": "Computer Engineering",
+    "field": "Signal and Audio Processing",
+    "conf": 0.9049,
+    "route": "conf-high",
+    "title": "Simultaneous Energy Harvesting and Information Transmission in a MIMO Full-Duplex System: A Machine Learning-Based Design"
+  },
+  {
+    "discipline": "Data Science",
+    "field": "Computational Statistics",
+    "conf": 0.9503,
+    "route": "conf-high",
+    "title": "Nested $\\hat R$: Assessing the convergence of Markov chain Monte Carlo when running many short chains"
+  },
+  {
+    "discipline": "Software Engineering",
+    "field": "Empirical and Human Factors in SE",
+    "conf": 0.9366,
+    "route": "conf-high",
+    "title": "Suggestion Bot: Analyzing the Impact of Automated Suggested Changes on Code Reviews"
+  },
+  {
+    "discipline": "Computer Science",
+    "field": "Algorithms and Complexity",
+    "conf": 0.9182,
+    "route": "conf-high",
+    "title": "Fair Interval Scheduling of Indivisible Chores"
+  },
+  {
+    "discipline": "Computer Science",
+    "field": "Artificial Intelligence and Agents",
+    "conf": 0.9724,
+    "route": "conf-high",
+    "title": "Similarity-based cooperative equilibrium"
+  },
+  {
+    "discipline": "Computer Science",
+    "field": "Artificial Intelligence and Agents",
+    "conf": 0.9915,
+    "route": "conf-high",
+    "title": "Planning with Multiple Biases"
+  },
+  {
+    "discipline": "Data Science",
+    "field": "Machine Learning Methods",
+    "conf": 0.9392,
+    "route": "conf-high",
+    "title": "Hop Sampling: A Simple Regularized Graph Learning for Non-Stationary Environments"
+  },
+  {
+    "discipline": "Data Science",
+    "field": "Computational Science and Engineering",
+    "conf": 0.9806,
+    "route": "conf-high",
+    "title": "A physics-informed variational DeepONet for predicting the crack path in brittle materials"
+  },
+  {
+    "discipline": "Software Engineering",
+    "field": "Requirements and Specification",
+    "conf": 0.7957,
+    "route": "conf-mid+kw",
+    "title": "The Dangerous Dogmas of Software Engineering"
+  },
+  {
+    "discipline": "Computer Engineering",
+    "field": "Signal and Audio Processing",
+    "conf": 0.8882,
+    "route": "conf-mid+kw",
+    "title": "Jammer Mitigation via Beam-Slicing for Low-Resolution mmWave Massive MU-MIMO"
+  },
+  {
+    "discipline": "Data Science",
+    "field": "Neural and Evolutionary Computation",
+    "conf": 0.9354,
+    "route": "conf-high",
+    "title": "NEWRON: A New Generalization of the Artificial Neuron to Enhance the Interpretability of Neural Networks"
+  },
+  {
+    "discipline": "Data Science",
+    "field": "Computational Statistics",
+    "conf": 0.9654,
+    "route": "conf-high",
+    "title": "MCMC for Variationally Sparse Gaussian Processes"
+  },
+  {
+    "discipline": "Information Systems",
+    "field": "Data and Database Management",
+    "conf": 0.9886,
+    "route": "conf-high",
+    "title": "Approximate Query Processing for Group-By Queries based on Conditional Generative Models"
+  },
+  {
+    "discipline": "Software Engineering",
+    "field": "Construction, Tooling and Program Analysis",
+    "conf": 0.9282,
+    "route": "conf-high",
+    "title": "Exploring and Unleashing the Power of Large Language Models in Automated Code Translation"
+  },
+  {
+    "discipline": "Computer Engineering",
+    "field": "Signal and Audio Processing",
+    "conf": 0.7915,
+    "route": "conf-mid+kw",
+    "title": "Joint Angle and Delay Cram\\'{e}r-Rao Bound Optimization for ISAC"
+  },
+  {
+    "discipline": "Computer Science",
+    "field": "Algorithms and Complexity",
+    "conf": 0.9588,
+    "route": "conf-high",
+    "title": "Tiered Random Matching Markets: Rank is Proportional to Popularity"
+  },
+  {
+    "discipline": "Computer Science",
+    "field": "Graphics, Multimedia and Sound",
+    "conf": 0.9676,
+    "route": "conf-high",
+    "title": "A Multimodal Approach towards Emotion Recognition of Music using Audio and Lyrical Content"
+  },
+  {
+    "discipline": "Software Engineering",
+    "field": "Construction, Tooling and Program Analysis",
+    "conf": 0.9033,
+    "route": "conf-high",
+    "title": "Assessing and Improving Syntactic Adversarial Robustness of Pre-trained Models for Code Translation"
+  },
+  {
+    "discipline": "Information Systems",
+    "field": "Social and Information Networks",
+    "conf": 0.9462,
+    "route": "conf-high",
+    "title": "Think before you collect: Setting up a data collection approach for social media studies"
+  },
+  {
+    "discipline": "Data Science",
+    "field": "Applied Statistics and Analytics",
+    "conf": 0.9291,
+    "route": "conf-high",
+    "title": "Modeling human decomposition: a Bayesian approach"
+  },
+  {
+    "discipline": "Computer Science",
+    "field": "Algorithms and Complexity",
+    "conf": 0.9887,
+    "route": "conf-high",
+    "title": "Ordinal Maximin Guarantees for Group Fair Division"
+  },
+  {
+    "discipline": "Software Engineering",
+    "field": "Requirements and Specification",
+    "conf": 0.9786,
+    "route": "conf-high",
+    "title": "Practical Guidelines for the Selection and Evaluation of Natural Language Processing Techniques in Requirements Engineering"
+  }
+]

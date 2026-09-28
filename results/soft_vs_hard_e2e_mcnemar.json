@@ -1,0 +1,12 @@
+{
+  "soft_vs_hard": {
+    "fixed": 257,
+    "broken": 192,
+    "p_value": 0.00249
+  },
+  "hard_vs_scibert": {
+    "fixed": 388,
+    "broken": 343,
+    "p_value": 0.10359
+  }
+}

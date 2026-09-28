@@ -1,0 +1,435 @@
+{
+  "model": "scibert+deberta",
+  "n": 9462,
+  "n_clean": 8641,
+  "accuracy_all": 0.6325,
+  "accuracy_clean": 0.6702,
+  "macro_f1_clean": 0.6193,
+  "docs_per_second": 48.6,
+  "per_discipline_recall": {
+    "Computer Science": {
+      "n": 1609,
+      "recall": 0.3965
+    },
+    "Information Systems": {
+      "n": 417,
+      "recall": 0.7962
+    },
+    "Information Technology": {
+      "n": 2047,
+      "recall": 0.6185
+    },
+    "Software Engineering": {
+      "n": 409,
+      "recall": 0.9022
+    },
+    "Computer Engineering": {
+      "n": 3398,
+      "recall": 0.809
+    },
+    "Data Science": {
+      "n": 761,
+      "recall": 0.5742
+    }
+  },
+  "per_area": {
+    "Algorithm design": {
+      "mapped_discipline": "Computer Science",
+      "n": 379,
+      "hit_rate": 0.1346,
+      "ambiguous": false,
+      "pred_distribution": {
+        "Data Science": 72,
+        "Computer Engineering": 126,
+        "Information Technology": 88,
+        "Information Systems": 28,
+        "Computer Science": 51,
+        "Software Engineering": 14
+      }
+    },
+    "Analog signal processing": {
+      "mapped_discipline": "Computer Engineering",
+      "n": 407,
+      "hit_rate": 0.9877,
+      "ambiguous": false,
+      "pred_distribution": {
+        "Computer Engineering": 402,
+        "Information Systems": 2,
+        "Computer Science": 1,
+        "Information Technology": 2
+      }
+    },
+    "Bioinformatics": {
+      "mapped_discipline": "Data Science",
+      "n": 365,
+      "hit_rate": 0.5781,
+      "ambiguous": false,
+      "pred_distribution": {
+        "Data Science": 211,
+        "Information Systems": 10,
+        "Computer Engineering": 137,
+        "Computer Science": 4,
+        "Software Engineering": 1,
+        "Information Technology": 2
+      }
+    },
+    "Computer graphics": {
+      "mapped_discipline": "Computer Science",
+      "n": 412,
+      "hit_rate": 0.6238,
+      "ambiguous": false,
+      "pred_distribution": {
+        "Computer Engineering": 37,
+        "Computer Science": 257,
+        "Information Systems": 85,
+        "Data Science": 20,
+        "Information Technology": 8,
+        "Software Engineering": 5
+      }
+    },
+    "Computer programming": {
+      "mapped_discipline": "Software Engineering",
+      "n": 424,
+      "hit_rate": 0.125,
+      "ambiguous": true,
+      "pred_distribution": {
+        "Computer Engineering": 27,
+        "Data Science": 55,
+        "Information Systems": 249,
+        "Software Engineering": 53,
+        "Computer Science": 31,
+        "Information Technology": 9
+      }
+    },
+    "Computer vision": {
+      "mapped_discipline": "Computer Science",
+      "n": 430,
+      "hit_rate": 0.5512,
+      "ambiguous": false,
+      "pred_distribution": {
+        "Data Science": 47,
+        "Computer Engineering": 105,
+        "Computer Science": 237,
+        "Information Technology": 5,
+        "Information Systems": 32,
+        "Software Engineering": 4
+      }
+    },
+    "Control engineering": {
+      "mapped_discipline": "Computer Engineering",
+      "n": 276,
+      "hit_rate": 0.5906,
+      "ambiguous": false,
+      "pred_distribution": {
+        "Computer Engineering": 163,
+        "Information Systems": 55,
+        "Data Science": 29,
+        "Software Engineering": 19,
+        "Information Technology": 6,
+        "Computer Science": 4
+      }
+    },
+    "Cryptography": {
+      "mapped_discipline": "Information Technology",
+      "n": 385,
+      "hit_rate": 0.7299,
+      "ambiguous": false,
+      "pred_distribution": {
+        "Information Technology": 281,
+        "Computer Engineering": 77,
+        "Data Science": 4,
+        "Information Systems": 3,
+        "Computer Science": 20
+      }
+    },
+    "Data structures": {
+      "mapped_discipline": "Computer Science",
+      "n": 388,
+      "hit_rate": 0.2397,
+      "ambiguous": false,
+      "pred_distribution": {
+        "Data Science": 82,
+        "Computer Science": 93,
+        "Information Technology": 71,
+        "Information Systems": 88,
+        "Computer Engineering": 17,
+        "Software Engineering": 37
+      }
+    },
+    "Digital control": {
+      "mapped_discipline": "Computer Engineering",
+      "n": 426,
+      "hit_rate": 0.9343,
+      "ambiguous": false,
+      "pred_distribution": {
+        "Computer Engineering": 398,
+        "Information Systems": 11,
+        "Information Technology": 6,
+        "Software Engineering": 4,
+        "Data Science": 7
+      }
+    },
+    "Distributed computing": {
+      "mapped_discipline": "Information Technology",
+      "n": 399,
+      "hit_rate": 0.6942,
+      "ambiguous": false,
+      "pred_distribution": {
+        "Computer Science": 25,
+        "Information Technology": 277,
+        "Information Systems": 30,
+        "Software Engineering": 7,
+        "Data Science": 31,
+        "Computer Engineering": 29
+      }
+    },
+    "Image processing": {
+      "mapped_discipline": "Computer Engineering",
+      "n": 414,
+      "hit_rate": 0.6594,
+      "ambiguous": false,
+      "pred_distribution": {
+        "Data Science": 72,
+        "Computer Science": 47,
+        "Computer Engineering": 273,
+        "Information Systems": 11,
+        "Information Technology": 7,
+        "Software Engineering": 4
+      }
+    },
+    "Machine learning": {
+      "mapped_discipline": "Data Science",
+      "n": 396,
+      "hit_rate": 0.5707,
+      "ambiguous": false,
+      "pred_distribution": {
+        "Computer Engineering": 72,
+        "Data Science": 226,
+        "Information Systems": 44,
+        "Information Technology": 23,
+        "Computer Science": 27,
+        "Software Engineering": 4
+      }
+    },
+    "Microcontroller": {
+      "mapped_discipline": "Computer Engineering",
+      "n": 413,
+      "hit_rate": 0.8475,
+      "ambiguous": false,
+      "pred_distribution": {
+        "Computer Engineering": 350,
+        "Information Technology": 32,
+        "Information Systems": 20,
+        "Computer Science": 2,
+        "Software Engineering": 6,
+        "Data Science": 3
+      }
+    },
+    "Operating systems": {
+      "mapped_discipline": "Information Technology",
+      "n": 380,
+      "hit_rate": 0.5184,
+      "ambiguous": false,
+      "pred_distribution": {
+        "Information Systems": 58,
+        "Information Technology": 197,
+        "Computer Engineering": 31,
+        "Software Engineering": 54,
+        "Data Science": 30,
+        "Computer Science": 10
+      }
+    },
+    "PID controller": {
+      "mapped_discipline": "Computer Engineering",
+      "n": 428,
+      "hit_rate": 0.9626,
+      "ambiguous": false,
+      "pred_distribution": {
+        "Computer Engineering": 412,
+        "Data Science": 14,
+        "Information Technology": 2
+      }
+    },
+    "Parallel computing": {
+      "mapped_discipline": "Information Technology",
+      "n": 439,
+      "hit_rate": 0.2665,
+      "ambiguous": false,
+      "pred_distribution": {
+        "Data Science": 182,
+        "Information Technology": 117,
+        "Computer Science": 51,
+        "Information Systems": 11,
+        "Software Engineering": 17,
+        "Computer Engineering": 61
+      }
+    },
+    "Relational databases": {
+      "mapped_discipline": "Information Systems",
+      "n": 374,
+      "hit_rate": 0.8476,
+      "ambiguous": false,
+      "pred_distribution": {
+        "Information Systems": 317,
+        "Computer Science": 10,
+        "Software Engineering": 13,
+        "Information Technology": 26,
+        "Data Science": 7,
+        "Computer Engineering": 1
+      }
+    },
+    "Signal-flow graph": {
+      "mapped_discipline": "Computer Engineering",
+      "n": 274,
+      "hit_rate": 0.8942,
+      "ambiguous": false,
+      "pred_distribution": {
+        "Computer Engineering": 245,
+        "Computer Science": 7,
+        "Software Engineering": 5,
+        "Information Technology": 10,
+        "Data Science": 7
+      }
+    },
+    "Software engineering": {
+      "mapped_discipline": "Software Engineering",
+      "n": 409,
+      "hit_rate": 0.9022,
+      "ambiguous": false,
+      "pred_distribution": {
+        "Information Systems": 17,
+        "Software Engineering": 369,
+        "Information Technology": 7,
+        "Computer Engineering": 5,
+        "Data Science": 5,
+        "Computer Science": 6
+      }
+    },
+    "State space representation": {
+      "mapped_discipline": "Computer Engineering",
+      "n": 344,
+      "hit_rate": 0.7151,
+      "ambiguous": false,
+      "pred_distribution": {
+        "Computer Engineering": 246,
+        "Data Science": 82,
+        "Computer Science": 9,
+        "Information Technology": 7
+      }
+    },
+    "Structured Storage": {
+      "mapped_discipline": "Information Systems",
+      "n": 43,
+      "hit_rate": 0.3488,
+      "ambiguous": false,
+      "pred_distribution": {
+        "Information Technology": 16,
+        "Computer Science": 1,
+        "Data Science": 4,
+        "Information Systems": 15,
+        "Computer Engineering": 3,
+        "Software Engineering": 4
+      }
+    },
+    "Symbolic computation": {
+      "mapped_discipline": "Computer Science",
+      "n": 397,
+      "hit_rate": 0.3552,
+      "ambiguous": true,
+      "pred_distribution": {
+        "Computer Science": 141,
+        "Computer Engineering": 150,
+        "Data Science": 87,
+        "Software Engineering": 10,
+        "Information Systems": 2,
+        "Information Technology": 7
+      }
+    },
+    "System identification": {
+      "mapped_discipline": "Computer Engineering",
+      "n": 416,
+      "hit_rate": 0.625,
+      "ambiguous": false,
+      "pred_distribution": {
+        "Computer Engineering": 260,
+        "Data Science": 150,
+        "Information Technology": 3,
+        "Information Systems": 2,
+        "Computer Science": 1
+      }
+    },
+    "network security": {
+      "mapped_discipline": "Information Technology",
+      "n": 444,
+      "hit_rate": 0.8874,
+      "ambiguous": false,
+      "pred_distribution": {
+        "Information Technology": 394,
+        "Information Systems": 9,
+        "Computer Science": 8,
+        "Software Engineering": 3,
+        "Computer Engineering": 24,
+        "Data Science": 6
+      }
+    }
+  },
+  "confusion_labels": [
+    "Computer Science",
+    "Information Systems",
+    "Information Technology",
+    "Software Engineering",
+    "Computer Engineering",
+    "Data Science"
+  ],
+  "confusion_clean": [
+    [
+      638,
+      233,
+      172,
+      60,
+      285,
+      221
+    ],
+    [
+      11,
+      332,
+      42,
+      17,
+      4,
+      11
+    ],
+    [
+      114,
+      111,
+      1266,
+      81,
+      222,
+      253
+    ],
+    [
+      6,
+      17,
+      7,
+      369,
+      5,
+      5
+    ],
+    [
+      71,
+      101,
+      75,
+      38,
+      2749,
+      364
+    ],
+    [
+      31,
+      54,
+      25,
+      5,
+      209,
+      437
+    ]
+  ],
+  "note": "OUT-OF-DISTRIBUTION probe: non-arXiv, title-free, older text."
+}

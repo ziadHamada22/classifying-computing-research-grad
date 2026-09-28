@@ -1,0 +1,22 @@
+{
+  "tag": "ensemble_scibert_tfidf",
+  "members": [
+    "scibert",
+    "tfidf"
+  ],
+  "weights": {
+    "scibert": 0.6,
+    "tfidf": 0.4
+  },
+  "val": {
+    "macro_f1": 0.857,
+    "accuracy": 0.8571,
+    "ece": 0.0362
+  },
+  "test": {
+    "macro_f1": 0.8144,
+    "accuracy": 0.8145,
+    "ece": 0.0119,
+    "lift_over_best_single": 0.0022
+  }
+}

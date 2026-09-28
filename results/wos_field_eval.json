@@ -1,0 +1,365 @@
+{
+  "model": "field-scibert-v2",
+  "conditioning": "oracle (true discipline)",
+  "n": 7454,
+  "fields_tested": [
+    "Algorithms and Complexity",
+    "Computer Vision",
+    "Control Systems and Robotics",
+    "Cybersecurity and Cryptography",
+    "Data and Database Management",
+    "Distributed and Cloud Computing",
+    "Graphics, Multimedia and Sound",
+    "Image and Video Processing",
+    "Machine Learning Methods",
+    "Operating Systems and Platforms",
+    "Signal and Audio Processing"
+  ],
+  "accuracy": 0.6921,
+  "macro_f1": 0.2526,
+  "docs_per_second": 343.5,
+  "per_field": {
+    "Algorithms and Complexity": {
+      "discipline": "Computer Science",
+      "n": 767,
+      "agreement": 0.2973,
+      "chance_baseline": 0.1429
+    },
+    "Computer Vision": {
+      "discipline": "Computer Science",
+      "n": 430,
+      "agreement": 0.8163,
+      "chance_baseline": 0.1429
+    },
+    "Control Systems and Robotics": {
+      "discipline": "Computer Engineering",
+      "n": 2164,
+      "agreement": 0.7602,
+      "chance_baseline": 0.1667
+    },
+    "Cybersecurity and Cryptography": {
+      "discipline": "Information Technology",
+      "n": 829,
+      "agreement": 0.8058,
+      "chance_baseline": 0.2
+    },
+    "Data and Database Management": {
+      "discipline": "Information Systems",
+      "n": 417,
+      "agreement": 0.8993,
+      "chance_baseline": 0.1667
+    },
+    "Distributed and Cloud Computing": {
+      "discipline": "Information Technology",
+      "n": 838,
+      "agreement": 0.8699,
+      "chance_baseline": 0.2
+    },
+    "Graphics, Multimedia and Sound": {
+      "discipline": "Computer Science",
+      "n": 412,
+      "agreement": 0.8034,
+      "chance_baseline": 0.1429
+    },
+    "Image and Video Processing": {
+      "discipline": "Computer Engineering",
+      "n": 414,
+      "agreement": 0.7899,
+      "chance_baseline": 0.1667
+    },
+    "Machine Learning Methods": {
+      "discipline": "Data Science",
+      "n": 396,
+      "agreement": 0.2879,
+      "chance_baseline": 0.1429
+    },
+    "Operating Systems and Platforms": {
+      "discipline": "Information Technology",
+      "n": 380,
+      "agreement": 0.3842,
+      "chance_baseline": 0.2
+    },
+    "Signal and Audio Processing": {
+      "discipline": "Computer Engineering",
+      "n": 407,
+      "agreement": 0.602,
+      "chance_baseline": 0.1667
+    }
+  },
+  "per_area": {
+    "Algorithm design": {
+      "target_field": "Algorithms and Complexity",
+      "discipline": "Computer Science",
+      "n": 379,
+      "agreement": 0.2005,
+      "pred_distribution": {
+        "Artificial Intelligence and Agents": 175,
+        "Natural Language Processing": 2,
+        "Algorithms and Complexity": 76,
+        "Computer Vision": 35,
+        "Programming Languages and Compilers": 23,
+        "Theory of Computation and Logic": 18,
+        "Graphics, Multimedia and Sound": 50
+      }
+    },
+    "Analog signal processing": {
+      "target_field": "Signal and Audio Processing",
+      "discipline": "Computer Engineering",
+      "n": 407,
+      "agreement": 0.602,
+      "pred_distribution": {
+        "Signal and Audio Processing": 245,
+        "Computer Architecture and Hardware": 75,
+        "Embedded and Emerging Devices": 62,
+        "Image and Video Processing": 10,
+        "Control Systems and Robotics": 13,
+        "Information and Coding Theory": 2
+      }
+    },
+    "Computer graphics": {
+      "target_field": "Graphics, Multimedia and Sound",
+      "discipline": "Computer Science",
+      "n": 412,
+      "agreement": 0.8034,
+      "pred_distribution": {
+        "Graphics, Multimedia and Sound": 331,
+        "Algorithms and Complexity": 20,
+        "Computer Vision": 25,
+        "Programming Languages and Compilers": 10,
+        "Artificial Intelligence and Agents": 19,
+        "Natural Language Processing": 2,
+        "Theory of Computation and Logic": 5
+      }
+    },
+    "Computer vision": {
+      "target_field": "Computer Vision",
+      "discipline": "Computer Science",
+      "n": 430,
+      "agreement": 0.8163,
+      "pred_distribution": {
+        "Computer Vision": 351,
+        "Graphics, Multimedia and Sound": 36,
+        "Artificial Intelligence and Agents": 28,
+        "Programming Languages and Compilers": 3,
+        "Natural Language Processing": 1,
+        "Algorithms and Complexity": 10,
+        "Theory of Computation and Logic": 1
+      }
+    },
+    "Control engineering": {
+      "target_field": "Control Systems and Robotics",
+      "discipline": "Computer Engineering",
+      "n": 276,
+      "agreement": 0.8804,
+      "pred_distribution": {
+        "Control Systems and Robotics": 243,
+        "Image and Video Processing": 4,
+        "Embedded and Emerging Devices": 9,
+        "Signal and Audio Processing": 16,
+        "Information and Coding Theory": 2,
+        "Computer Architecture and Hardware": 2
+      }
+    },
+    "Cryptography": {
+      "target_field": "Cybersecurity and Cryptography",
+      "discipline": "Information Technology",
+      "n": 385,
+      "agreement": 0.8961,
+      "pred_distribution": {
+        "Cybersecurity and Cryptography": 345,
+        "Networking and Communications": 26,
+        "Distributed and Cloud Computing": 12,
+        "Operating Systems and Platforms": 1,
+        "Performance, Capacity and Reliability": 1
+      }
+    },
+    "Data structures": {
+      "target_field": "Algorithms and Complexity",
+      "discipline": "Computer Science",
+      "n": 388,
+      "agreement": 0.3918,
+      "pred_distribution": {
+        "Artificial Intelligence and Agents": 65,
+        "Programming Languages and Compilers": 101,
+        "Algorithms and Complexity": 152,
+        "Graphics, Multimedia and Sound": 38,
+        "Computer Vision": 13,
+        "Theory of Computation and Logic": 16,
+        "Natural Language Processing": 3
+      }
+    },
+    "Digital control": {
+      "target_field": "Control Systems and Robotics",
+      "discipline": "Computer Engineering",
+      "n": 426,
+      "agreement": 0.7817,
+      "pred_distribution": {
+        "Control Systems and Robotics": 333,
+        "Image and Video Processing": 8,
+        "Computer Architecture and Hardware": 21,
+        "Embedded and Emerging Devices": 16,
+        "Signal and Audio Processing": 48
+      }
+    },
+    "Distributed computing": {
+      "target_field": "Distributed and Cloud Computing",
+      "discipline": "Information Technology",
+      "n": 399,
+      "agreement": 0.8446,
+      "pred_distribution": {
+        "Distributed and Cloud Computing": 337,
+        "Cybersecurity and Cryptography": 28,
+        "Networking and Communications": 28,
+        "Operating Systems and Platforms": 2,
+        "Performance, Capacity and Reliability": 4
+      }
+    },
+    "Image processing": {
+      "target_field": "Image and Video Processing",
+      "discipline": "Computer Engineering",
+      "n": 414,
+      "agreement": 0.7899,
+      "pred_distribution": {
+        "Image and Video Processing": 327,
+        "Control Systems and Robotics": 28,
+        "Signal and Audio Processing": 28,
+        "Embedded and Emerging Devices": 16,
+        "Computer Architecture and Hardware": 12,
+        "Information and Coding Theory": 3
+      }
+    },
+    "Machine learning": {
+      "target_field": "Machine Learning Methods",
+      "discipline": "Data Science",
+      "n": 396,
+      "agreement": 0.2879,
+      "pred_distribution": {
+        "Neural and Evolutionary Computation": 50,
+        "Statistical Learning Theory": 53,
+        "Applied Statistics and Analytics": 115,
+        "Machine Learning Methods": 114,
+        "Computational Science and Engineering": 53,
+        "Computational Statistics": 6,
+        "Statistical Methodology and Inference": 5
+      }
+    },
+    "Operating systems": {
+      "target_field": "Operating Systems and Platforms",
+      "discipline": "Information Technology",
+      "n": 380,
+      "agreement": 0.3842,
+      "pred_distribution": {
+        "Distributed and Cloud Computing": 91,
+        "Networking and Communications": 59,
+        "Cybersecurity and Cryptography": 69,
+        "Operating Systems and Platforms": 146,
+        "Performance, Capacity and Reliability": 15
+      }
+    },
+    "PID controller": {
+      "target_field": "Control Systems and Robotics",
+      "discipline": "Computer Engineering",
+      "n": 428,
+      "agreement": 0.9836,
+      "pred_distribution": {
+        "Control Systems and Robotics": 421,
+        "Signal and Audio Processing": 7
+      }
+    },
+    "Parallel computing": {
+      "target_field": "Distributed and Cloud Computing",
+      "discipline": "Information Technology",
+      "n": 439,
+      "agreement": 0.8929,
+      "pred_distribution": {
+        "Distributed and Cloud Computing": 392,
+        "Performance, Capacity and Reliability": 12,
+        "Operating Systems and Platforms": 9,
+        "Networking and Communications": 16,
+        "Cybersecurity and Cryptography": 10
+      }
+    },
+    "Relational databases": {
+      "target_field": "Data and Database Management",
+      "discipline": "Information Systems",
+      "n": 374,
+      "agreement": 0.9332,
+      "pred_distribution": {
+        "Data and Database Management": 349,
+        "Digital Libraries and Scholarly Information": 7,
+        "Computing, Ethics and Society": 11,
+        "Information Retrieval and Search": 6,
+        "Social and Information Networks": 1
+      }
+    },
+    "Signal-flow graph": {
+      "target_field": "Control Systems and Robotics",
+      "discipline": "Computer Engineering",
+      "n": 274,
+      "agreement": 0.2518,
+      "pred_distribution": {
+        "Signal and Audio Processing": 139,
+        "Embedded and Emerging Devices": 13,
+        "Computer Architecture and Hardware": 34,
+        "Image and Video Processing": 4,
+        "Control Systems and Robotics": 69,
+        "Information and Coding Theory": 15
+      }
+    },
+    "State space representation": {
+      "target_field": "Control Systems and Robotics",
+      "discipline": "Computer Engineering",
+      "n": 344,
+      "agreement": 0.8343,
+      "pred_distribution": {
+        "Control Systems and Robotics": 287,
+        "Computer Architecture and Hardware": 7,
+        "Signal and Audio Processing": 39,
+        "Embedded and Emerging Devices": 3,
+        "Information and Coding Theory": 7,
+        "Image and Video Processing": 1
+      }
+    },
+    "Structured Storage": {
+      "target_field": "Data and Database Management",
+      "discipline": "Information Systems",
+      "n": 43,
+      "agreement": 0.6047,
+      "pred_distribution": {
+        "Data and Database Management": 26,
+        "Digital Libraries and Scholarly Information": 2,
+        "Information Retrieval and Search": 3,
+        "Computing, Ethics and Society": 7,
+        "Human-Computer Interaction": 3,
+        "Social and Information Networks": 2
+      }
+    },
+    "System identification": {
+      "target_field": "Control Systems and Robotics",
+      "discipline": "Computer Engineering",
+      "n": 416,
+      "agreement": 0.7019,
+      "pred_distribution": {
+        "Control Systems and Robotics": 292,
+        "Signal and Audio Processing": 110,
+        "Embedded and Emerging Devices": 4,
+        "Image and Video Processing": 7,
+        "Computer Architecture and Hardware": 2,
+        "Information and Coding Theory": 1
+      }
+    },
+    "network security": {
+      "target_field": "Cybersecurity and Cryptography",
+      "discipline": "Information Technology",
+      "n": 444,
+      "agreement": 0.7275,
+      "pred_distribution": {
+        "Cybersecurity and Cryptography": 323,
+        "Networking and Communications": 98,
+        "Distributed and Cloud Computing": 22,
+        "Operating Systems and Platforms": 1
+      }
+    }
+  },
+  "note": "OOD probe; WoS area is a coarse proxy label, title-free text."
+}

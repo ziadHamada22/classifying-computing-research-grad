@@ -1,0 +1,28 @@
+{
+  "tag": "ensemble_deberta-v3-base_modernbert-base_scibert_specter2_tfidf",
+  "members": [
+    "deberta-v3-base",
+    "modernbert-base",
+    "scibert",
+    "specter2",
+    "tfidf"
+  ],
+  "weights": {
+    "deberta-v3-base": 0.0,
+    "modernbert-base": 0.2,
+    "scibert": 0.3,
+    "specter2": 0.3,
+    "tfidf": 0.2
+  },
+  "val": {
+    "macro_f1": 0.8601,
+    "accuracy": 0.8602,
+    "ece": 0.0264
+  },
+  "test": {
+    "macro_f1": 0.8157,
+    "accuracy": 0.8158,
+    "ece": 0.0174,
+    "lift_over_best_single": 0.0035
+  }
+}

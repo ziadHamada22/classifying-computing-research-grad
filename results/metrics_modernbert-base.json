@@ -1,0 +1,35 @@
+{
+  "model": "answerdotai/ModernBERT-base",
+  "tag": "modernbert-base",
+  "corpus": "abstract",
+  "train_seconds": 3223.8,
+  "args": {
+    "model": "answerdotai/ModernBERT-base",
+    "tag": "modernbert-base",
+    "corpus": "abstract",
+    "max_chunk_rows": 400000,
+    "epochs": 3.0,
+    "batch_size": 8,
+    "grad_accum": 4,
+    "lr": 3e-05,
+    "max_length": 256,
+    "label_smoothing": 0.05,
+    "warmup_ratio": 0.06,
+    "weight_decay": 0.01,
+    "seed": 42,
+    "patience": 2,
+    "eval_steps": 0
+  },
+  "val": {
+    "macro_f1": 0.8392664495489167,
+    "weighted_f1": 0.8392664495489168,
+    "accuracy": 0.8390740740740741,
+    "report": "                        precision    recall  f1-score   support\n\n      Computer Science     0.7939    0.7894    0.7916      1800\n   Information Systems     0.8378    0.8639    0.8507      1800\nInformation Technology     0.8104    0.8361    0.8231      1800\n  Software Engineering     0.9048    0.8872    0.8959      1800\n  Computer Engineering     0.8039    0.8061    0.8050      1800\n          Data Science     0.8877    0.8517    0.8693      1800\n\n              accuracy                         0.8391     10800\n             macro avg     0.8397    0.8391    0.8393     10800\n          weighted avg     0.8397    0.8391    0.8393     10800\n"
+  },
+  "test": {
+    "macro_f1": 0.7976653443847782,
+    "weighted_f1": 0.7976653443847782,
+    "accuracy": 0.7973765432098765,
+    "report": "                        precision    recall  f1-score   support\n\n      Computer Science     0.7139    0.7162    0.7150      2160\n   Information Systems     0.8238    0.8181    0.8209      2160\nInformation Technology     0.7913    0.8144    0.8026      2160\n  Software Engineering     0.8900    0.8731    0.8815      2160\n  Computer Engineering     0.7489    0.7801    0.7642      2160\n          Data Science     0.8220    0.7824    0.8017      2160\n\n              accuracy                         0.7974     12960\n             macro avg     0.7983    0.7974    0.7977     12960\n          weighted avg     0.7983    0.7974    0.7977     12960\n"
+  }
+}

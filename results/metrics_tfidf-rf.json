@@ -1,0 +1,32 @@
+{
+  "model": "tfidf+random-forest",
+  "tag": "tfidf-rf",
+  "train_seconds": 139.9,
+  "params": {
+    "n_estimators": 400,
+    "k_features": 20000,
+    "min_samples_leaf": 1,
+    "val_grid": {
+      "1": 0.7649480846523593,
+      "3": 0.7613223389189213
+    }
+  },
+  "val": {
+    "macro_f1": 0.7649480846523593,
+    "weighted_f1": 0.7649480846523595,
+    "accuracy": 0.7663888888888889,
+    "report": "                        precision    recall  f1-score   support\n\n      Computer Science     0.7285    0.6500    0.6870      1800\n   Information Systems     0.7688    0.7906    0.7795      1800\nInformation Technology     0.7485    0.7822    0.7650      1800\n  Software Engineering     0.8202    0.8589    0.8391      1800\n  Computer Engineering     0.7685    0.6972    0.7311      1800\n          Data Science     0.7587    0.8194    0.7879      1800\n\n              accuracy                         0.7664     10800\n             macro avg     0.7655    0.7664    0.7649     10800\n          weighted avg     0.7655    0.7664    0.7649     10800\n"
+  },
+  "test": {
+    "macro_f1": 0.7245121007729302,
+    "weighted_f1": 0.72451210077293,
+    "accuracy": 0.7263117283950618,
+    "report": "                        precision    recall  f1-score   support\n\n      Computer Science     0.6734    0.5736    0.6195      2160\n   Information Systems     0.7505    0.7532    0.7518      2160\nInformation Technology     0.7192    0.7718    0.7445      2160\n  Software Engineering     0.7981    0.8255    0.8116      2160\n  Computer Engineering     0.7024    0.6787    0.6904      2160\n          Data Science     0.7051    0.7551    0.7293      2160\n\n              accuracy                         0.7263     12960\n             macro avg     0.7248    0.7263    0.7245     12960\n          weighted avg     0.7248    0.7263    0.7245     12960\n"
+  },
+  "temporal": {
+    "macro_f1": 0.6651075976307197,
+    "weighted_f1": 0.6651075976307198,
+    "accuracy": 0.67,
+    "report": "                        precision    recall  f1-score   support\n\n      Computer Science     0.6220    0.5047    0.5572      1500\n   Information Systems     0.7290    0.7460    0.7374      1500\nInformation Technology     0.6667    0.7200    0.6923      1500\n  Software Engineering     0.6876    0.8553    0.7623      1500\n  Computer Engineering     0.6120    0.5393    0.5734      1500\n          Data Science     0.6819    0.6547    0.6680      1500\n\n              accuracy                         0.6700      9000\n             macro avg     0.6665    0.6700    0.6651      9000\n          weighted avg     0.6665    0.6700    0.6651      9000\n"
+  }
+}

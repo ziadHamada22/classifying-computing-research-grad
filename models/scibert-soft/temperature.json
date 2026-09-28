@@ -1,0 +1,245 @@
+{
+  "temperature": 1.0,
+  "temperature_fitted": 0.8218934535980225,
+  "temperature_applied": false,
+  "val_ece_raw": 0.0344,
+  "val_ece_fitted": 0.0212,
+  "composition_guard": {
+    "slice": "2025+ calibration half (seed 42)",
+    "ece_raw": 0.0435,
+    "ece_fitted": 0.0887
+  },
+  "model_dir": "C:\\Users\\ziada\\OneDrive\\Desktop\\YEAR 4\\GP\\system\\models\\scibert-soft",
+  "val": {
+    "n": 10800,
+    "accuracy": 0.8495,
+    "ece_raw": 0.0344,
+    "ece_calibrated": 0.0344,
+    "ece_reduction": 0.0,
+    "mean_confidence_raw": 0.8164,
+    "mean_confidence_calibrated": 0.8164,
+    "reliability": [
+      {
+        "lo": 0.0,
+        "hi": 0.067,
+        "n": 0,
+        "confidence": null,
+        "accuracy": null
+      },
+      {
+        "lo": 0.067,
+        "hi": 0.133,
+        "n": 0,
+        "confidence": null,
+        "accuracy": null
+      },
+      {
+        "lo": 0.133,
+        "hi": 0.2,
+        "n": 0,
+        "confidence": null,
+        "accuracy": null
+      },
+      {
+        "lo": 0.2,
+        "hi": 0.267,
+        "n": 2,
+        "confidence": 0.2608,
+        "accuracy": 0.5
+      },
+      {
+        "lo": 0.267,
+        "hi": 0.333,
+        "n": 21,
+        "confidence": 0.3093,
+        "accuracy": 0.3333
+      },
+      {
+        "lo": 0.333,
+        "hi": 0.4,
+        "n": 102,
+        "confidence": 0.3746,
+        "accuracy": 0.4216
+      },
+      {
+        "lo": 0.4,
+        "hi": 0.467,
+        "n": 252,
+        "confidence": 0.4386,
+        "accuracy": 0.5119
+      },
+      {
+        "lo": 0.467,
+        "hi": 0.533,
+        "n": 574,
+        "confidence": 0.5002,
+        "accuracy": 0.5052
+      },
+      {
+        "lo": 0.533,
+        "hi": 0.6,
+        "n": 608,
+        "confidence": 0.5665,
+        "accuracy": 0.5559
+      },
+      {
+        "lo": 0.6,
+        "hi": 0.667,
+        "n": 614,
+        "confidence": 0.6337,
+        "accuracy": 0.6482
+      },
+      {
+        "lo": 0.667,
+        "hi": 0.733,
+        "n": 651,
+        "confidence": 0.6997,
+        "accuracy": 0.7588
+      },
+      {
+        "lo": 0.733,
+        "hi": 0.8,
+        "n": 845,
+        "confidence": 0.7687,
+        "accuracy": 0.7917
+      },
+      {
+        "lo": 0.8,
+        "hi": 0.867,
+        "n": 1253,
+        "confidence": 0.8354,
+        "accuracy": 0.8675
+      },
+      {
+        "lo": 0.867,
+        "hi": 0.933,
+        "n": 2342,
+        "confidence": 0.9049,
+        "accuracy": 0.9458
+      },
+      {
+        "lo": 0.933,
+        "hi": 1.0,
+        "n": 3536,
+        "confidence": 0.9529,
+        "accuracy": 0.991
+      }
+    ]
+  },
+  "test": {
+    "n": 12960,
+    "accuracy": 0.8104,
+    "ece_raw": 0.0242,
+    "ece_calibrated": 0.0242,
+    "ece_reduction": 0.0,
+    "mean_confidence_raw": 0.7941,
+    "mean_confidence_calibrated": 0.7941,
+    "reliability": [
+      {
+        "lo": 0.0,
+        "hi": 0.067,
+        "n": 0,
+        "confidence": null,
+        "accuracy": null
+      },
+      {
+        "lo": 0.067,
+        "hi": 0.133,
+        "n": 0,
+        "confidence": null,
+        "accuracy": null
+      },
+      {
+        "lo": 0.133,
+        "hi": 0.2,
+        "n": 0,
+        "confidence": null,
+        "accuracy": null
+      },
+      {
+        "lo": 0.2,
+        "hi": 0.267,
+        "n": 2,
+        "confidence": 0.2627,
+        "accuracy": 0.0
+      },
+      {
+        "lo": 0.267,
+        "hi": 0.333,
+        "n": 42,
+        "confidence": 0.3132,
+        "accuracy": 0.4762
+      },
+      {
+        "lo": 0.333,
+        "hi": 0.4,
+        "n": 176,
+        "confidence": 0.3706,
+        "accuracy": 0.2443
+      },
+      {
+        "lo": 0.4,
+        "hi": 0.467,
+        "n": 405,
+        "confidence": 0.4376,
+        "accuracy": 0.4765
+      },
+      {
+        "lo": 0.467,
+        "hi": 0.533,
+        "n": 819,
+        "confidence": 0.501,
+        "accuracy": 0.5128
+      },
+      {
+        "lo": 0.533,
+        "hi": 0.6,
+        "n": 871,
+        "confidence": 0.5669,
+        "accuracy": 0.5568
+      },
+      {
+        "lo": 0.6,
+        "hi": 0.667,
+        "n": 911,
+        "confidence": 0.6347,
+        "accuracy": 0.6476
+      },
+      {
+        "lo": 0.667,
+        "hi": 0.733,
+        "n": 905,
+        "confidence": 0.701,
+        "accuracy": 0.7138
+      },
+      {
+        "lo": 0.733,
+        "hi": 0.8,
+        "n": 1089,
+        "confidence": 0.7672,
+        "accuracy": 0.7493
+      },
+      {
+        "lo": 0.8,
+        "hi": 0.867,
+        "n": 1403,
+        "confidence": 0.8355,
+        "accuracy": 0.8753
+      },
+      {
+        "lo": 0.867,
+        "hi": 0.933,
+        "n": 2674,
+        "confidence": 0.9054,
+        "accuracy": 0.9192
+      },
+      {
+        "lo": 0.933,
+        "hi": 1.0,
+        "n": 3663,
+        "confidence": 0.9526,
+        "accuracy": 0.9839
+      }
+    ]
+  }
+}

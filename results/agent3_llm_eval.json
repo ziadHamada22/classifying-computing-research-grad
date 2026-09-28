@@ -1,0 +1,604 @@
+{
+  "model": "methodology-facets-v2",
+  "llm": "qwen2.5-3b-instruct-q4_k_m",
+  "k_examples": 4,
+  "ensemble_weight": 0.5,
+  "n_sample": 600,
+  "n_dev": 200,
+  "n_signal_papers": 197,
+  "external_signals": {
+    "deployed": {
+      "theory_venue": {
+        "n": 42,
+        "share_expected": 0.7143,
+        "base_rate": 0.185,
+        "lift": 3.86
+      },
+      "hci_venue": {
+        "n": 24,
+        "share_expected": 0.5,
+        "base_rate": 0.0633,
+        "lift": 7.89
+      },
+      "code_release": {
+        "n": 109,
+        "share_expected": 0.3394,
+        "base_rate": 0.27,
+        "lift": 1.26
+      },
+      "tool_demo": {
+        "n": 7,
+        "share_expected": 0.7143,
+        "base_rate": 0.27,
+        "lift": 2.65
+      },
+      "industry_track": {
+        "n": 7,
+        "share_expected": 0.2857,
+        "base_rate": 0.0417,
+        "lift": 6.86
+      },
+      "survey_venue": {
+        "n": 6,
+        "share_expected": 0.0,
+        "base_rate": 0.01,
+        "lift": 0.0
+      },
+      "simulation_venue": {
+        "n": 2,
+        "share_expected": 0.5,
+        "base_rate": 0.155,
+        "lift": 3.23
+      }
+    },
+    "llm_zero": {
+      "theory_venue": {
+        "n": 42,
+        "share_expected": 0.9048,
+        "base_rate": 0.1317,
+        "lift": 6.87
+      },
+      "hci_venue": {
+        "n": 24,
+        "share_expected": 0.0,
+        "base_rate": 0.0117,
+        "lift": 0.0
+      },
+      "code_release": {
+        "n": 109,
+        "share_expected": 0.2752,
+        "base_rate": 0.1867,
+        "lift": 1.47
+      },
+      "tool_demo": {
+        "n": 7,
+        "share_expected": 0.8571,
+        "base_rate": 0.1867,
+        "lift": 4.59
+      },
+      "industry_track": {
+        "n": 7,
+        "share_expected": 0.0,
+        "base_rate": 0.0017,
+        "lift": 0.0
+      },
+      "survey_venue": {
+        "n": 6,
+        "share_expected": 0.0,
+        "base_rate": 0.0033,
+        "lift": 0.0
+      },
+      "simulation_venue": {
+        "n": 2,
+        "share_expected": 0.0,
+        "base_rate": 0.0333,
+        "lift": 0.0
+      }
+    },
+    "llm_zero_cc": {
+      "theory_venue": {
+        "n": 42,
+        "share_expected": 0.9762,
+        "base_rate": 0.2533,
+        "lift": 3.85
+      },
+      "hci_venue": {
+        "n": 24,
+        "share_expected": 0.4583,
+        "base_rate": 0.15,
+        "lift": 3.06
+      },
+      "code_release": {
+        "n": 109,
+        "share_expected": 0.4312,
+        "base_rate": 0.3367,
+        "lift": 1.28
+      },
+      "tool_demo": {
+        "n": 7,
+        "share_expected": 0.8571,
+        "base_rate": 0.3367,
+        "lift": 2.55
+      },
+      "industry_track": {
+        "n": 7,
+        "share_expected": 0.0,
+        "base_rate": 0.035,
+        "lift": 0.0
+      },
+      "survey_venue": {
+        "n": 6,
+        "share_expected": 0.0,
+        "base_rate": 0.0117,
+        "lift": 0.0
+      },
+      "simulation_venue": {
+        "n": 2,
+        "share_expected": 0.0,
+        "base_rate": 0.0967,
+        "lift": 0.0
+      }
+    },
+    "ensemble_zero": {
+      "theory_venue": {
+        "n": 42,
+        "share_expected": 0.9524,
+        "base_rate": 0.1417,
+        "lift": 6.72
+      },
+      "hci_venue": {
+        "n": 24,
+        "share_expected": 0.0,
+        "base_rate": 0.0117,
+        "lift": 0.0
+      },
+      "code_release": {
+        "n": 109,
+        "share_expected": 0.2202,
+        "base_rate": 0.1783,
+        "lift": 1.23
+      },
+      "tool_demo": {
+        "n": 7,
+        "share_expected": 0.8571,
+        "base_rate": 0.1783,
+        "lift": 4.81
+      },
+      "industry_track": {
+        "n": 7,
+        "share_expected": 0.0,
+        "base_rate": 0.0017,
+        "lift": 0.0
+      },
+      "survey_venue": {
+        "n": 6,
+        "share_expected": 0.0,
+        "base_rate": 0.0033,
+        "lift": 0.0
+      },
+      "simulation_venue": {
+        "n": 2,
+        "share_expected": 0.0,
+        "base_rate": 0.0383,
+        "lift": 0.0
+      }
+    },
+    "ensemble_zero_cc": {
+      "theory_venue": {
+        "n": 42,
+        "share_expected": 1.0,
+        "base_rate": 0.2433,
+        "lift": 4.11
+      },
+      "hci_venue": {
+        "n": 24,
+        "share_expected": 0.2917,
+        "base_rate": 0.0883,
+        "lift": 3.3
+      },
+      "code_release": {
+        "n": 109,
+        "share_expected": 0.4128,
+        "base_rate": 0.3117,
+        "lift": 1.32
+      },
+      "tool_demo": {
+        "n": 7,
+        "share_expected": 0.8571,
+        "base_rate": 0.3117,
+        "lift": 2.75
+      },
+      "industry_track": {
+        "n": 7,
+        "share_expected": 0.0,
+        "base_rate": 0.025,
+        "lift": 0.0
+      },
+      "survey_venue": {
+        "n": 6,
+        "share_expected": 0.0,
+        "base_rate": 0.005,
+        "lift": 0.0
+      },
+      "simulation_venue": {
+        "n": 2,
+        "share_expected": 0.0,
+        "base_rate": 0.0967,
+        "lift": 0.0
+      }
+    },
+    "llm_rag": {
+      "theory_venue": {
+        "n": 42,
+        "share_expected": 0.5238,
+        "base_rate": 0.1283,
+        "lift": 4.08
+      },
+      "hci_venue": {
+        "n": 24,
+        "share_expected": 0.0417,
+        "base_rate": 0.0067,
+        "lift": 6.25
+      },
+      "code_release": {
+        "n": 109,
+        "share_expected": 0.2385,
+        "base_rate": 0.2,
+        "lift": 1.19
+      },
+      "tool_demo": {
+        "n": 7,
+        "share_expected": 0.2857,
+        "base_rate": 0.2,
+        "lift": 1.43
+      },
+      "industry_track": {
+        "n": 7,
+        "share_expected": 0.0,
+        "base_rate": 0.0033,
+        "lift": 0.0
+      },
+      "survey_venue": {
+        "n": 6,
+        "share_expected": 0.0,
+        "base_rate": 0.0017,
+        "lift": 0.0
+      },
+      "simulation_venue": {
+        "n": 2,
+        "share_expected": 0.0,
+        "base_rate": 0.1233,
+        "lift": 0.0
+      }
+    },
+    "llm_rag_cc": {
+      "theory_venue": {
+        "n": 42,
+        "share_expected": 0.7381,
+        "base_rate": 0.2233,
+        "lift": 3.3
+      },
+      "hci_venue": {
+        "n": 24,
+        "share_expected": 0.7917,
+        "base_rate": 0.2017,
+        "lift": 3.93
+      },
+      "code_release": {
+        "n": 109,
+        "share_expected": 0.3761,
+        "base_rate": 0.2383,
+        "lift": 1.58
+      },
+      "tool_demo": {
+        "n": 7,
+        "share_expected": 0.1429,
+        "base_rate": 0.2383,
+        "lift": 0.6
+      },
+      "industry_track": {
+        "n": 7,
+        "share_expected": 0.2857,
+        "base_rate": 0.0833,
+        "lift": 3.43
+      },
+      "survey_venue": {
+        "n": 6,
+        "share_expected": 0.1667,
+        "base_rate": 0.0183,
+        "lift": 9.09
+      },
+      "simulation_venue": {
+        "n": 2,
+        "share_expected": 0.5,
+        "base_rate": 0.185,
+        "lift": 2.7
+      }
+    },
+    "ensemble_rag": {
+      "theory_venue": {
+        "n": 42,
+        "share_expected": 0.5952,
+        "base_rate": 0.1283,
+        "lift": 4.64
+      },
+      "hci_venue": {
+        "n": 24,
+        "share_expected": 0.0417,
+        "base_rate": 0.005,
+        "lift": 8.33
+      },
+      "code_release": {
+        "n": 109,
+        "share_expected": 0.2477,
+        "base_rate": 0.1883,
+        "lift": 1.32
+      },
+      "tool_demo": {
+        "n": 7,
+        "share_expected": 0.2857,
+        "base_rate": 0.1883,
+        "lift": 1.52
+      },
+      "industry_track": {
+        "n": 7,
+        "share_expected": 0.0,
+        "base_rate": 0.0033,
+        "lift": 0.0
+      },
+      "survey_venue": {
+        "n": 6,
+        "share_expected": 0.0,
+        "base_rate": 0.0017,
+        "lift": 0.0
+      },
+      "simulation_venue": {
+        "n": 2,
+        "share_expected": 0.0,
+        "base_rate": 0.1217,
+        "lift": 0.0
+      }
+    },
+    "ensemble_rag_cc": {
+      "theory_venue": {
+        "n": 42,
+        "share_expected": 0.8571,
+        "base_rate": 0.2267,
+        "lift": 3.78
+      },
+      "hci_venue": {
+        "n": 24,
+        "share_expected": 0.6667,
+        "base_rate": 0.12,
+        "lift": 5.56
+      },
+      "code_release": {
+        "n": 109,
+        "share_expected": 0.3303,
+        "base_rate": 0.2417,
+        "lift": 1.37
+      },
+      "tool_demo": {
+        "n": 7,
+        "share_expected": 0.5714,
+        "base_rate": 0.2417,
+        "lift": 2.36
+      },
+      "industry_track": {
+        "n": 7,
+        "share_expected": 0.2857,
+        "base_rate": 0.0533,
+        "lift": 5.36
+      },
+      "survey_venue": {
+        "n": 6,
+        "share_expected": 0.1667,
+        "base_rate": 0.0083,
+        "lift": 20.0
+      },
+      "simulation_venue": {
+        "n": 2,
+        "share_expected": 0.5,
+        "base_rate": 0.1617,
+        "lift": 3.09
+      }
+    }
+  },
+  "unseen_text": {
+    "caveat": "reference derived with the facet labels' own cue vocabulary; favours `deployed`",
+    "n": 432,
+    "agreement": {
+      "deployed": 0.456,
+      "llm_zero": 0.3287,
+      "llm_zero_cc": 0.3704,
+      "ensemble_zero": 0.3449,
+      "ensemble_zero_cc": 0.4167,
+      "llm_rag": 0.3565,
+      "llm_rag_cc": 0.3634,
+      "ensemble_rag": 0.3634,
+      "ensemble_rag_cc": 0.4097
+    },
+    "vs_deployed": {
+      "llm_zero": {
+        "diff": -0.1273,
+        "ci95": [
+          -0.1806,
+          -0.0718
+        ],
+        "mcnemar_p": 2e-05
+      },
+      "llm_zero_cc": {
+        "diff": -0.0856,
+        "ci95": [
+          -0.1481,
+          -0.0301
+        ],
+        "mcnemar_p": 0.00604
+      },
+      "ensemble_zero": {
+        "diff": -0.1111,
+        "ci95": [
+          -0.1644,
+          -0.0556
+        ],
+        "mcnemar_p": 0.00011
+      },
+      "ensemble_zero_cc": {
+        "diff": -0.0394,
+        "ci95": [
+          -0.0972,
+          0.0116
+        ],
+        "mcnemar_p": 0.18375
+      },
+      "llm_rag": {
+        "diff": -0.0995,
+        "ci95": [
+          -0.1481,
+          -0.0509
+        ],
+        "mcnemar_p": 0.00017
+      },
+      "llm_rag_cc": {
+        "diff": -0.0926,
+        "ci95": [
+          -0.1412,
+          -0.0417
+        ],
+        "mcnemar_p": 0.00057
+      },
+      "ensemble_rag": {
+        "diff": -0.0926,
+        "ci95": [
+          -0.1389,
+          -0.044
+        ],
+        "mcnemar_p": 0.00033
+      },
+      "ensemble_rag_cc": {
+        "diff": -0.0463,
+        "ci95": [
+          -0.0903,
+          0.0
+        ],
+        "mcnemar_p": 0.06193
+      }
+    }
+  },
+  "design_distribution": {
+    "deployed": {
+      "Experiment / Empirical Evaluation": 0.3167,
+      "Design & Creation (Design Science)": 0.27,
+      "Formal / Theoretical": 0.185,
+      "Simulation & Modelling": 0.155,
+      "Case Study": 0.0383,
+      "Survey (empirical study of respondents)": 0.0117,
+      "Systematic Literature Review / Secondary Study": 0.01,
+      "Qualitative Field Study / Grounded Theory": 0.01,
+      "Action Research": 0.0033
+    },
+    "llm_zero": {
+      "Experiment / Empirical Evaluation": 0.6333,
+      "Design & Creation (Design Science)": 0.1867,
+      "Formal / Theoretical": 0.1317,
+      "Simulation & Modelling": 0.0333,
+      "Survey (empirical study of respondents)": 0.01,
+      "Systematic Literature Review / Secondary Study": 0.0033,
+      "Case Study": 0.0017
+    },
+    "llm_zero_cc": {
+      "Design & Creation (Design Science)": 0.3367,
+      "Formal / Theoretical": 0.2533,
+      "Experiment / Empirical Evaluation": 0.1517,
+      "Simulation & Modelling": 0.0967,
+      "Survey (empirical study of respondents)": 0.0783,
+      "Qualitative Field Study / Grounded Theory": 0.0367,
+      "Action Research": 0.0183,
+      "Case Study": 0.0167,
+      "Systematic Literature Review / Secondary Study": 0.0117
+    },
+    "ensemble_zero": {
+      "Experiment / Empirical Evaluation": 0.6267,
+      "Design & Creation (Design Science)": 0.1783,
+      "Formal / Theoretical": 0.1417,
+      "Simulation & Modelling": 0.0383,
+      "Survey (empirical study of respondents)": 0.01,
+      "Systematic Literature Review / Secondary Study": 0.0033,
+      "Case Study": 0.0017
+    },
+    "ensemble_zero_cc": {
+      "Design & Creation (Design Science)": 0.3117,
+      "Experiment / Empirical Evaluation": 0.255,
+      "Formal / Theoretical": 0.2433,
+      "Simulation & Modelling": 0.0967,
+      "Survey (empirical study of respondents)": 0.055,
+      "Case Study": 0.02,
+      "Qualitative Field Study / Grounded Theory": 0.0083,
+      "Systematic Literature Review / Secondary Study": 0.005,
+      "Action Research": 0.005
+    },
+    "llm_rag": {
+      "Experiment / Empirical Evaluation": 0.54,
+      "Design & Creation (Design Science)": 0.2,
+      "Formal / Theoretical": 0.1283,
+      "Simulation & Modelling": 0.1233,
+      "Case Study": 0.0033,
+      "Survey (empirical study of respondents)": 0.0033,
+      "Systematic Literature Review / Secondary Study": 0.0017
+    },
+    "llm_rag_cc": {
+      "Design & Creation (Design Science)": 0.2383,
+      "Formal / Theoretical": 0.2233,
+      "Simulation & Modelling": 0.185,
+      "Experiment / Empirical Evaluation": 0.1333,
+      "Survey (empirical study of respondents)": 0.0667,
+      "Case Study": 0.0567,
+      "Qualitative Field Study / Grounded Theory": 0.0517,
+      "Action Research": 0.0267,
+      "Systematic Literature Review / Secondary Study": 0.0183
+    },
+    "ensemble_rag": {
+      "Experiment / Empirical Evaluation": 0.555,
+      "Design & Creation (Design Science)": 0.1883,
+      "Formal / Theoretical": 0.1283,
+      "Simulation & Modelling": 0.1217,
+      "Case Study": 0.0033,
+      "Systematic Literature Review / Secondary Study": 0.0017,
+      "Survey (empirical study of respondents)": 0.0017
+    },
+    "ensemble_rag_cc": {
+      "Design & Creation (Design Science)": 0.2417,
+      "Experiment / Empirical Evaluation": 0.2417,
+      "Formal / Theoretical": 0.2267,
+      "Simulation & Modelling": 0.1617,
+      "Case Study": 0.045,
+      "Survey (empirical study of respondents)": 0.035,
+      "Qualitative Field Study / Grounded Theory": 0.0317,
+      "Action Research": 0.0083,
+      "Systematic Literature Review / Secondary Study": 0.0083
+    }
+  },
+  "kappa_with_deployed": {
+    "llm_zero": 0.2122,
+    "llm_zero_cc": 0.2243,
+    "ensemble_zero": 0.2465,
+    "ensemble_zero_cc": 0.3665,
+    "llm_rag": 0.3123,
+    "llm_rag_cc": 0.3514,
+    "ensemble_rag": 0.359,
+    "ensemble_rag_cc": 0.4886
+  },
+  "llm_runtime": {
+    "zero": {
+      "mean_latency_ms": 836.4,
+      "mean_prompt_tokens": 795.1,
+      "mean_examples": 0.0
+    },
+    "rag": {
+      "mean_latency_ms": 1143.5,
+      "mean_prompt_tokens": 1678.2,
+      "mean_examples": 3.91
+    }
+  },
+  "rag_answer_equals_nearest_example": 0.525
+}

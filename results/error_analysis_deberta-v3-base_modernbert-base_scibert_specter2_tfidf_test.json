@@ -1,0 +1,97 @@
+{
+  "members": [
+    "deberta-v3-base",
+    "modernbert-base",
+    "scibert",
+    "specter2",
+    "tfidf"
+  ],
+  "split": "test",
+  "n": 12960,
+  "n_errors": 2350,
+  "decomposition": {
+    "correct": 10610,
+    "genuine": 960,
+    "co_listed": 1092,
+    "adjacent": 298
+  },
+  "strict_accuracy": 0.8187,
+  "defensible_credited_accuracy": 0.9259,
+  "top_genuine_pairs": [
+    {
+      "gold": "Computer Science",
+      "pred": "Information Systems",
+      "count": 73
+    },
+    {
+      "gold": "Computer Engineering",
+      "pred": "Information Technology",
+      "count": 69
+    },
+    {
+      "gold": "Information Systems",
+      "pred": "Information Technology",
+      "count": 65
+    },
+    {
+      "gold": "Software Engineering",
+      "pred": "Information Technology",
+      "count": 58
+    },
+    {
+      "gold": "Information Technology",
+      "pred": "Computer Engineering",
+      "count": 56
+    },
+    {
+      "gold": "Computer Engineering",
+      "pred": "Data Science",
+      "count": 55
+    },
+    {
+      "gold": "Data Science",
+      "pred": "Information Systems",
+      "count": 53
+    },
+    {
+      "gold": "Information Systems",
+      "pred": "Software Engineering",
+      "count": 51
+    },
+    {
+      "gold": "Information Technology",
+      "pred": "Software Engineering",
+      "count": 46
+    },
+    {
+      "gold": "Data Science",
+      "pred": "Computer Engineering",
+      "count": 41
+    },
+    {
+      "gold": "Computer Science",
+      "pred": "Information Technology",
+      "count": 39
+    },
+    {
+      "gold": "Information Technology",
+      "pred": "Information Systems",
+      "count": 36
+    },
+    {
+      "gold": "Computer Science",
+      "pred": "Computer Engineering",
+      "count": 34
+    },
+    {
+      "gold": "Data Science",
+      "pred": "Information Technology",
+      "count": 32
+    },
+    {
+      "gold": "Information Systems",
+      "pred": "Computer Science",
+      "count": 25
+    }
+  ]
+}
