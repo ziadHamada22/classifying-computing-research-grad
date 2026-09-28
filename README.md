@@ -33,6 +33,7 @@ is evaluated against text the model never reads and against arXiv metadata signa
 
 ```
 src/crc/     the package: taxonomy, ingestion, the three agents, evaluation, CLI, web UI
+tests/       216 unit tests (python -m pytest tests -q)
 models/      the three deployed models (weights, tokenizer, calibration files, saved predictions)
 data/        the final labelled datasets each agent was trained and evaluated on
 results/     one JSON file per experiment, plus figures
@@ -64,6 +65,9 @@ python -m crc.serve
 
 # parsing and chunking only
 python -m crc.cli inspect paper.pdf --show-chunks
+
+# the unit tests (about 15 seconds)
+python -m pytest tests -q
 ```
 
 The input guard refuses what it cannot read (an empty input, a scanned PDF with no
