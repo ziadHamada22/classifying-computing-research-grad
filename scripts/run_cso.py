@@ -1,12 +1,4 @@
-r"""Run the CSO Classifier over the exported test subset and cache its RAW topic
-lists per paper. Runs in the isolated .venv-baselines (cso_classifier + stdlib
-only; NO pandas, NO crc import). Mapping to our disciplines happens later in
-`crc.eval.evaluate_baselines` via `crc.taxonomy.cso_map`, so the label decision
-stays auditable in the main package.
 
-    ..\.venv-baselines\Scripts\python.exe scripts\run_cso.py
-    ..\.venv-baselines\Scripts\python.exe scripts\run_cso.py --limit 300
-"""
 import argparse
 import json
 import time
