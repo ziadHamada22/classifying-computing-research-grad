@@ -34,6 +34,7 @@ is evaluated against text the model never reads and against arXiv metadata signa
 ```
 src/crc/     the package: taxonomy, ingestion, the three agents, evaluation, CLI, web UI
 tests/       216 unit tests (python -m pytest tests -q)
+scripts/     one-off experiment runners: backbone bake-off, ensemble build, CSO baseline, RAG probe, results summary
 models/      the three deployed models (weights, tokenizer, calibration files, saved predictions)
 data/        the final labelled datasets each agent was trained and evaluated on
 results/     one JSON file per experiment, plus figures
